@@ -562,7 +562,15 @@ var astraAddon = {"sticky_active":""};
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/blog.doanhien.cf\/wp-admin\/admin-ajax.php","nonce":"b80fd8ab97","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""}};
 </script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor-pro/assets/js/frontend.min.js"></script><script src="https://blog.doanhien.cf/wp-includes/js/jquery/ui/position.min.js"></script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js"></script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js"></script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js"></script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js"></script><script>
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","downloadImage":"Download image"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.9.7","urls":{"assets":"https:\/\/blog.doanhien.cf\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_fullscreen":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_enable_share":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"description"},"editorPreferences":[]},"post":{"id":9,"title":"Hien%20Nguyen%20Blog%20%E2%80%93%20Learning%20and%20sharing%20developer%27s%20experiences","excerpt":"","featuredImage":false}};
-</script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/js/frontend.min.js"></script><script type="text/javascript">
+</script><script src="https://blog.doanhien.cf/wp-content/plugins/elementor/assets/js/frontend.min.js"></script><script>
+		(function() {
+			jQuery( document ).on( 'click', 'a[href^="#elementor-action"]', function( e ) {
+				e.preventDefault();
+				elementorFrontend.utils.urlActions.runAction( jQuery( e.currentTarget ).attr( 'href' ), e );
+			});
+		})();
+		
+</script><script type="text/javascript">
             (function ($) {
                 $(document).ready(function () {
                     $(".katex.math.inline").each(function () {
