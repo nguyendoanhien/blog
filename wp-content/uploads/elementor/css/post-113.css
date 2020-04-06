@@ -1,0 +1,16 @@
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-posts-container .elementor-post__thumbnail {padding-bottom: calc(.66 * 100%);}
+.elementor-113 .elementor-element.elementor-element-ab507be:after {content: "0.66";}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-post__meta-data span + span:before {content: "•";}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-posts-container {grid-column-gap: 30px;grid-row-gap: 35px;}
+.elementor-msie .elementor-113 .elementor-element.elementor-element-ab507be .elementor-post {padding-right: calc(30px / 2);padding-left: calc(30px / 2);padding-bottom: 35px;}
+.elementor-msie .elementor-113 .elementor-element.elementor-element-ab507be .elementor-posts-container {margin-left: calc(-30px / 2);margin-right: calc(-30px / 2);}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-post__text {margin-top: 20px;}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-post__badge {right: 0;}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-post__card .elementor-post__badge {margin: 20px;}
+.elementor-113 .elementor-element.elementor-element-ab507be .elementor-pagination {text-align: center;}
+body:not(.rtl) .elementor-113 .elementor-element.elementor-element-ab507be .elementor-pagination .page-numbers:not(:first-child) {margin-left: calc(10px / 2);}
+body:not(.rtl) .elementor-113 .elementor-element.elementor-element-ab507be .elementor-pagination .page-numbers:not(:last-child) {margin-right: calc(10px / 2);}
+body.rtl .elementor-113 .elementor-element.elementor-element-ab507be .elementor-pagination .page-numbers:not(:first-child) {margin-right: calc(10px / 2);}
+body.rtl .elementor-113 .elementor-element.elementor-element-ab507be .elementor-pagination .page-numbers:not(:last-child) {margin-left: calc(10px / 2);}
+@media (max-width:767px) {.elementor-113 .elementor-element.elementor-element-ab507be .elementor-posts-container .elementor-post__thumbnail {padding-bottom: calc(.5 * 100%);}
+	.elementor-113 .elementor-element.elementor-element-ab507be:after {content: "0.5";}}
