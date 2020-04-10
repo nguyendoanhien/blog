@@ -1,0 +1,1655 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Javascript &#8211; Hien Nguyen Blog</title>
+	<atom:link href="https://blog.doanhien.cf/category/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.doanhien.cf/</link>
+	<description>Learning and sharing developer&#039;s experiences</description>
+	<lastBuildDate>Fri, 10 Apr 2020 07:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4</generator>
+
+<image>
+	<url>https://blog.doanhien.cf/wp-content/uploads/2020/04/favicon-150x150.png</url>
+	<title>Javascript &#8211; Hien Nguyen Blog</title>
+	<link>https://blog.doanhien.cf/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Javascript Coding Standards and Naming Conventions</title>
+		<link>https://blog.doanhien.cf/javascript-coding-standards-and-naming-conventions/</link>
+		
+		<dc:creator><![CDATA[toilati123vn]]></dc:creator>
+		<pubDate>Fri, 10 Apr 2020 07:29:27 +0000</pubDate>
+				<category><![CDATA[Javascript]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=972</guid>
+
+					<description><![CDATA[Javascript coding standards]]></description>
+										<content:encoded><![CDATA[<p>Original post: https://github.com/airbnb/javascript/blob/master/README.md</p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a class="wp-editor-md-post-content-link" href="#types">Types</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#references">References</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#objects">Objects</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#arrays">Arrays</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#destructuring">Destructuring</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#strings">Strings</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#functions">Functions</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#arrow-functions">Arrow Functions</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#classes--constructors">Classes &amp; Constructors</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#modules">Modules</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#iterators-and-generators">Iterators and Generators</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#properties">Properties</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#variables">Variables</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#hoisting">Hoisting</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#comparison-operators--equality">Comparison Operators &amp; Equality</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#blocks">Blocks</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#control-statements">Control Statements</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#comments">Comments</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#whitespace">Whitespace</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#commas">Commas</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#semicolons">Semicolons</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#type-casting--coercion">Type Casting &amp; Coercion</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#naming-conventions">Naming Conventions</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#accessors">Accessors</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#events">Events</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#jquery">jQuery</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#ecmascript-5-compatibility">ECMAScript 5 Compatibility</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#ecmascript-6-es-2015-styles">ECMAScript 6+ (ES 2015+) Styles</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#standard-library">Standard Library</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#testing">Testing</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#performance">Performance</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#resources">Resources</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#in-the-wild">In the Wild</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#translation">Translation</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#the-javascript-style-guide-guide">The JavaScript Style Guide Guide</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#chat-with-us-about-javascript">Chat With Us About JavaScript</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#contributors">Contributors</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#license">License</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#amendments">Amendments</a></li>
+</ol>
+<h2>Types</h2>
+<p><a name="types--primitives"></a><a name="1.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#types--primitives">1.1</a> <strong>Primitives</strong>: When you access a primitive type you work directly on its value.</p>
+<pre><code>- `string`
+- `number`
+- `boolean`
+- `null`
+- `undefined`
+- `symbol`
+- `bigint`
+
+```javascript
+const foo = 1;
+let bar = foo;
+
+bar = 9;
+
+console.log(foo, bar); // =&gt; 1, 9
+```
+
+- Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don’t support them natively.
+</code></pre>
+<p><a name="types--complex"></a><a name="1.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#types--complex">1.2</a>  <strong>Complex</strong>: When you access a complex type you work on a reference to its value.</p>
+<pre><code>- `object`
+- `array`
+- `function`
+
+```javascript
+const foo = [1, 2];
+const bar = foo;
+
+bar[0] = 9;
+
+console.log(foo[0], bar[0]); // =&gt; 9, 9
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>References</h2>
+<p><a name="references--prefer-const"></a><a name="2.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#references--prefer-const">2.1</a> Use <code>const</code> for all of your references; avoid using <code>var</code>. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/prefer-const.html"><code>prefer-const</code></a>, <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-const-assign.html"><code>no-const-assign</code></a></p>
+<pre><code>&gt; Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+
+```javascript
+// bad
+var a = 1;
+var b = 2;
+
+// good
+const a = 1;
+const b = 2;
+```
+</code></pre>
+<p><a name="references--disallow-var"></a><a name="2.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#references--disallow-var">2.2</a> If you must reassign references, use <code>let</code> instead of <code>var</code>. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-var.html"><code>no-var</code></a></p>
+<pre><code>&gt; Why? `let` is block-scoped rather than function-scoped like `var`.
+
+```javascript
+// bad
+var count = 1;
+if (true) {
+  count += 1;
+}
+
+// good, use the let.
+let count = 1;
+if (true) {
+  count += 1;
+}
+```
+</code></pre>
+<p><a name="references--block-scope"></a><a name="2.3"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#references--block-scope">2.3</a> Note that both <code>let</code> and <code>const</code> are block-scoped.</p>
+<pre><code></code></pre>
+<p><a name="objects--prototype-builtins"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#objects--prototype-builtins">3.7</a> Do not call <code>Object.prototype</code> methods directly, such as <code>hasOwnProperty</code>, <code>propertyIsEnumerable</code>, and <code>isPrototypeOf</code>. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-prototype-builtins"><code>no-prototype-builtins</code></a></p>
+<pre><code>&gt; Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
+
+```javascript
+// bad
+console.log(object.hasOwnProperty(key));
+
+// good
+console.log(Object.prototype.hasOwnProperty.call(object, key));
+
+// best
+const has = Object.prototype.hasOwnProperty; // cache the lookup once, in module scope.
+console.log(has.call(object, key));
+/* or */
+import has from &#039;has&#039;; // https://www.npmjs.com/package/has
+console.log(has(object, key));
+```
+</code></pre>
+<p><a name="objects--rest-spread"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#objects--rest-spread">3.8</a> Prefer the object spread operator over <a class="wp-editor-md-post-content-link" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign"><code>Object.assign</code></a> to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted.</p>
+<pre><code></code></pre>
+<p><a name="es6-rest"></a><a name="7.6"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#es6-rest">7.6</a> Never use <code>arguments</code>, opt to use rest syntax <code>...</code> instead. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/prefer-rest-params"><code>prefer-rest-params</code></a></p>
+<pre><code>&gt; Why? `...` is explicit about which arguments you want pulled. Plus, rest arguments are a real Array, and not merely Array-like like `arguments`.
+
+```javascript
+// bad
+function concatenateAll() {
+  const args = Array.prototype.slice.call(arguments);
+  return args.join(&#039;&#039;);
+}
+
+// good
+function concatenateAll(...args) {
+  return args.join(&#039;&#039;);
+}
+```
+</code></pre>
+<p><a name="es6-default-parameters"></a><a name="7.7"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#es6-default-parameters">7.7</a> Use default parameter syntax rather than mutating function arguments.</p>
+<pre><code>```javascript
+// really bad
+function handleThings(opts) {
+  // No! We shouldn’t mutate function arguments.
+  // Double bad: if opts is falsy it'll be set to an object which may
+  // be what you want but it can introduce subtle bugs.
+  opts = opts || {};
+  // ...
+}
+
+// still bad
+function handleThings(opts) {
+  if (opts === void 0) {
+    opts = {};
+  }
+  // ...
+}
+
+// good
+function handleThings(opts = {}) {
+  // ...
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;functions--default-side-effects&quot;&gt;&lt;/a&gt;&lt;a name=&quot;7.8&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#functions--default-side-effects&quot;&gt;7.8&lt;/a&gt; Avoid side effects with default parameters.
+
+&lt;pre&gt;&lt;code&gt;&gt; Why? They are confusing to reason about.
+
+```javascript
+var b = 1;
+// bad
+function count(a = b++) {
+  console.log(a);
+}
+count();  // 1
+count();  // 2
+count(3); // 3
+count();  // 3
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;functions--defaults-last&quot;&gt;&lt;/a&gt;&lt;a name=&quot;7.9&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#functions--defaults-last&quot;&gt;7.9&lt;/a&gt; Always put default parameters last.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+function handleThings(opts = {}, name) {
+  // ...
+}
+
+// good
+function handleThings(name, opts = {}) {
+  // ...
+}
+```
+</code></pre>
+<p><a name="functions--constructor"></a><a name="7.10"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--constructor">7.10</a> Never use the Function constructor to create a new function. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-new-func"><code>no-new-func</code></a></p>
+<pre><code>&gt; Why? Creating a function in this way evaluates a string similarly to `eval()`, which opens vulnerabilities.
+
+```javascript
+// bad
+var add = new Function(&#039;a&#039;, &#039;b&#039;, &#039;return a + b&#039;);
+
+// still bad
+var subtract = Function(&#039;a&#039;, &#039;b&#039;, &#039;return a - b&#039;);
+```
+</code></pre>
+<p><a name="functions--signature-spacing"></a><a name="7.11"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--signature-spacing">7.11</a> Spacing in a function signature. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/space-before-function-paren"><code>space-before-function-paren</code></a> <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/space-before-blocks"><code>space-before-blocks</code></a></p>
+<pre><code>&gt; Why? Consistency is good, and you shouldn’t have to add or remove a space when adding or removing a name.
+
+```javascript
+// bad
+const f = function(){};
+const g = function (){};
+const h = function() {};
+
+// good
+const x = function () {};
+const y = function a() {};
+```
+</code></pre>
+<p><a name="functions--mutate-params"></a><a name="7.12"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--mutate-params">7.12</a> Never mutate parameters. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-param-reassign.html"><code>no-param-reassign</code></a></p>
+<pre><code>&gt; Why? Manipulating objects passed in as parameters can cause unwanted variable side effects in the original caller.
+
+```javascript
+// bad
+function f1(obj) {
+  obj.key = 1;
+}
+
+// good
+function f2(obj) {
+  const key = Object.prototype.hasOwnProperty.call(obj, &#039;key&#039;) ? obj.key : 1;
+}
+```
+</code></pre>
+<p><a name="functions--reassign-params"></a><a name="7.13"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--reassign-params">7.13</a> Never reassign parameters. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-param-reassign.html"><code>no-param-reassign</code></a></p>
+<pre><code>&gt; Why? Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
+
+```javascript
+// bad
+function f1(a) {
+  a = 1;
+  // ...
+}
+
+function f2(a) {
+  if (!a) { a = 1; }
+  // ...
+}
+
+// good
+function f3(a) {
+  const b = a || 1;
+  // ...
+}
+
+function f4(a = 1) {
+  // ...
+}
+```
+</code></pre>
+<p><a name="functions--spread-vs-apply"></a><a name="7.14"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--spread-vs-apply">7.14</a> Prefer the use of the spread operator <code>...</code> to call variadic functions. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/prefer-spread"><code>prefer-spread</code></a></p>
+<pre><code>&gt; Why? It’s cleaner, you don’t need to supply a context, and you can not easily compose `new` with `apply`.
+
+```javascript
+// bad
+const x = [1, 2, 3, 4, 5];
+console.log.apply(console, x);
+
+// good
+const x = [1, 2, 3, 4, 5];
+console.log(...x);
+
+// bad
+new (Function.prototype.bind.apply(Date, [null, 2016, 8, 5]));
+
+// good
+new Date(...[2016, 8, 5]);
+```
+</code></pre>
+<p><a name="functions--signature-invocation-indentation"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#functions--signature-invocation-indentation">7.15</a> Functions with multiline signatures, or invocations, should be indented just like every other multiline list in this guide: with each item on a line by itself, with a trailing comma on the last item. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/function-paren-newline"><code>function-paren-newline</code></a></p>
+<pre><code>```javascript
+// bad
+function foo(bar,
+             baz,
+             quux) {
+  // ...
+}
+
+// good
+function foo(
+  bar,
+  baz,
+  quux,
+) {
+  // ...
+}
+
+// bad
+console.log(foo,
+  bar,
+  baz);
+
+// good
+console.log(
+  foo,
+  bar,
+  baz,
+);
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Arrow Functions</h2>
+<p><a name="arrows--use-them"></a><a name="8.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#arrows--use-them">8.1</a> When you must use an anonymous function (as when passing an inline callback), use arrow function notation. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/prefer-arrow-callback.html"><code>prefer-arrow-callback</code></a>, <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/arrow-spacing.html"><code>arrow-spacing</code></a></p>
+<pre><code>&gt; Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
+
+&gt; Why not? If you have a fairly complicated function, you might move that logic out into its own named function expression.
+
+```javascript
+// bad
+[1, 2, 3].map(function (x) {
+  const y = x + 1;
+  return x * y;
+});
+
+// good
+[1, 2, 3].map((x) =&gt; {
+  const y = x + 1;
+  return x * y;
+});
+```
+</code></pre>
+<p><a name="arrows--implicit-return"></a><a name="8.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#arrows--implicit-return">8.2</a> If the function body consists of a single statement returning an <a class="wp-editor-md-post-content-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions">expression</a> without side effects, omit the braces and use the implicit return. Otherwise, keep the braces and use a <code>return</code> statement. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/arrow-parens.html"><code>arrow-parens</code></a>, <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/arrow-body-style.html"><code>arrow-body-style</code></a></p>
+<pre><code>&gt; Why? Syntactic sugar. It reads well when multiple functions are chained together.
+
+```javascript
+// bad
+[1, 2, 3].map((number) =&gt; {
+  const nextNumber = number + 1;
+  `A string containing the <span class="katex math inline">{nextNumber}.`; });  // good [1, 2, 3].map((number) => `A string containing the</span>{number + 1}.`);
+
+// good
+[1, 2, 3].map((number) =&gt; {
+  const nextNumber = number + 1;
+  return `A string containing the <span class="katex math inline">{nextNumber}.`; });  // good [1, 2, 3].map((number, index) => ({   [index]: number, }));  // No implicit return with side effects function foo(callback) {   const val = callback();   if (val === true) {     // Do something if callback returns true   } }  let bool = false;  // bad foo(() => bool = true);  // good foo(() => {   bool = true; }); ``` </code></pre>
+<p>  <a name="arrows--paren-wrap"></a><a name="8.3"></a>   &#8211; <a class="wp-editor-md-post-content-link" href="#arrows--paren-wrap">8.3</a> In case the expression spans over multiple lines, wrap it in parentheses for better readability.  </p>
+<pre><code>> Why? It shows clearly where the function starts and ends.  ```javascript // bad ['get', 'post', 'put'].map((httpMethod) => Object.prototype.hasOwnProperty.call(     httpMagicObjectWithAVeryLongName,     httpMethod,   ) );  // good ['get', 'post', 'put'].map((httpMethod) => (   Object.prototype.hasOwnProperty.call(     httpMagicObjectWithAVeryLongName,     httpMethod,   ) )); ``` </code></pre>
+<p>  <a name="arrows--one-arg-parens"></a><a name="8.4"></a>   &#8211; <a class="wp-editor-md-post-content-link" href="#arrows--one-arg-parens">8.4</a> Always include parentheses around arguments for clarity and consistency. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/arrow-parens.html"><code>arrow-parens</code></a>  </p>
+<pre><code>> Why? Minimizes diff churn when adding or removing arguments.  ```javascript // bad [1, 2, 3].map(x => x * x);  // good [1, 2, 3].map((x) => x * x);  // bad [1, 2, 3].map(number => (   `A long string with the</span>{number}. It’s so long that we don’t want it to take up space on the .map line!`
+));
+
+// good
+[1, 2, 3].map((number) =&gt; (
+  `A long string with the ${number}. It’s so long that we don’t want it to take up space on the .map line!`
+));
+
+// bad
+[1, 2, 3].map(x =&gt; {
+  const y = x + 1;
+  return x * y;
+});
+
+// good
+[1, 2, 3].map((x) =&gt; {
+  const y = x + 1;
+  return x * y;
+});
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;arrows--confusing&quot;&gt;&lt;/a&gt;&lt;a name=&quot;8.5&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#arrows--confusing&quot;&gt;8.5&lt;/a&gt; Avoid confusing arrow function syntax (&lt;code&gt;=&gt;&lt;/code&gt;) with comparison operators (&lt;code&gt;&lt;=&lt;/code&gt;, &lt;code&gt;&gt;=&lt;/code&gt;). eslint: &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;https://eslint.org/docs/rules/no-confusing-arrow&quot;&gt;&lt;code&gt;no-confusing-arrow&lt;/code&gt;&lt;/a&gt;
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+const itemHeight = (item) =&gt; item.height &lt;= 256 ? item.largeSize : item.smallSize;
+
+// bad
+const itemHeight = (item) =&gt; item.height &gt;= 256 ? item.largeSize : item.smallSize;
+
+// good
+const itemHeight = (item) =&gt; (item.height &lt;= 256 ? item.largeSize : item.smallSize);
+
+// good
+const itemHeight = (item) =&gt; {
+  const { height, largeSize, smallSize } = item;
+  return height &lt;= 256 ? largeSize : smallSize;
+};
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;whitespace--implicit-arrow-linebreak&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#whitespace--implicit-arrow-linebreak&quot;&gt;8.6&lt;/a&gt; Enforce the location of arrow function bodies with implicit returns. eslint: &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;https://eslint.org/docs/rules/implicit-arrow-linebreak&quot;&gt;&lt;code&gt;implicit-arrow-linebreak&lt;/code&gt;&lt;/a&gt;
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+(foo) =&gt;
+  bar;
+
+(foo) =&gt;
+  (bar);
+
+// good
+(foo) =&gt; bar;
+(foo) =&gt; (bar);
+(foo) =&gt; (
+   bar
+)
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Classes &amp; Constructors</h2>
+<p><a name="constructors--use-class"></a><a name="9.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#constructors--use-class">9.1</a> Always use <code>class</code>. Avoid manipulating <code>prototype</code> directly.</p>
+<pre><code>&gt; Why? `class` syntax is more concise and easier to reason about.
+
+```javascript
+// bad
+function Queue(contents = []) {
+  this.queue = [...contents];
+}
+Queue.prototype.pop = function () {
+  const value = this.queue[0];
+  this.queue.splice(0, 1);
+  return value;
+};
+
+// good
+class Queue {
+  constructor(contents = []) {
+    this.queue = [...contents];
+  }
+  pop() {
+    const value = this.queue[0];
+    this.queue.splice(0, 1);
+    return value;
+  }
+}
+```
+</code></pre>
+<p><a name="constructors--extends"></a><a name="9.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#constructors--extends">9.2</a> Use <code>extends</code> for inheritance.</p>
+<pre><code>&gt; Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
+
+```javascript
+// bad
+const inherits = require(&#039;inherits&#039;);
+function PeekableQueue(contents) {
+  Queue.apply(this, contents);
+}
+inherits(PeekableQueue, Queue);
+PeekableQueue.prototype.peek = function () {
+  return this.queue[0];
+};
+
+// good
+class PeekableQueue extends Queue {
+  peek() {
+    return this.queue[0];
+  }
+}
+```
+</code></pre>
+<p><a name="constructors--chaining"></a><a name="9.3"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#constructors--chaining">9.3</a> Methods can return <code>this</code> to help with method chaining.</p>
+<pre><code></code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Iterators and Generators</h2>
+<p><a name="iterators--nope"></a><a name="11.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#iterators--nope">11.1</a> Don’t use iterators. Prefer JavaScript’s higher-order functions instead of loops like <code>for-in</code> or <code>for-of</code>. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-iterator.html"><code>no-iterator</code></a> <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-restricted-syntax"><code>no-restricted-syntax</code></a></p>
+<pre><code>&gt; Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
+
+&gt; Use `map()` / `every()` / `filter()` / `find()` / `findIndex()` / `reduce()` / `some()` / ... to iterate over arrays, and `Object.keys()` / `Object.values()` / `Object.entries()` to produce arrays so you can iterate over objects.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+// bad
+let sum = 0;
+for (let num of numbers) {
+  sum += num;
+}
+sum === 15;
+
+// good
+let sum = 0;
+numbers.forEach((num) =&gt; {
+  sum += num;
+});
+sum === 15;
+
+// best (use the functional force)
+const sum = numbers.reduce((total, num) =&gt; total + num, 0);
+sum === 15;
+
+// bad
+const increasedByOne = [];
+for (let i = 0; i &lt; numbers.length; i++) {
+  increasedByOne.push(numbers[i] + 1);
+}
+
+// good
+const increasedByOne = [];
+numbers.forEach((num) =&gt; {
+  increasedByOne.push(num + 1);
+});
+
+// best (keeping it functional)
+const increasedByOne = numbers.map((num) =&gt; num + 1);
+```
+</code></pre>
+<p><a name="generators--nope"></a><a name="11.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#generators--nope">11.2</a> Don’t use generators for now.</p>
+<pre><code>&gt; Why? They don’t transpile well to ES5.
+</code></pre>
+<p><a name="generators--spacing"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#generators--spacing">11.3</a> If you must use generators, or if you disregard <a class="wp-editor-md-post-content-link" href="#generators--nope">our advice</a>, make sure their function signature is spaced properly. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/generator-star-spacing"><code>generator-star-spacing</code></a></p>
+<pre><code>&gt; Why? `function` and `*` are part of the same conceptual keyword - `*` is not a modifier for `function`, `function*` is a unique construct, different from `function`.
+
+```javascript
+// bad
+function * foo() {
+  // ...
+}
+
+// bad
+const bar = function * () {
+  // ...
+};
+
+// bad
+const baz = function *() {
+  // ...
+};
+
+// bad
+const quux = function*() {
+  // ...
+};
+
+// bad
+function*foo() {
+  // ...
+}
+
+// bad
+function *foo() {
+  // ...
+}
+
+// very bad
+function
+*
+foo() {
+  // ...
+}
+
+// very bad
+const wat = function
+*
+() {
+  // ...
+};
+
+// good
+function* foo() {
+  // ...
+}
+
+// good
+const foo = function* () {
+  // ...
+};
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Properties</h2>
+<p><a name="properties--dot"></a><a name="12.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#properties--dot">12.1</a> Use dot notation when accessing properties. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/dot-notation.html"><code>dot-notation</code></a></p>
+<pre><code>```javascript
+const luke = {
+  jedi: true,
+  age: 28,
+};
+
+// bad
+const isJedi = luke['jedi'];
+
+// good
+const isJedi = luke.jedi;
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;properties--bracket&quot;&gt;&lt;/a&gt;&lt;a name=&quot;12.2&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#properties--bracket&quot;&gt;12.2&lt;/a&gt; Use bracket notation &lt;code&gt;[]&lt;/code&gt; when accessing properties with a variable.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+const luke = {
+  jedi: true,
+  age: 28,
+};
+
+function getProp(prop) {
+  return luke[prop];
+}
+
+const isJedi = getProp('jedi');
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;es2016-properties--exponentiation-operator&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#es2016-properties--exponentiation-operator&quot;&gt;12.3&lt;/a&gt; Use exponentiation operator &lt;code&gt;**&lt;/code&gt; when calculating exponentiations. eslint: &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;https://eslint.org/docs/rules/no-restricted-properties&quot;&gt;&lt;code&gt;no-restricted-properties&lt;/code&gt;&lt;/a&gt;.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+const binary = Math.pow(2, 10);
+
+// good
+const binary = 2 ** 10;
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;strong&gt;&lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#table-of-contents&quot;&gt;⬆ back to top&lt;/a&gt;&lt;/strong&gt;
+
+&lt;h2&gt;Variables&lt;/h2&gt;
+
+&lt;a name=&quot;variables--const&quot;&gt;&lt;/a&gt;&lt;a name=&quot;13.1&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#variables--const&quot;&gt;13.1&lt;/a&gt; Always use &lt;code&gt;const&lt;/code&gt; or &lt;code&gt;let&lt;/code&gt; to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that. eslint: &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;https://eslint.org/docs/rules/no-undef&quot;&gt;&lt;code&gt;no-undef&lt;/code&gt;&lt;/a&gt; &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;https://eslint.org/docs/rules/prefer-const&quot;&gt;&lt;code&gt;prefer-const&lt;/code&gt;&lt;/a&gt;
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+superPower = new SuperPower();
+
+// good
+const superPower = new SuperPower();
+```
+</code></pre>
+<p><a name="variables--one-const"></a><a name="13.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--one-const">13.2</a> Use one <code>const</code> or <code>let</code> declaration per variable or assignment. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/one-var.html"><code>one-var</code></a></p>
+<pre><code>&gt; Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
+
+```javascript
+// bad
+const items = getItems(),
+    goSportsTeam = true,
+    dragonball = &#039;z&#039;;
+
+// bad
+// (compare to above, and try to spot the mistake)
+const items = getItems(),
+    goSportsTeam = true;
+    dragonball = &#039;z&#039;;
+
+// good
+const items = getItems();
+const goSportsTeam = true;
+const dragonball = &#039;z&#039;;
+```
+</code></pre>
+<p><a name="variables--const-let-group"></a><a name="13.3"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--const-let-group">13.3</a> Group all your <code>const</code>s and then group all your <code>let</code>s.</p>
+<pre><code>&gt; Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
+
+```javascript
+// bad
+let i, len, dragonball,
+    items = getItems(),
+    goSportsTeam = true;
+
+// bad
+let i;
+const items = getItems();
+let dragonball;
+const goSportsTeam = true;
+let len;
+
+// good
+const goSportsTeam = true;
+const items = getItems();
+let dragonball;
+let i;
+let length;
+```
+</code></pre>
+<p><a name="variables--define-where-used"></a><a name="13.4"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--define-where-used">13.4</a> Assign variables where you need them, but place them in a reasonable place.</p>
+<pre><code>&gt; Why? `let` and `const` are block scoped and not function scoped.
+
+```javascript
+// bad - unnecessary function call
+function checkName(hasName) {
+  const name = getName();
+
+  if (hasName === &#039;test&#039;) {
+    return false;
+  }
+
+  if (name === &#039;test&#039;) {
+    this.setName(&#039;&#039;);
+    return false;
+  }
+
+  return name;
+}
+
+// good
+function checkName(hasName) {
+  if (hasName === &#039;test&#039;) {
+    return false;
+  }
+
+  const name = getName();
+
+  if (name === &#039;test&#039;) {
+    this.setName(&#039;&#039;);
+    return false;
+  }
+
+  return name;
+}
+```
+</code></pre>
+<p><a name="variables--no-chain-assignment"></a><a name="13.5"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--no-chain-assignment">13.5</a> Don’t chain variable assignments. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-multi-assign"><code>no-multi-assign</code></a></p>
+<pre><code>&gt; Why? Chaining variable assignments creates implicit global variables.
+
+```javascript
+// bad
+(function example() {
+  // JavaScript interprets this as
+  // let a = ( b = ( c = 1 ) );
+  // The let keyword only applies to variable a; variables b and c become
+  // global variables.
+  let a = b = c = 1;
+}());
+
+console.log(a); // throws ReferenceError
+console.log(b); // 1
+console.log(c); // 1
+
+// good
+(function example() {
+  let a = 1;
+  let b = a;
+  let c = a;
+}());
+
+console.log(a); // throws ReferenceError
+console.log(b); // throws ReferenceError
+console.log(c); // throws ReferenceError
+
+// the same applies for `const`
+```
+</code></pre>
+<p><a name="variables--unary-increment-decrement"></a><a name="13.6"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--unary-increment-decrement">13.6</a> Avoid using unary increments and decrements (<code>++</code>, <code>--</code>). eslint <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-plusplus"><code>no-plusplus</code></a></p>
+<pre><code>&gt; Why? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
+
+```javascript
+// bad
+
+const array = [1, 2, 3];
+let num = 1;
+num++;
+--num;
+
+let sum = 0;
+let truthyCount = 0;
+for (let i = 0; i &lt; array.length; i++) {
+  let value = array[i];
+  sum += value;
+  if (value) {
+    truthyCount++;
+  }
+}
+
+// good
+
+const array = [1, 2, 3];
+let num = 1;
+num += 1;
+num -= 1;
+
+const sum = array.reduce((a, b) =&gt; a + b, 0);
+const truthyCount = array.filter(Boolean).length;
+```
+</code></pre>
+<p><a name="variables--linebreak"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--linebreak">13.7</a> Avoid linebreaks before or after <code>=</code> in an assignment. If your assignment violates <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/max-len.html"><code>max-len</code></a>, surround the value in parens. eslint <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/operator-linebreak.html"><code>operator-linebreak</code></a>.</p>
+<pre><code>&gt; Why? Linebreaks surrounding `=` can obfuscate the value of an assignment.
+
+```javascript
+// bad
+const foo =
+  superLongLongLongLongLongLongLongLongFunctionName();
+
+// bad
+const foo
+  = &#039;superLongLongLongLongLongLongLongLongString&#039;;
+
+// good
+const foo = (
+  superLongLongLongLongLongLongLongLongFunctionName()
+);
+
+// good
+const foo = &#039;superLongLongLongLongLongLongLongLongString&#039;;
+```
+</code></pre>
+<p><a name="variables--no-unused-vars"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#variables--no-unused-vars">13.8</a> Disallow unused variables. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-unused-vars"><code>no-unused-vars</code></a></p>
+<pre><code>&gt; Why? Variables that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring. Such variables take up space in the code and can lead to confusion by readers.
+
+```javascript
+// bad
+
+var some_unused_var = 42;
+
+// Write-only variables are not considered as used.
+var y = 10;
+y = 5;
+
+// A read for a modification of itself is not considered as used.
+var z = 0;
+z = z + 1;
+
+// Unused function arguments.
+function getX(x, y) {
+    return x;
+}
+
+// good
+
+function getXPlusY(x, y) {
+  return x + y;
+}
+
+var x = 1;
+var y = a + 2;
+
+alert(getXPlusY(x, y));
+
+// &#039;type&#039; is ignored even if unused because it has a rest property sibling.
+// This is a form of extracting an object that omits the specified keys.
+var { type, ...coords } = data;
+// &#039;coords&#039; is now the &#039;data&#039; object without its &#039;type&#039; property.
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Hoisting</h2>
+<p><a name="hoisting--about"></a><a name="14.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#hoisting--about">14.1</a> <code>var</code> declarations get hoisted to the top of their closest enclosing function scope, their assignment does not. <code>const</code> and <code>let</code> declarations are blessed with a new concept called <a class="wp-editor-md-post-content-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone">Temporal Dead Zones (TDZ)</a>. It’s important to know why <a class="wp-editor-md-post-content-link" href="http://es-discourse.com/t/why-typeof-is-no-longer-safe/15">typeof is no longer safe</a>.</p>
+<pre><code>```javascript
+// we know this wouldn’t work (assuming there
+// is no notDefined global variable)
+function example() {
+  console.log(notDefined); // =&gt; throws a ReferenceError
+}
+
+// creating a variable declaration after you
+// reference the variable will work due to
+// variable hoisting. Note: the assignment
+// value of `true` is not hoisted.
+function example() {
+  console.log(declaredButNotAssigned); // =&gt; undefined
+  var declaredButNotAssigned = true;
+}
+
+// the interpreter is hoisting the variable
+// declaration to the top of the scope,
+// which means our example could be rewritten as:
+function example() {
+  let declaredButNotAssigned;
+  console.log(declaredButNotAssigned); // =&gt; undefined
+  declaredButNotAssigned = true;
+}
+
+// using const and let
+function example() {
+  console.log(declaredButNotAssigned); // =&gt; throws a ReferenceError
+  console.log(typeof declaredButNotAssigned); // =&gt; throws a ReferenceError
+  const declaredButNotAssigned = true;
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;hoisting--anon-expressions&quot;&gt;&lt;/a&gt;&lt;a name=&quot;14.2&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#hoisting--anon-expressions&quot;&gt;14.2&lt;/a&gt; Anonymous function expressions hoist their variable name, but not the function assignment.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+function example() {
+  console.log(anonymous); // =&gt; undefined
+
+  anonymous(); // =&gt; TypeError anonymous is not a function
+
+  var anonymous = function () {
+    console.log('anonymous function expression');
+  };
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;hoisting--named-expresions&quot;&gt;&lt;/a&gt;&lt;a name=&quot;hoisting--named-expressions&quot;&gt;&lt;/a&gt;&lt;a name=&quot;14.3&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#hoisting--named-expressions&quot;&gt;14.3&lt;/a&gt; Named function expressions hoist the variable name, not the function name or the function body.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+function example() {
+  console.log(named); // =&gt; undefined
+
+  named(); // =&gt; TypeError named is not a function
+
+  superPower(); // =&gt; ReferenceError superPower is not defined
+
+  var named = function superPower() {
+    console.log('Flying');
+  };
+}
+
+// the same is true when the function name
+// is the same as the variable name.
+function example() {
+  console.log(named); // =&gt; undefined
+
+  named(); // =&gt; TypeError named is not a function
+
+  var named = function named() {
+    console.log('named');
+  };
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;hoisting--declarations&quot;&gt;&lt;/a&gt;&lt;a name=&quot;14.4&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#hoisting--declarations&quot;&gt;14.4&lt;/a&gt; Function declarations hoist their name and the function body.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+function example() {
+  superPower(); // =&gt; Flying
+
+  function superPower() {
+    console.log('Flying');
+  }
+}
+```
+</code></pre>
+<ul>
+<li>For more information refer to <a class="wp-editor-md-post-content-link" href="http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/">JavaScript Scoping &amp; Hoisting</a> by <a class="wp-editor-md-post-content-link" href="http://www.adequatelygood.com/">Ben Cherry</a>.</li>
+</ul>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Comparison Operators &amp; Equality</h2>
+<p><a name="comparison--eqeqeq"></a><a name="15.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--eqeqeq">15.1</a> Use <code>===</code> and <code>!==</code> over <code>==</code> and <code>!=</code>. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/eqeqeq.html"><code>eqeqeq</code></a></p>
+<p><a name="comparison--if"></a><a name="15.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--if">15.2</a> Conditional statements such as the <code>if</code> statement evaluate their expression using coercion with the <code>ToBoolean</code> abstract method and always follow these simple rules:</p>
+<pre><code>- **Objects** evaluate to **true**
+- **Undefined** evaluates to **false**
+- **Null** evaluates to **false**
+- **Booleans** evaluate to **the value of the boolean**
+- **Numbers** evaluate to **false** if **+0, -0, or NaN**, otherwise **true**
+- **Strings** evaluate to **false** if an empty string `''`, otherwise **true**
+
+```javascript
+if ([0] &amp;&amp; []) {
+  // true
+  // an array (even an empty one) is an object, objects will evaluate to true
+}
+```
+</code></pre>
+<p><a name="comparison--shortcuts"></a><a name="15.3"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--shortcuts">15.3</a> Use shortcuts for booleans, but explicit comparisons for strings and numbers.</p>
+<pre><code>```javascript
+// bad
+if (isValid === true) {
+  // ...
+}
+
+// good
+if (isValid) {
+  // ...
+}
+
+// bad
+if (name) {
+  // ...
+}
+
+// good
+if (name !== '') {
+  // ...
+}
+
+// bad
+if (collection.length) {
+  // ...
+}
+
+// good
+if (collection.length &gt; 0) {
+  // ...
+}
+```
+</code></pre>
+<p><a name="comparison--moreinfo"></a><a name="15.4"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--moreinfo">15.4</a> For more information see <a class="wp-editor-md-post-content-link" href="https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108">Truth Equality and JavaScript</a> by Angus Croll.</p>
+<p><a name="comparison--switch-blocks"></a><a name="15.5"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--switch-blocks">15.5</a> Use braces to create blocks in <code>case</code> and <code>default</code> clauses that contain lexical declarations (e.g. <code>let</code>, <code>const</code>, <code>function</code>, and <code>class</code>). eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-case-declarations.html"><code>no-case-declarations</code></a></p>
+<pre><code>&gt; Why? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
+
+```javascript
+// bad
+switch (foo) {
+  case 1:
+    let x = 1;
+    break;
+  case 2:
+    const y = 2;
+    break;
+  case 3:
+    function f() {
+      // ...
+    }
+    break;
+  default:
+    class C {}
+}
+
+// good
+switch (foo) {
+  case 1: {
+    let x = 1;
+    break;
+  }
+  case 2: {
+    const y = 2;
+    break;
+  }
+  case 3: {
+    function f() {
+      // ...
+    }
+    break;
+  }
+  case 4:
+    bar();
+    break;
+  default: {
+    class C {}
+  }
+}
+```
+</code></pre>
+<p><a name="comparison--nested-ternaries"></a><a name="15.6"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#comparison--nested-ternaries">15.6</a> Ternaries should not be nested and generally be single line expressions. eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-nested-ternary.html"><code>no-nested-ternary</code></a></p>
+<pre><code></code></pre>
+<p><a name="naming--uppercase"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#naming--uppercase">23.10</a> You may optionally uppercase a constant only if it (1) is exported, (2) is a <code>const</code> (it can not be reassigned), and (3) the programmer can trust it (and its nested properties) to never change.</p>
+<pre><code>&gt; Why? This is an additional tool to assist in situations where the programmer would be unsure if a variable might ever change. UPPERCASE_VARIABLES are letting the programmer know that they can trust the variable (and its properties) not to change.
+- What about all `const` variables? - This is unnecessary, so uppercasing should not be used for constants within a file. It should be used for exported constants however.
+- What about exported objects? - Uppercase at the top level of export (e.g. `EXPORTED_OBJECT.key`) and maintain that all nested properties do not change.
+
+```javascript
+// bad
+const PRIVATE_VARIABLE = &#039;should not be unnecessarily uppercased within a file&#039;;
+
+// bad
+export const THING_TO_BE_CHANGED = &#039;should obviously not be uppercased&#039;;
+
+// bad
+export let REASSIGNABLE_VARIABLE = &#039;do not use let with uppercase variables&#039;;
+
+// ---
+
+// allowed but does not supply semantic value
+export const apiKey = &#039;SOMEKEY&#039;;
+
+// better in most cases
+export const API_KEY = &#039;SOMEKEY&#039;;
+
+// ---
+
+// bad - unnecessarily uppercases key while adding no semantic value
+export const MAPPING = {
+  KEY: &#039;value&#039;
+};
+
+// good
+export const MAPPING = {
+  key: &#039;value&#039;
+};
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Accessors</h2>
+<p><a name="accessors--not-required"></a><a name="23.1"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#accessors--not-required">24.1</a> Accessor functions for properties are not required.</p>
+<p><a name="accessors--no-getters-setters"></a><a name="23.2"></a><br />
+  &#8211; <a class="wp-editor-md-post-content-link" href="#accessors--no-getters-setters">24.2</a> Do not use JavaScript getters/setters as they cause unexpected side effects and are harder to test, maintain, and reason about. Instead, if you do make accessor functions, use <code>getVal()</code> and <code>setVal('hello')</code>.</p>
+<pre><code>```javascript
+// bad
+class Dragon {
+  get age() {
+    // ...
+  }
+
+  set age(value) {
+    // ...
+  }
+}
+
+// good
+class Dragon {
+  getAge() {
+    // ...
+  }
+
+  setAge(value) {
+    // ...
+  }
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;accessors--boolean-prefix&quot;&gt;&lt;/a&gt;&lt;a name=&quot;23.3&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#accessors--boolean-prefix&quot;&gt;24.3&lt;/a&gt; If the property/method is a &lt;code&gt;boolean&lt;/code&gt;, use &lt;code&gt;isVal()&lt;/code&gt; or &lt;code&gt;hasVal()&lt;/code&gt;.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+if (!dragon.age()) {
+  return false;
+}
+
+// good
+if (!dragon.hasAge()) {
+  return false;
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;accessors--consistent&quot;&gt;&lt;/a&gt;&lt;a name=&quot;23.4&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#accessors--consistent&quot;&gt;24.4&lt;/a&gt; It’s okay to create &lt;code&gt;get()&lt;/code&gt; and &lt;code&gt;set()&lt;/code&gt; functions, but be consistent.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+class Jedi {
+  constructor(options = {}) {
+    const lightsaber = options.lightsaber || 'blue';
+    this.set('lightsaber', lightsaber);
+  }
+
+  set(key, val) {
+    this[key] = val;
+  }
+
+  get(key) {
+    return this[key];
+  }
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;strong&gt;&lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#table-of-contents&quot;&gt;⬆ back to top&lt;/a&gt;&lt;/strong&gt;
+
+&lt;h2&gt;Events&lt;/h2&gt;
+
+&lt;a name=&quot;events--hash&quot;&gt;&lt;/a&gt;&lt;a name=&quot;24.1&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#events--hash&quot;&gt;25.1&lt;/a&gt; When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass an object literal (also known as a &quot;hash&quot;) instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+<span class="katex math inline">(this).trigger('listingUpdated', listing.id);  // ...</span>(this).on('listingUpdated', (e, listingID) =&gt; {
+  // do something with listingID
+});
+```
+
+prefer:
+
+```javascript
+// good
+<span class="katex math inline">(this).trigger('listingUpdated', { listingID: listing.id });  // ...</span>(this).on('listingUpdated', (e, data) =&gt; {
+  // do something with data.listingID
+});
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;strong&gt;&lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#table-of-contents&quot;&gt;⬆ back to top&lt;/a&gt;&lt;/strong&gt;
+
+&lt;h2&gt;jQuery&lt;/h2&gt;
+
+&lt;a name=&quot;jquery--dollar-prefix&quot;&gt;&lt;/a&gt;&lt;a name=&quot;25.1&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#jquery--dollar-prefix&quot;&gt;26.1&lt;/a&gt; Prefix jQuery object variables with a &lt;code&gt;<span class="katex math inline"></code>.  <pre><code>```javascript // bad const sidebar =</span>('.sidebar');
+
+// good
+const <span class="katex math inline">sidebar =</span>('.sidebar');
+
+// good
+const <span class="katex math inline">sidebarBtn =</span>('.sidebar-btn');
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;jquery--cache&quot;&gt;&lt;/a&gt;&lt;a name=&quot;25.2&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#jquery--cache&quot;&gt;26.2&lt;/a&gt; Cache jQuery lookups.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+function setSidebar() {
+  <span class="katex math inline">('.sidebar').hide();    // ...</span>('.sidebar').css({
+    'background-color': 'pink',
+  });
+}
+
+// good
+function setSidebar() {
+  const <span class="katex math inline">sidebar =</span>('.sidebar');
+  <span class="katex math inline">sidebar.hide();    // ...</span>sidebar.css({
+    'background-color': 'pink',
+  });
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a name=&quot;jquery--queries&quot;&gt;&lt;/a&gt;&lt;a name=&quot;25.3&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#jquery--queries&quot;&gt;26.3&lt;/a&gt; For DOM queries use Cascading &lt;code&gt;<span class="katex math inline">('.sidebar ul')</code> or parent > child <code></span>(&#039;.sidebar &gt; ul&#039;)&lt;/code&gt;. &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;http://jsperf.com/jquery-find-vs-context-sel/16&quot;&gt;jsPerf&lt;/a&gt;
+
+&lt;a name=&quot;jquery--find&quot;&gt;&lt;/a&gt;&lt;a name=&quot;25.4&quot;&gt;&lt;/a&gt;
+  - &lt;a class=&quot;wp-editor-md-post-content-link&quot; href=&quot;#jquery--find&quot;&gt;26.4&lt;/a&gt; Use &lt;code&gt;find&lt;/code&gt; with scoped jQuery object queries.
+
+&lt;pre&gt;&lt;code&gt;```javascript
+// bad
+<span class="katex math inline">('ul', '.sidebar').hide();  // bad</span>('.sidebar').find('ul').hide();
+
+// good
+<span class="katex math inline">('.sidebar ul').hide();  // good</span>('.sidebar &gt; ul').hide();
+
+// good
+$sidebar.find('ul').hide();
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>ECMAScript 5 Compatibility</h2>
+<p><a name="es5-compat--kangax"></a><a name="26.1"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#es5-compat--kangax">27.1</a> Refer to <a class="wp-editor-md-post-content-link" href="https://twitter.com/kangax/">Kangax</a>’s ES5 <a class="wp-editor-md-post-content-link" href="https://kangax.github.io/es5-compat-table/">compatibility table</a>.</p>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<p><a name="ecmascript-6-styles"></a></p>
+<h2>ECMAScript 6+ (ES 2015+) Styles</h2>
+<p><a name="es6-styles"></a><a name="27.1"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#es6-styles">28.1</a> This is a collection of links to the various ES6+ features.</p>
+<ol>
+<li><a class="wp-editor-md-post-content-link" href="#arrow-functions">Arrow Functions</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#classes--constructors">Classes</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-object-shorthand">Object Shorthand</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-object-concise">Object Concise</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-computed-properties">Object Computed Properties</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-template-literals">Template Strings</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#destructuring">Destructuring</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-default-parameters">Default Parameters</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-rest">Rest</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es6-array-spreads">Array Spreads</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#references">Let and Const</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#es2016-properties--exponentiation-operator">Exponentiation Operator</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#iterators-and-generators">Iterators and Generators</a></li>
+<li><a class="wp-editor-md-post-content-link" href="#modules">Modules</a>
+<p><a name="tc39-proposals"></a></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="#tc39-proposals">28.2</a> Do not use <a class="wp-editor-md-post-content-link" href="https://github.com/tc39/proposals">TC39 proposals</a> that have not reached stage 3.</li>
+</ul>
+<blockquote><p>
+  Why? <a class="wp-editor-md-post-content-link" href="https://tc39.github.io/process-document/">They are not finalized</a>, and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
+</p></blockquote>
+</li>
+</ol>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Standard Library</h2>
+<p>The <a class="wp-editor-md-post-content-link" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects">Standard Library</a><br />
+  contains utilities that are functionally broken but remain for legacy reasons.</p>
+<p><a name="standard-library--isnan"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#standard-library--isnan">29.1</a> Use <code>Number.isNaN</code> instead of global <code>isNaN</code>.<br />
+    eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-restricted-globals"><code>no-restricted-globals</code></a></p>
+<pre><code>&gt; Why? The global `isNaN` coerces non-numbers to numbers, returning true for anything that coerces to NaN.
+&gt; If this behavior is desired, make it explicit.
+
+```javascript
+// bad
+isNaN(&#039;1.2&#039;); // false
+isNaN(&#039;1.2.3&#039;); // true
+
+// good
+Number.isNaN(&#039;1.2.3&#039;); // false
+Number.isNaN(Number(&#039;1.2.3&#039;)); // true
+```
+</code></pre>
+<p><a name="standard-library--isfinite"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#standard-library--isfinite">29.2</a> Use <code>Number.isFinite</code> instead of global <code>isFinite</code>.<br />
+    eslint: <a class="wp-editor-md-post-content-link" href="https://eslint.org/docs/rules/no-restricted-globals"><code>no-restricted-globals</code></a></p>
+<pre><code>&gt; Why? The global `isFinite` coerces non-numbers to numbers, returning true for anything that coerces to a finite number.
+&gt; If this behavior is desired, make it explicit.
+
+```javascript
+// bad
+isFinite(&#039;2e3&#039;); // true
+
+// good
+Number.isFinite(&#039;2e3&#039;); // false
+Number.isFinite(parseInt(&#039;2e3&#039;, 10)); // true
+```
+</code></pre>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Testing</h2>
+<p><a name="testing--yup"></a><a name="28.1"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#testing--yup">30.1</a> <strong>Yup.</strong></p>
+<pre><code>```javascript
+function foo() {
+  return true;
+}
+```
+</code></pre>
+<p><a name="testing--for-real"></a><a name="28.2"></a><br />
+  - <a class="wp-editor-md-post-content-link" href="#testing--for-real">30.2</a> <strong>No, but seriously</strong>:<br />
+    - Whichever testing framework you use, you should be writing tests!<br />
+    - Strive to write many small pure functions, and minimize where mutations occur.<br />
+    - Be cautious about stubs and mocks - they can make your tests more brittle.<br />
+    - We primarily use <a class="wp-editor-md-post-content-link" href="https://www.npmjs.com/package/mocha"><code>mocha</code></a> and <a class="wp-editor-md-post-content-link" href="https://www.npmjs.com/package/jest"><code>jest</code></a> at Airbnb. <a class="wp-editor-md-post-content-link" href="https://www.npmjs.com/package/tape"><code>tape</code></a> is also used occasionally for small, separate modules.<br />
+    - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.<br />
+    - Whenever you fix a bug, <em>write a regression test</em>. A bug fixed without a regression test is almost certainly going to break again in the future.</p>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Performance</h2>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://www.kellegous.com/j/2013/01/26/layout-performance/">On Layout &amp; Web Performance</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/string-vs-array-concat/2">String vs Array Concat</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/try-catch-in-loop-cost/12">Try/Catch Cost In a Loop</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/bang-function">Bang Function</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/jquery-find-vs-context-sel/164">jQuery Find vs Context, Selector</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/innerhtml-vs-textcontent-for-script-text">innerHTML vs textContent for script text</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://jsperf.com/ya-string-concat/38">Long String Concatenation</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.quora.com/JavaScript-programming-language-Are-Javascript-functions-like-map-reduce-and-filter-already-optimized-for-traversing-array/answer/Quildreen-Motta">Are JavaScript functions like <code>map()</code>, <code>reduce()</code>, and <code>filter()</code> optimized for traversing arrays?</a></li>
+<li>Loading...</li>
+</ul>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Resources</h2>
+<p><strong>Learning ES6+</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://tc39.github.io/ecma262/">Latest ECMA spec</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://exploringjs.com/">ExploringJS</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://kangax.github.io/compat-table/es6/">ES6 Compatibility Table</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://es6-features.org/">Comprehensive Overview of ES6 Features</a></li>
+</ul>
+<p><strong>Read This</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="http://www.ecma-international.org/ecma-262/6.0/index.html">Standard ECMA-262</a></li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul>
+<li>Code Style Linters
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://eslint.org/">ESlint</a> - <a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript/blob/master/linters/.eslintrc">Airbnb Style .eslintrc</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://jshint.com/">JSHint</a> - <a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript/blob/master/linters/.jshintrc">Airbnb Style .jshintrc</a></li>
+</ul>
+</li>
+<li>Neutrino Preset - <a class="wp-editor-md-post-content-link" href="https://neutrinojs.org/packages/airbnb/">@neutrinojs/airbnb</a></li>
+</ul>
+<p><strong>Other Style Guides</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://google.github.io/styleguide/javascriptguide.xml">Google JavaScript Style Guide (Old)</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://contribute.jquery.org/style-guide/js/">jQuery Core Style Guidelines</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/rwaldron/idiomatic.js">Principles of Writing Consistent, Idiomatic JavaScript</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://standardjs.com">StandardJS</a></li>
+</ul>
+<p><strong>Other Styles</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://gist.github.com/cjohansen/4135065">Naming this in nested functions</a> - Christian Johansen</li>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript/issues/52">Conditional Callbacks</a> - Ross Allen</li>
+<li><a class="wp-editor-md-post-content-link" href="http://sideeffect.kr/popularconvention/#javascript">Popular JavaScript Coding Conventions on GitHub</a> - JeongHoon Byun</li>
+<li><a class="wp-editor-md-post-content-link" href="http://benalman.com/news/2012/05/multiple-var-statements-javascript/">Multiple var statements in JavaScript, not superfluous</a> - Ben Alman</li>
+</ul>
+<p><strong>Further Reading</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/">Understanding JavaScript Closures</a> - Angus Croll</li>
+<li><a class="wp-editor-md-post-content-link" href="http://www.2ality.com/2013/06/basic-javascript.html">Basic JavaScript for the impatient programmer</a> - Dr. Axel Rauschmayer</li>
+<li><a class="wp-editor-md-post-content-link" href="http://youmightnotneedjquery.com/">You Might Not Need jQuery</a> - Zack Bloom &amp; Adam Schwartz</li>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/lukehoban/es6features">ES6 Features</a> - Luke Hoban</li>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/bendc/frontend-guidelines">Frontend Guidelines</a> - Benjamin De Cock</li>
+</ul>
+<p><strong>Books</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript: The Good Parts</a> - Douglas Crockford</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752">JavaScript Patterns</a> - Stoyan Stefanov</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/JavaScript-Design-Patterns-Recipes-Problem-Solution/dp/159059908X">Pro JavaScript Design Patterns</a> - Ross Harmes and Dustin Diaz</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/High-Performance-Web-Sites-Essential/dp/0596529309">High Performance Web Sites: Essential Knowledge for Front-End Engineers</a> - Steve Souders</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/Maintainable-JavaScript-Nicholas-C-Zakas/dp/1449327680">Maintainable JavaScript</a> - Nicholas C. Zakas</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/JavaScript-Web-Applications-Alex-MacCaw/dp/144930351X">JavaScript Web Applications</a> - Alex MacCaw</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/Pro-JavaScript-Techniques-John-Resig/dp/1590597273">Pro JavaScript Techniques</a> - John Resig</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/Smashing-Node-js-JavaScript-Everywhere-Magazine/dp/1119962595">Smashing Node.js: JavaScript Everywhere</a> - Guillermo Rauch</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X">Secrets of the JavaScript Ninja</a> - John Resig and Bear Bibeault</li>
+<li><a class="wp-editor-md-post-content-link" href="http://humanjavascript.com/">Human JavaScript</a> - Henrik Joreteg</li>
+<li><a class="wp-editor-md-post-content-link" href="http://superherojs.com/">Superhero.js</a> - Kim Joar Bekkelund, Mads Mobæk, &amp; Olav Bjorkoy</li>
+<li><a class="wp-editor-md-post-content-link" href="http://jsbooks.revolunet.com/">JSBooks</a> - Julien Bouquillon</li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.manning.com/books/third-party-javascript">Third Party JavaScript</a> - Ben Vinegar and Anton Kovalyov</li>
+<li><a class="wp-editor-md-post-content-link" href="http://amzn.com/0321812182">Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript</a> - David Herman</li>
+<li><a class="wp-editor-md-post-content-link" href="http://eloquentjavascript.net/">Eloquent JavaScript</a> - Marijn Haverbeke</li>
+<li><a class="wp-editor-md-post-content-link" href="http://shop.oreilly.com/product/0636920033769.do">You Don’t Know JS: ES6 &amp; Beyond</a> - Kyle Simpson</li>
+</ul>
+<p><strong>Blogs</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="http://javascriptweekly.com/">JavaScript Weekly</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://javascriptweblog.wordpress.com/">JavaScript, JavaScript...</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://bocoup.com/weblog">Bocoup Weblog</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://www.adequatelygood.com/">Adequately Good</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://www.nczonline.net/">NCZOnline</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://perfectionkills.com/">Perfection Kills</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://benalman.com/">Ben Alman</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://dmitry.baranovskiy.com/">Dmitry Baranovskiy</a></li>
+<li><a class="wp-editor-md-post-content-link" href="http://code.tutsplus.com/?s=javascript">nettuts</a></li>
+</ul>
+<p><strong>Podcasts</strong></p>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://javascriptair.com/">JavaScript Air</a></li>
+<li><a class="wp-editor-md-post-content-link" href="https://devchat.tv/js-jabber/">JavaScript Jabber</a></li>
+</ul>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>In the Wild</h2>
+<p>This is a list of organizations that are using this style guide. Send us a pull request and we'll add you to the list.</p>
+<ul>
+<li><strong>123erfasst</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/123erfasst/javascript">123erfasst/javascript</a></li>
+<li><strong>3blades</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/3blades">3Blades</a></li>
+<li><strong>4Catalyzer</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/4Catalyzer/javascript">4Catalyzer/javascript</a></li>
+<li><strong>Aan Zee</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/AanZee/javascript">AanZee/javascript</a></li>
+<li><strong>Adult Swim</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/adult-swim/javascript">adult-swim/javascript</a></li>
+<li><strong>Airbnb</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript">airbnb/javascript</a></li>
+<li><strong>AltSchool</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/AltSchool/javascript">AltSchool/javascript</a></li>
+<li><strong>Apartmint</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/apartmint/javascript">apartmint/javascript</a></li>
+<li><strong>Ascribe</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ascribe/javascript">ascribe/javascript</a></li>
+<li><strong>Avalara</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/avalara/javascript">avalara/javascript</a></li>
+<li><strong>Avant</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/avantcredit/javascript">avantcredit/javascript</a></li>
+<li><strong>Axept</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/axept/javascript">axept/javascript</a></li>
+<li><strong>BashPros</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/BashPros/javascript">BashPros/javascript</a></li>
+<li><strong>Billabong</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/billabong/javascript">billabong/javascript</a></li>
+<li><strong>Bisk</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Bisk/">bisk</a></li>
+<li><strong>Bonhomme</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/bonhommeparis/javascript">bonhommeparis/javascript</a></li>
+<li><strong>Brainshark</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/brainshark/javascript">brainshark/javascript</a></li>
+<li><strong>CaseNine</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/CaseNine/javascript">CaseNine/javascript</a></li>
+<li><strong>Cerner</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/cerner/">Cerner</a></li>
+<li><strong>Chartboost</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ChartBoost/javascript-style-guide">ChartBoost/javascript-style-guide</a></li>
+<li><strong>Coeur d'Alene Tribe</strong>: <a class="wp-editor-md-post-content-link" href="https://www.cdatribe-nsn.gov">www.cdatribe-nsn.gov</a></li>
+<li><strong>ComparaOnline</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/comparaonline/javascript-style-guide">comparaonline/javascript</a></li>
+<li><strong>Compass Learning</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/compasslearning/javascript-style-guide">compasslearning/javascript-style-guide</a></li>
+<li><strong>DailyMotion</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/dailymotion/javascript">dailymotion/javascript</a></li>
+<li><strong>DoSomething</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/DoSomething/eslint-config">DoSomething/eslint-config</a></li>
+<li><strong>Digitpaint</strong> <a class="wp-editor-md-post-content-link" href="https://github.com/digitpaint/javascript">digitpaint/javascript</a></li>
+<li><strong>Drupal</strong>: <a class="wp-editor-md-post-content-link" href="https://www.drupal.org/project/drupal">www.drupal.org</a></li>
+<li><strong>Ecosia</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ecosia/javascript">ecosia/javascript</a></li>
+<li><strong>Evernote</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/evernote/javascript-style-guide">evernote/javascript-style-guide</a></li>
+<li><strong>Evolution Gaming</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/evolution-gaming/javascript">evolution-gaming/javascript</a></li>
+<li><strong>EvozonJs</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/evozonjs/javascript">evozonjs/javascript</a></li>
+<li><strong>ExactTarget</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ExactTarget/javascript">ExactTarget/javascript</a></li>
+<li><strong>Expensify</strong> <a class="wp-editor-md-post-content-link" href="https://github.com/Expensify/Style-Guide/blob/master/javascript.md">Expensify/Style-Guide</a></li>
+<li><strong>Flexberry</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Flexberry/javascript-style-guide">Flexberry/javascript-style-guide</a></li>
+<li><strong>Gawker Media</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/gawkermedia/">gawkermedia</a></li>
+<li><strong>General Electric</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/GeneralElectric/javascript">GeneralElectric/javascript</a></li>
+<li><strong>Generation Tux</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/generationtux/styleguide">GenerationTux/javascript</a></li>
+<li><strong>GoodData</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/gooddata/gdc-js-style">gooddata/gdc-js-style</a></li>
+<li><strong>GreenChef</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/greenchef/javascript">greenchef/javascript</a></li>
+<li><strong>Grooveshark</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/grooveshark/javascript">grooveshark/javascript</a></li>
+<li><strong>Grupo-Abraxas</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Grupo-Abraxas/javascript">Grupo-Abraxas/javascript</a></li>
+<li><strong>Happeo</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/happeo/javascript">happeo/javascript</a></li>
+<li><strong>Honey</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/honeyscience/javascript">honeyscience/javascript</a></li>
+<li><strong>How About We</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/howaboutwe/javascript-style-guide">howaboutwe/javascript</a></li>
+<li><strong>Huballin</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/huballin/">huballin</a></li>
+<li><strong>HubSpot</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/HubSpot/javascript">HubSpot/javascript</a></li>
+<li><strong>Hyper</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/hyperoslo/javascript-playbook/blob/master/style.md">hyperoslo/javascript-playbook</a></li>
+<li><strong>InterCity Group</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/intercitygroup/javascript-style-guide">intercitygroup/javascript-style-guide</a></li>
+<li><strong>Jam3</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Jam3/Javascript-Code-Conventions">Jam3/Javascript-Code-Conventions</a></li>
+<li><strong>JeopardyBot</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/kesne/jeopardy-bot/blob/master/STYLEGUIDE.md">kesne/jeopardy-bot</a></li>
+<li><strong>JSSolutions</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/JSSolutions/javascript">JSSolutions/javascript</a></li>
+<li><strong>Kaplan Komputing</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/kaplankomputing/javascript">kaplankomputing/javascript</a></li>
+<li><strong>KickorStick</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/kickorstick/">kickorstick</a></li>
+<li><strong>Kinetica Solutions</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/kinetica/Javascript-style-guide">kinetica/javascript</a></li>
+<li><strong>LEINWAND</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/LEINWAND/javascript">LEINWAND/javascript</a></li>
+<li><strong>Lonely Planet</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/lonelyplanet/javascript">lonelyplanet/javascript</a></li>
+<li><strong>M2GEN</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/M2GEN/javascript">M2GEN/javascript</a></li>
+<li><strong>Mighty Spring</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/mightyspring/javascript">mightyspring/javascript</a></li>
+<li><strong>MinnPost</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/MinnPost/javascript">MinnPost/javascript</a></li>
+<li><strong>MitocGroup</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/MitocGroup/javascript">MitocGroup/javascript</a></li>
+<li><strong>ModCloth</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/modcloth/javascript">modcloth/javascript</a></li>
+<li><strong>Money Advice Service</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/moneyadviceservice/javascript">moneyadviceservice/javascript</a></li>
+<li><strong>Muber</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/muber/">muber</a></li>
+<li><strong>National Geographic</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/natgeo/">natgeo</a></li>
+<li><strong>Nimbl3</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/nimbl3/javascript">nimbl3/javascript</a></li>
+<li><strong>NullDev</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/NullDevCo/JavaScript-Styleguide">NullDevCo/JavaScript-Styleguide</a></li>
+<li><strong>Nulogy</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/nulogy/javascript">nulogy/javascript</a></li>
+<li><strong>Orange Hill Development</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/orangehill/javascript">orangehill/javascript</a></li>
+<li><strong>Orion Health</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/orionhealth/javascript">orionhealth/javascript</a></li>
+<li><strong>OutBoxSoft</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/OutBoxSoft/javascript">OutBoxSoft/javascript</a></li>
+<li><strong>Peerby</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Peerby/javascript">Peerby/javascript</a></li>
+<li><strong>Pier 1</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/pier1/javascript">Pier1/javascript</a></li>
+<li><strong>Qotto</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Qotto/javascript-style-guide">Qotto/javascript-style-guide</a></li>
+<li><strong>Razorfish</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/razorfish/javascript-style-guide">razorfish/javascript-style-guide</a></li>
+<li><strong>reddit</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/reddit/styleguide/tree/master/javascript">reddit/styleguide/javascript</a></li>
+<li><strong>React</strong>: <a class="wp-editor-md-post-content-link" href="https://facebook.github.io/react/contributing/how-to-contribute.html#style-guide">facebook.github.io/react/contributing/how-to-contribute.html#style-guide</a></li>
+<li><strong>REI</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/rei/code-style-guides/">reidev/js-style-guide</a></li>
+<li><strong>Ripple</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ripple/javascript-style-guide">ripple/javascript-style-guide</a></li>
+<li><strong>Sainsbury’s Supermarkets</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/jsainsburyplc">jsainsburyplc</a></li>
+<li><strong>SeekingAlpha</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/seekingalpha/javascript-style-guide">seekingalpha/javascript-style-guide</a></li>
+<li><strong>Shutterfly</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/shutterfly/javascript">shutterfly/javascript</a></li>
+<li><strong>Sourcetoad</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/sourcetoad/javascript">sourcetoad/javascript</a></li>
+<li><strong>Springload</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/springload/">springload</a></li>
+<li><strong>StratoDem Analytics</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/stratodem/javascript">stratodem/javascript</a></li>
+<li><strong>SteelKiwi Development</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/steelkiwi/javascript">steelkiwi/javascript</a></li>
+<li><strong>StudentSphere</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/studentsphere/guide-javascript">studentsphere/javascript</a></li>
+<li><strong>SwoopApp</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/swoopapp/javascript">swoopapp/javascript</a></li>
+<li><strong>SysGarage</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/sysgarage/javascript-style-guide">sysgarage/javascript-style-guide</a></li>
+<li><strong>Syzygy Warsaw</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/syzygypl/javascript">syzygypl/javascript</a></li>
+<li><strong>Target</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/target/javascript">target/javascript</a></li>
+<li><strong>Terra</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/cerner?utf8=%E2%9C%93&amp;q=terra&amp;type=&amp;language=">terra</a></li>
+<li><strong>TheLadders</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/TheLadders/javascript">TheLadders/javascript</a></li>
+<li><strong>The Nerdery</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/thenerdery/javascript-standards">thenerdery/javascript-standards</a></li>
+<li><strong>Tomify</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/tomprats">tomprats</a></li>
+<li><strong>Traitify</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/traitify/eslint-config-traitify">traitify/eslint-config-traitify</a></li>
+<li><strong>T4R Technology</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/T4R-Technology/javascript">T4R-Technology/javascript</a></li>
+<li><strong>UrbanSim</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/urbansim/">urbansim</a></li>
+<li><strong>VoxFeed</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/VoxFeed/javascript-style-guide">VoxFeed/javascript-style-guide</a></li>
+<li><strong>WeBox Studio</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/weboxstudio/javascript">weboxstudio/javascript</a></li>
+<li><strong>Weggo</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/Weggo/javascript">Weggo/javascript</a></li>
+<li><strong>Zillow</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/zillow/javascript">zillow/javascript</a></li>
+<li><strong>ZocDoc</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ZocDoc/javascript">ZocDoc/javascript</a></li>
+</ul>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Translation</h2>
+<p>This style guide is also available in other languages:</p>
+<ul>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png" alt="br" /> <strong>Brazilian Portuguese</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/armoucar/javascript-style-guide">armoucar/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Bulgaria.png" alt="bg" /> <strong>Bulgarian</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/borislavvv/javascript">borislavvv/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/fpmweb/javascript-style-guide/master/img/catala.png" alt="ca" /> <strong>Catalan</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/fpmweb/javascript-style-guide">fpmweb/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png" alt="cn" /> <strong>Chinese (Simplified)</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/lin-123/javascript">lin-123/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png" alt="tw" /> <strong>Chinese (Traditional)</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/jigsawye/javascript">jigsawye/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/France.png" alt="fr" /> <strong>French</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/nmussy/javascript-style-guide">nmussy/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Germany.png" alt="de" /> <strong>German</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/timofurrer/javascript-style-guide">timofurrer/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png" alt="it" /> <strong>Italian</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/sinkswim/javascript-style-guide">sinkswim/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png" alt="jp" /> <strong>Japanese</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/mitsuruog/javascript-style-guide">mitsuruog/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png" alt="kr" /> <strong>Korean</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ParkSB/javascript-style-guide">ParkSB/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png" alt="ru" /> <strong>Russian</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/leonidlebedev/javascript-airbnb">leonidlebedev/javascript-airbnb</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png" alt="es" /> <strong>Spanish</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/paolocarrasco/javascript-style-guide">paolocarrasco/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Thailand.png" alt="th" /> <strong>Thai</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/lvarayut/javascript-style-guide">lvarayut/javascript-style-guide</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Turkey.png" alt="tr" /> <strong>Turkish</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/eraycetinay/javascript">eraycetinay/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png" alt="ua" /> <strong>Ukrainian</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/ivanzusko/javascript">ivanzusko/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png" alt="vn" /> <strong>Vietnam</strong>: <a class="wp-editor-md-post-content-link" href="https://github.com/dangkyokhoang/javascript-style-guide">dangkyokhoang/javascript-style-guide</a></li>
+</ul>
+<h2>The JavaScript Style Guide Guide</h2>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide">Reference</a></li>
+</ul>
+<h2>Chat With Us About JavaScript</h2>
+<ul>
+<li>Find us on <a class="wp-editor-md-post-content-link" href="https://gitter.im/airbnb/javascript">gitter</a>.</li>
+</ul>
+<h2>Contributors</h2>
+<ul>
+<li><a class="wp-editor-md-post-content-link" href="https://github.com/airbnb/javascript/graphs/contributors">View Contributors</a></li>
+</ul>
+<h2>License</h2>
+<p>(The MIT License)</p>
+<p>Copyright (c) 2012 Airbnb</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining<br />
+a copy of this software and associated documentation files (the<br />
+'Software'), to deal in the Software without restriction, including<br />
+without limitation the rights to use, copy, modify, merge, publish,<br />
+distribute, sublicense, and/or sell copies of the Software, and to<br />
+permit persons to whom the Software is furnished to do so, subject to<br />
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be<br />
+included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,<br />
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<br />
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.<br />
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY<br />
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,<br />
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE<br />
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p><strong><a class="wp-editor-md-post-content-link" href="#table-of-contents">⬆ back to top</a></strong></p>
+<h2>Amendments</h2>
+<p>We encourage you to fork this guide and change the rules to fit your team’s style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.</p>
+<h1>};</h1>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
