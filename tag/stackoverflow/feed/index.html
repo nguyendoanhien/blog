@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>stackoverflow &#8211; Hien Nguyen Blog</title>
+	<atom:link href="https://blog.doanhien.cf/tag/stackoverflow/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.doanhien.cf/</link>
+	<description>Learning and sharing developer&#039;s experiences</description>
+	<lastBuildDate>Sun, 12 Apr 2020 14:14:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4</generator>
+
+<image>
+	<url>https://blog.doanhien.cf/wp-content/uploads/2020/04/favicon-150x150.png</url>
+	<title>stackoverflow &#8211; Hien Nguyen Blog</title>
+	<link>https://blog.doanhien.cf/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Difference between 0.0.0.0, 127.0.0.1 and localhost</title>
+		<link>https://blog.doanhien.cf/difference-between-0-0-0-0-127-0-0-1-and-localhost/</link>
+		
+		<dc:creator><![CDATA[toilati123vn]]></dc:creator>
+		<pubDate>Sun, 12 Apr 2020 14:09:39 +0000</pubDate>
+				<category><![CDATA[Questions]]></category>
+		<category><![CDATA[stackoverflow]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=984</guid>
+
+					<description><![CDATA[Answer here !]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="984" class="elementor elementor-984" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-5786f5a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="5786f5a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-6d64b48 elementor-column elementor-col-100 elementor-top-column" data-id="6d64b48" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-241fde5 elementor-widget elementor-widget-text-editor" data-id="241fde5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><div>Original answer: <a href="https://stackoverflow.com/a/20778887/11415487">https://stackoverflow.com/a/20778887/11415487</a></div>
+<div><div class="post-text" itemprop="text">
+<p><code>127.0.0.1</code> is normally the IP address assigned to the 
+&#8220;loopback&#8221; or local-only interface.  This is a &#8220;fake&#8221; network adapter 
+that can only communicate within the same host.  It&#8217;s often used when 
+you want a network-capable application to only serve clients on the same
+ host.  A process that is listening on <code>127.0.0.1</code> for connections will only receive local connections on that socket.</p>
+
+<p>&#8220;localhost&#8221; is normally the hostname for the <code>127.0.0.1</code> IP address.  It&#8217;s usually set in <code>/etc/hosts</code> (or the Windows equivalent named &#8220;hosts&#8221; somewhere under <code>%WINDIR%</code>). You can use it just like any other hostname &#8211; try &#8220;ping localhost&#8221; to see how it resolves to <code>127.0.0.1</code>.</p>
+
+<p><code>0.0.0.0</code> has a couple of different meanings, but in this context, when a server is told to listen on <code>0.0.0.0</code> that means &#8220;listen on every available network interface&#8221;.  The loopback adapter with IP address <code>127.0.0.1</code>
+ from the perspective of the server process looks just like any other 
+network adapter on the machine, so a server told to listen on <code>0.0.0.0</code> will accept connections on that interface too.</p>
+
+<p>That hopefully answers the IP side of your question.  I&#8217;m not 
+familiar with Jekyll or Vagrant, but I&#8217;m guessing that your port 
+forwarding <code>8080 =&gt; 4000</code> is somehow bound to a particular network adapter, so it isn&#8217;t in the path when you connect locally to <code>127.0.0.1</code></p>
+    </div></div>
+<div><br></div></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
