@@ -2,18 +2,11 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
 		<loc>https://blog.doanhien.cf/post-sitemap.xml</loc>
-		<lastmod>2020-04-13T08:15:26+00:00</lastmod>
+		<lastmod>2020-04-16T04:05:57+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/page-sitemap.xml</loc>
 		<lastmod>2020-04-13T09:57:59+00:00</lastmod>
-	</sitemap>
-	<sitemap>
-		<loc>https://blog.doanhien.cf/elementskit_content-sitemap.xml</loc>
-		<lastmod>2020-04-13T08:49:18+00:00</lastmod>
-	</sitemap>
-	<sitemap>
-		<loc>https://blog.doanhien.cf/elementskit_template-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/astra-portfolio-sitemap.xml</loc>
@@ -23,11 +16,11 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/category-sitemap.xml</loc>
-		<lastmod>2020-04-13T08:15:26+00:00</lastmod>
+		<lastmod>2020-04-16T04:05:57+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/post_tag-sitemap.xml</loc>
-		<lastmod>2020-04-12T14:14:14+00:00</lastmod>
+		<lastmod>2020-04-15T08:08:21+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/author-sitemap.xml</loc>
