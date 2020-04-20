@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://blog.doanhien.cf/category/algorithm/</loc>
-		<lastmod>2020-04-15T07:46:52+00:00</lastmod>
+		<lastmod>2020-04-20T04:50:27+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/csharp/</loc>
@@ -10,7 +10,11 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/data-mining/</loc>
-		<lastmod>2020-04-16T04:05:57+00:00</lastmod>
+		<lastmod>2020-04-16T05:12:43+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/category/github/</loc>
+		<lastmod>2020-04-16T08:30:27+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/online-courses/</loc>
@@ -22,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/questions/</loc>
-		<lastmod>2020-04-12T14:14:14+00:00</lastmod>
+		<lastmod>2020-04-17T13:02:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/responsive-design/</loc>
@@ -30,7 +34,7 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/stackoverflow/</loc>
-		<lastmod>2020-04-10T06:21:15+00:00</lastmod>
+		<lastmod>2020-04-17T13:02:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/survey/</loc>
