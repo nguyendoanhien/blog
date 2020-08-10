@@ -10,7 +10,8 @@
 .no-border-radius.wp-block-button__link {border-radius: 0 !important;}
 .is-style-outline {color: #32373c;}
 .is-style-outline .wp-block-button__link {background-color: transparent;border: 2px solid;}
-.wp-block-buttons .wp-block-button {display: inline-block;margin: 4px;}
+.wp-block-buttons .wp-block-button {display: inline-block;margin-right: 8px;margin-bottom: 8px;}
+.wp-block-buttons.alignright .wp-block-button {margin-right: none;margin-left: 8px;}
 .wp-block-buttons.aligncenter, .wp-block-calendar {text-align: center;}
 .wp-block-calendar tbody td, .wp-block-calendar th {padding: 4px;border: 1px solid #e2e4e7;}
 .wp-block-calendar tfoot td {border: none;}
