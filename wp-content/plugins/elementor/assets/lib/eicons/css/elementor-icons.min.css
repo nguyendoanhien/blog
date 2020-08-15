@@ -1,4 +1,4 @@
-@font-face {font-family: eicons;src: url("../fonts/eicons.eot?5.6.2");src: url("../fonts/eicons.eot?5.6.2#iefix") format("embedded-opentype"),url("../fonts/eicons.woff2?5.6.2") format("woff2"),url("../fonts/eicons.woff?5.6.2") format("woff"),url("../fonts/eicons.ttf?5.6.2") format("truetype"),url("../fonts/eicons.svg?5.6.2#eicon") format("svg");font-weight: 400;font-style: normal;}
+@font-face {font-family: eicons;src: url("../fonts/eicons.eot?5.7.0");src: url("../fonts/eicons.eot?5.7.0#iefix") format("embedded-opentype"),url("../fonts/eicons.woff2?5.7.0") format("woff2"),url("../fonts/eicons.woff?5.7.0") format("woff"),url("../fonts/eicons.ttf?5.7.0") format("truetype"),url("../fonts/eicons.svg?5.7.0#eicon") format("svg");font-weight: 400;font-style: normal;}
 [class*=" eicon-"], [class^=eicon] {display: inline-block;font-family: eicons;font-size: inherit;font-weight: 400;font-style: normal;font-variant: normal;line-height: 1;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 @keyframes a {0% {transform: rotate(0deg);}
 	to {transform: rotate(359deg);}}
@@ -371,4 +371,9 @@
 .eicon-global-settings:before {content: "";}
 .eicon-user-preferences:before {content: "";}
 .eicon-lock:before {content: "";}
+.eicon-export-kit:before {content: "";}
+.eicon-import-kit:before {content: "";}
+.eicon-lottie:before {content: "";}
+.eicon-products-archive:before {content: "";}
+.eicon-single-product:before {content: "";}
 .eicon-eye:before {content: "";}
