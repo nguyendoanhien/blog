@@ -4,16 +4,19 @@
 .elementor-9 .elementor-element.elementor-element-53d2a6e0:not(.elementor-motion-effects-element-type-background), .elementor-9 .elementor-element.elementor-element-53d2a6e0 > .elementor-motion-effects-container > .elementor-motion-effects-layer {background-color: #fff;background-image: url("https://blog.doanhien.cf/wp-content/uploads/2020/04/alexandru-acea-XEB8y0nRRP4-unsplash-scaled.jpg");background-position: center left;background-repeat: no-repeat;background-size: cover;}
 .elementor-9 .elementor-element.elementor-element-53d2a6e0 > .elementor-background-overlay {background-color: #000;opacity: .5;transition: background .3s,border-radius .3s,opacity .3s;}
 .elementor-9 .elementor-element.elementor-element-53d2a6e0 {transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;}
-.elementor-9 .elementor-element.elementor-element-276a48a0 > .elementor-element-populated {padding: 0% 30% 0% 0%;}
+.elementor-9 .elementor-element.elementor-element-276a48a0 > .elementor-element-populated {padding: 0% 0% 0% 5%;}
 .elementor-9 .elementor-element.elementor-element-1172a69e .elementor-heading-title {color: #fff;}
+.elementor-9 .elementor-element.elementor-element-1172a69e > .elementor-widget-container {padding: 0px 0px 0px 0px;}
 .elementor-9 .elementor-element.elementor-element-6cec38 .elementor-heading-title {color: #fff;}
 .elementor-9 .elementor-element.elementor-element-6cec38 > .elementor-widget-container {padding: 5px 0px 0px 0px;}
-.elementor-9 .elementor-element.elementor-element-34dc9e6b > .elementor-widget-container {padding: 20px 0px 0px 0px;}
-.elementor-9 .elementor-element.elementor-element-90f80df .elementor-button .elementor-align-icon-right {margin-left: 9px;}
-.elementor-9 .elementor-element.elementor-element-90f80df .elementor-button .elementor-align-icon-left {margin-right: 9px;}
+.elementor-9 .elementor-element.elementor-element-34dc9e6b .elementor-button {border-radius: 29px 29px 29px 29px;}
+.elementor-9 .elementor-element.elementor-element-34dc9e6b > .elementor-widget-container {padding: 0px 0px 0px 0px;}
+.elementor-9 .elementor-element.elementor-element-90f80df .elementor-button .elementor-align-icon-right {margin-left: 10px;}
+.elementor-9 .elementor-element.elementor-element-90f80df .elementor-button .elementor-align-icon-left {margin-right: 10px;}
 .elementor-9 .elementor-element.elementor-element-90f80df .elementor-button {fill: #fff;color: #fff;background-color: rgba(0,0,0,0);border-style: solid;border-width: 0px 0px 0px 0px;}
 .elementor-9 .elementor-element.elementor-element-90f80df .elementor-button:hover, .elementor-9 .elementor-element.elementor-element-90f80df .elementor-button:focus {background-color: rgba(0,0,0,0);}
-.elementor-9 .elementor-element.elementor-element-90f80df > .elementor-widget-container {padding: 20px 0px 0px 0px;}
+.elementor-9 .elementor-element.elementor-element-90f80df > .elementor-widget-container {padding: 0px 0px 0px 0px;}
+.elementor-9 .elementor-element.elementor-element-90f80df {z-index: 20;}
 .elementor-9 .elementor-element.elementor-element-e3de0b6 {padding: 85px 0px 135px 0px;}
 .elementor-9 .elementor-element.elementor-element-faa048d {text-align: left;}
 .elementor-9 .elementor-element.elementor-element-ae86dc5 > .elementor-widget-container {padding: 5px 0px 0px 0px;}
@@ -197,8 +200,8 @@
 	.elementor-9 .elementor-element.elementor-element-54d7612 {text-align: center;}
 	.elementor-9 .elementor-element.elementor-element-12291fa {text-align: center;}
 	.elementor-9 .elementor-element.elementor-element-c95f9e8 > .elementor-widget-container {margin: 0px 0px 0px 0px;}}
-@media (min-width:768px) {.elementor-9 .elementor-element.elementor-element-ae5b85b {width: 27.262%;}
-	.elementor-9 .elementor-element.elementor-element-ec573d3 {width: 72.738%;}
+@media (min-width:768px) {.elementor-9 .elementor-element.elementor-element-ae5b85b {width: 20.911%;}
+	.elementor-9 .elementor-element.elementor-element-ec573d3 {width: 79.089%;}
 	.elementor-9 .elementor-element.elementor-element-33d858d {width: 68.333%;}
 	.elementor-9 .elementor-element.elementor-element-d1929b2 {width: 31.667%;}
 	.elementor-9 .elementor-element.elementor-element-a447df7 {width: 50%;}
