@@ -37,5 +37,5 @@
 .actions .button.upload-button {text-transform: capitalize;}
 .wp-picker-container .iris-square-handle {z-index: 8;}
 #customize-control-custom_logo .attachment-media-view .button-add-media, #customize-control-site_icon .attachment-media-view .placeholder, #customize-control-astra-settings-transparent-header-logo .attachment-media-view .button-add-media {text-transform: capitalize;}
-.customize-control-ast-color .wp-picker-container .wp-picker-clear, .customize-control-ast-responsive-color .wp-picker-container .wp-picker-clear, .customize-control-ast-background .wp-picker-container .wp-picker-clear {margin-left: 4px;min-height: 30px;}
+.customize-control-ast-color .wp-picker-container .wp-picker-clear, .customize-control-ast-responsive-color .wp-picker-container .wp-picker-clear, .customize-control-ast-background .wp-picker-container .wp-picker-clear, .customize-control-ast-responsive-background .wp-picker-container .wp-picker-clear {margin-left: 4px;min-height: 30px;}
 .customize-control-ast-background .wp-picker-container {display: block;}
