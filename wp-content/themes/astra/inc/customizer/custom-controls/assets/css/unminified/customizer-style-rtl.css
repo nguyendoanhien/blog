@@ -12,6 +12,7 @@
 .ast-fields-wrap .customize-control .ast-control-tooltip {left: 15px;top: 6px;}
 .customize-control .select2-search input[type="text"].select2-search__field {min-height: 17px;}
 input[type="text"].select2-search__field {line-height: 1;border-radius: 0;}
+.ast-customizer-notice {margin: 0 -12px;padding: 12px;}
 #customize-theme-controls .control-section.open {height: 100%;}
 @media not all and (min-resolution: 0.001dpcm) {@supports (-webkit-appearance: none) {#customize-control-astra-settings-ast-header-responsive-logo-width .wrapper {display: inline-block;width: 100%;}
 		.dashicons-desktop:before, .dashicons-tablet:before, .dashicons-smartphone:before {color: #000;opacity: .75;}
