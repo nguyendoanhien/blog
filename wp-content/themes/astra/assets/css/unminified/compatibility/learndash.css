@@ -20,8 +20,6 @@
 .wpProQuiz_modal_window #wpProQuiz_user_content h2 {font-size: 1.5em;margin-bottom: 5px;font-weight: 600;}
 #learndash_next_prev_link {margin: 0;padding: 2em 0 0;border-top: 1px solid #eee;overflow: hidden;line-height: 0;}
 #learndash_next_prev_link a {margin: 2px;display: inline-block;padding: 0 1.5em;height: 2.33333em;line-height: 2.33333em;text-align: center;font-size: 16px;font-size: 1.06666rem;}
-@media (max-width: 544px) {#learndash_next_prev_link a {width: 100%;}
-	#learndash_next_prev_link a.prev-link {margin-bottom: 1em;}}
 #learndash_next_prev_link a.next-link {float: right;}
 body .learndash .completed, body .learndash .notcompleted, body #learndash_profile .completed, body #learndash_profile .notcompleted {line-height: 1.7;background: none;}
 body #ld_topic_categorydropdown, body #ld_lesson_categorydropdown, body #ld_course_categorydropdown {margin-bottom: 1em;}
@@ -74,7 +72,6 @@ body #learndash_profile .profile_info .flip > div .right, body #learndash_profil
 body #learndash_profile .profile_info .certificate_icon_large, body #learndash_profile #course_list .certificate_icon_large {background: none;height: auto;line-height: 1;}
 body #learndash_profile .profile_info .certificate_icon_large:before, body #learndash_profile #course_list .certificate_icon_large:before {content: "";font-family: "Astra";text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-size: 1.5em;line-height: .9;}
 body #learndash_profile .profile_info {margin-bottom: 1em;position: relative;}
-@media (min-width: 545px) {body #learndash_profile .profile_edit_profile {position: absolute;top: 15px;right: 15px;}}
 body #learndash_profile .course_progress, body #learndash_profile .learndash-course-link {margin-left: auto;margin-right: auto;}
 body #learndash_profile .learndash_profile_heading.course_overview_heading {padding-left: 0;background: none;color: inherit;font-weight: bold;font-size: inherit;line-height: inherit;font-family: inherit;text-transform: capitalize;}
 body #learndash_profile .learndash_profile_heading .ld_profile_certificate {margin: auto;padding-right: 10px;}
@@ -157,6 +154,4 @@ body .wpProQuiz_content .wpProQuiz_time_limit {position: relative;padding-bottom
 body .wpProQuiz_content .wpProQuiz_time_limit:before {content: "";width: 100%;height: 8px;background: #fbfbfb;display: block;position: absolute;bottom: 0;border-radius: 4px;}
 body .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress {position: absolute;bottom: 0;border-radius: 4px;height: 8px;margin-bottom: 0;}
 #ld_course_info_mycourses_list .ld-course-info-my-courses {padding: 10px 0;}
-@media (max-width: 544px) {#ld_course_info_mycourses_list .ld-course-info-my-courses img {display: block;margin-right: initial;max-width: 100%;margin: 10px 0;}
-	#ld_course_info_mycourses_list .ld-course-info-my-courses .ld-entry-title {margin: 0 0 20px;}}
 body.single-sfwd-quiz {overflow-x: unset;}
