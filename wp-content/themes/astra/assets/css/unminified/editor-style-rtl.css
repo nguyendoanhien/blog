@@ -360,7 +360,7 @@ button:active, button:focus, .ast-button:active, .ast-button:focus, .button:acti
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], textarea {color: #666;border: 1px solid #ccc;border-radius: 2px;-webkit-appearance: none;}
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, textarea:focus {color: #111;}
 textarea {padding-right: 3px;width: 100%;}
-.screen-reader-text {border: 0;clip: rect(1px,1px,1px,1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;word-wrap: normal !important;}
+.screen-reader-text {border: 0;clip: rect(1px,1px,1px,1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;word-wrap: normal !important;}
 .screen-reader-text:focus {background-color: #f1f1f1;border-radius: 2px;box-shadow: 0 0 2px 2px rgba(0,0,0,.6);clip: auto !important;color: #21759b;display: block;font-size: 12.25px;font-size: .875rem;height: auto;right: 5px;line-height: normal;padding: 15px 23px 14px;text-decoration: none;top: 5px;width: auto;z-index: 100000;}
 .alignleft {display: inline;float: right;margin-left: 1.5em;}
 .alignright {display: inline;float: left;margin-right: 1.5em;}
@@ -410,7 +410,7 @@ blockquote {margin: 1.5em 3em 1.5em 1em;padding: 1.2em;font-size: 1.1em;line-hei
 .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;left: 0;padding: 0 1em;border-radius: 0;}
 .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-form {padding: 0;display: block;overflow: hidden;}
 .site .skip-link {background-color: #f1f1f1;box-shadow: 0 0 1px 1px rgba(0,0,0,.2);color: #21759b;display: block;font-family: Montserrat,"Helvetica Neue",sans-serif;font-size: 14px;font-weight: 700;right: -9999em;outline: none;padding: 15px 23px 14px;text-decoration: none;text-transform: none;top: -9999em;}
-.site .skip-link:focus {clip: auto;height: auto;right: 6px;top: 7px;width: auto;z-index: 100000;}
+.site .skip-link:focus {clip: auto;height: auto;right: 6px;top: 7px;width: auto;z-index: 100000;outline: thin dotted;}
 .logged-in .site .skip-link {box-shadow: 0 0 2px 2px rgba(0,0,0,.2);font-family: "Open Sans",sans-serif;}
 .astra-icon-down_arrow::after {content: "";font-family: Astra;}
 .astra-icon-close::after {content: "";font-family: Astra;}
