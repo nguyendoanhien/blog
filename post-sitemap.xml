@@ -122,14 +122,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/c45/</loc>
-		<lastmod>2020-04-20T13:33:23+00:00</lastmod>
-		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/C4.5.png</image:loc>
-			<image:title><![CDATA[C4.5]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://blog.doanhien.cf/how-to-store-dotfiles/</loc>
 		<lastmod>2020-04-25T09:23:56+00:00</lastmod>
 		<image:image>
@@ -143,6 +135,14 @@
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/cognitive-complexity.jpg</image:loc>
 			<image:title><![CDATA[cognitive-complexity]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/c45/</loc>
+		<lastmod>2020-08-15T12:38:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/C4.5.png</image:loc>
+			<image:title><![CDATA[C4.5]]></image:title>
 		</image:image>
 	</url>
 </urlset>
