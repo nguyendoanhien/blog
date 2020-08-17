@@ -1,0 +1,23 @@
+.crp-full-screen-popup {position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: 9999999;}
+.mfp-close {margin-right: 2px;}
+.mfp-close-img {width: 64px;height: 64px;background-image: url("../images/general/icons/close-icon-2.png");background-repeat: no-repeat;background-size: contain;}
+.crp-tile-inner .tile-inner {-webkit-box-shadow: none !important;-moz-box-shadow: none !important;box-shadow: none !important;border: none !important;}
+.crp-wrapper .crp-additional-block2 {bottom: 0;position: absolute;height: 200px;overflow: hidden;padding: 5px !important;padding-top: 10px !important;text-align: center;}
+.crp-wrapper .crp-additional-block2 p {padding-top: 0 !important;padding-bottom: 0 !important;margin-top: 0 !important;margin-bottom: 0 !important;}
+.crp-wrapper .crp-product-buy-button {background-color: #333 !important;border-width: 0 !important;color: #fff !important;font-weight: 700 !important;line-height: 1 !important;padding: 1em 1.25em !important;height: 40px;font-size: 13px !important;cursor: pointer;position: relative;}
+.crp-wrapper .crp-product-buy-button:hover {opacity: .9 !important;}
+.crp-wrapper .crp-additional-block2 * {position: relative;}
+.crp-wrapper .crp-additional-block2 span {color: #333;line-height: 15px;}
+.crp-badge-box {z-index: 1;}
+.crp-badge {z-index: 1;position: relative !important;color: #fff !important;background-color: #81d742;}
+.crp-badge span {font-size: 16px;position: relative !important;}
+.crp-badge-box.crp-badge-pos-RT {top: 5px;right: 5px;}
+.crp-badge span {padding: 3px 12px;}
+.crp-catalog-title {overflow: hidden;white-space: nowrap;font-weight: bold;text-overflow: ellipsis;width: 100%;text-align: center;padding: 0 15px !important;font-size: 18px;}
+#gallery div {margin-left: 0px !important;margin-right: 0px !important;padding-left: 0px !important;padding-right: 0px !important;-webkit-transform: translate3d(0,0,0);}
+.lg-info {position: fixed;z-index: 3;left: 10px;top: 10px;padding: 10px;margin-right: 70px;min-width: 300px;max-width: 400px;background-color: rgba(0,0,0,.5);color: #fff;font-size: 16px;}
+.lg-info h4, .lg-info h3, .lg-info h2 {color: white;text-transform: uppercase;margin: 0px;font-size: 17px;line-height: 17px;max-height: 40px;overflow: hidden;}
+.lg-info p {color: white;margin-top: 4px;font-size: 13px;line-height: normal;max-height: 100px;overflow: auto;}
+.image01 .crp-tile-img {transition-property: transform,filter,-webkit-filter;transition-duration: .3s,.3s,.3s;transition-delay: 0s,0s,0s;}
+.image01 .crp-tile-img {-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);}
+.image01:hover .crp-tile-img, .image01:focus .crp-tile-img {-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);transform: scale(1.1);}
