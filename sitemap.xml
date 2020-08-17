@@ -6,13 +6,18 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/page-sitemap.xml</loc>
-		<lastmod>2020-08-16T04:01:39+00:00</lastmod>
+		<lastmod>2020-08-16T12:48:39+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/product-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/astra-portfolio-sitemap.xml</loc>
+		<lastmod>2020-08-16T07:40:58+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://blog.doanhien.cf/awl_filter_gallery-sitemap.xml</loc>
+		<lastmod>2020-08-16T07:47:06+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://blog.doanhien.cf/elementor-hf-sitemap.xml</loc>
