@@ -1,0 +1,25 @@
+.elementor-1207 .elementor-element.elementor-element-5dc83551 {overflow: hidden;transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;padding: 50px 0px 50px 0px;}
+.elementor-1207 .elementor-element.elementor-element-5dc83551:not(.elementor-motion-effects-element-type-background), .elementor-1207 .elementor-element.elementor-element-5dc83551 > .elementor-motion-effects-container > .elementor-motion-effects-layer {background-color: #fff;}
+.elementor-1207 .elementor-element.elementor-element-5dc83551 > .elementor-background-overlay {transition: background .3s,border-radius .3s,opacity .3s;}
+.elementor-1207 .elementor-element.elementor-element-295643c4 {text-align: center;}
+.elementor-1207 .elementor-element.elementor-element-295643c4 .elementor-heading-title {color: #0a0a0a;font-family: "Times New Roman",Times New Roman;font-size: 50px;font-weight: 200;line-height: 1.2em;}
+.elementor-1207 .elementor-element.elementor-element-78264357 iframe {height: 500px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group {padding-right: calc(29px / 2);padding-left: calc(29px / 2);margin-bottom: 20px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-form-fields-wrapper {margin-left: calc(-29px / 2);margin-right: calc(-29px / 2);margin-bottom: -20px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group.recaptcha_v3-bottomleft, .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group.recaptcha_v3-bottomright {margin-bottom: 0;}
+body.rtl .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-labels-inline .elementor-field-group > label {padding-left: 12px;}
+body:not(.rtl) .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-labels-inline .elementor-field-group > label {padding-right: 12px;}
+body .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-labels-above .elementor-field-group > label {padding-bottom: 12px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group > label, .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-subgroup label {color: #0274be;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-type-html {padding-bottom: 1px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group .elementor-field {color: #6e5757;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group .elementor-field, .elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-subgroup label {font-family: "Times New Roman",Times New Roman;font-size: 18px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper) {background-color: rgba(167,167,167,0);border-color: #060000;border-width: 1px 1px 1px 1px;border-radius: 20px 20px 20px 20px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group .elementor-select-wrapper select {background-color: rgba(167,167,167,0);border-color: #060000;border-width: 1px 1px 1px 1px;border-radius: 20px 20px 20px 20px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-field-group .elementor-select-wrapper::before {color: #060000;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-button {background-color: #0274be;color: #fff;font-family: "Times New Roman",Times New Roman;font-size: 20px;font-weight: bold;border-style: solid;border-width: 2px 2px 2px 2px;border-radius: 40px 40px 40px 40px;}
+.elementor-1207 .elementor-element.elementor-element-7ebbb679 .elementor-button svg {fill: #fff;}
+.elementor-1207 .elementor-element.elementor-element-6d49619 {text-align: center;}
+.elementor-1207 .elementor-element.elementor-element-6d49619 .elementor-heading-title {font-family: "Times New Roman",Times New Roman;font-size: 50px;font-weight: 500;}
+.elementor-1207 .elementor-element.elementor-element-77dc88e .elementor-wrapper {filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);}
+@media (max-width:767px) {.elementor-1207 .elementor-element.elementor-element-295643c4 .elementor-heading-title {font-size: 1.6rem;}}
