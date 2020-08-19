@@ -146,19 +146,27 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/clean-code-la-gi/</loc>
-		<lastmod>2020-08-17T06:04:18+00:00</lastmod>
-		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/clean-code.jpg</image:loc>
-			<image:title><![CDATA[clean-code]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://blog.doanhien.cf/technical-debt-la-gi/</loc>
 		<lastmod>2020-08-17T06:06:50+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/technical-deb-1.jpg</image:loc>
 			<image:title><![CDATA[technical-deb]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/khi-nao-can-phai-refactor/</loc>
+		<lastmod>2020-08-19T03:14:17+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/khi-nao-can-phai-refactor.jpg</image:loc>
+			<image:title><![CDATA[khi-nao-can-phai-refactor]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/clean-code-la-gi/</loc>
+		<lastmod>2020-08-19T03:15:49+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/clean-code.jpg</image:loc>
+			<image:title><![CDATA[clean-code]]></image:title>
 		</image:image>
 	</url>
 </urlset>
