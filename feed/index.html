@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Wed, 19 Aug 2020 03:15:49 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 20 Aug 2020 15:40:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,175 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring &#8211; #5: Phương thức dài?</title>
+		<link>https://blog.doanhien.cf/phuong-thuc-dai/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=phuong-thuc-dai</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2020 15:33:32 +0000</pubDate>
+				<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1280</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhận biết Một phương thức có quá nhiều dòng. Thông thường, bất kỳ phương thức nào dài hơn 10 dòng thì nên bắt đầu đặt các câu hỏi. Lý do của những vấn đề này Giống như khách sạn California, đã đi vô rồi thì sẽ không muốn đi ra, giống như khi &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/phuong-thuc-dai/"> <span class="screen-reader-text">Series Refactoring &#8211; #5: Phương thức dài?</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/phuong-thuc-dai/">Series Refactoring &#8211; #5: Phương thức dài?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1280" class="elementor elementor-1280" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-7618fd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7618fd6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e83f72b elementor-column elementor-col-100 elementor-top-column" data-id="e83f72b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4e894da elementor-widget elementor-widget-text-editor" data-id="4e894da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhận biết</strong></p><p>Một phương thức có quá nhiều dòng. Thông thường, bất kỳ phương thức nào dài hơn 10 dòng thì nên bắt đầu đặt các câu hỏi.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-41581c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="41581c5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-ac3067e elementor-column elementor-col-100 elementor-top-column" data-id="ac3067e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-dec5866 elementor-widget elementor-widget-text-editor" data-id="dec5866" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Giống như khách sạn California, đã đi vô rồi thì sẽ không muốn đi ra, giống như khi bỏ gì đó vô một phương thức thì dường như mình không có lấy nó ra lại. Từ đó, việc viết code dễ hơn việc đọc code, cái &#8220;mùi&#8221; này sẽ không bị chú ý cho đến khi phương thức trở nên xấu đi và to như quái vật.</li><li>Về mặt tinh thần, khó thêm phương thức mới hơn là thêm vào phương thức đã có sắn: &#8220;Nhưng nó chỉ có hai dòng, không nhất thiết phải tạo nguyên một phương thức mới cho nó..&#8221; Có nghĩa là một dòng khác được thêm vào và sau đó thêm một cái khác nữa, từ đó sinh ra một đống spaghetti code.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-c787a45 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="c787a45" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1c8b289 elementor-column elementor-col-100 elementor-top-column" data-id="1c8b289" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6dd8d96 elementor-widget elementor-widget-text-editor" data-id="6dd8d96" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><p>Theo kinh nghiệm thực tế, nếu bạn cảm thấy cần phải comment vào bất cứ gì trong phương thức, thì bạn nên lấy phần code đó ra và đặt vào một phương thức mới khác. Thậm chí một dòng duy nhất cũng có thể và nên được tách thành một phương thức riêng nếu nó cần phải giải thích. Và nếu một phương thức có một tên miêu tả, bất kỳ ai nhìn vô cũng sẽ biết code đó để làm gì.</p><ul><li>Giảm chiều dài của phương thức</li><li>Nếu biến local và tham số cản trở việc truy xuất một phương thức</li><li>Nếu không có phương thức nào trước đó có ích, hãy di chuyển toàn bộ phương thức vô một đối tượng.</li><li>Toán tử điều kiện và toán tử lặp là một minh chứng tốt về code có thể được di chuyển vào một phương thức riêng biệt. </li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dc3e9b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dc3e9b5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0a119f7 elementor-column elementor-col-100 elementor-top-column" data-id="0a119f7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-74b6854 elementor-widget elementor-widget-text-editor" data-id="74b6854" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Trong tất cả các loại code hướng đối tượng, class với các phương thức ngắn sẽ tồn tại lâu nhất. Phương thức hoặc function càng dài, thì nó sẽ càng khó để hiểu và bảo trì.</li><li>Ngoài ra, phương thức dài thường là nơi hoàn hảo để chưas các code lặp lại không mong muốn.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-e468853 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e468853" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-18fe9b1 elementor-column elementor-col-100 elementor-top-column" data-id="18fe9b1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-dc439a4 elementor-widget elementor-widget-text-editor" data-id="dc439a4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Đánh giá</strong></p><ul><li>Càng nhiều dòng code trong phương thức có làm giảm hiệu suất như mọi người nói? Phần lớn những trường hợp bị ảnh hưởng thì không đáng kể nên là đừng bận tâm về điều đó.</li><li>Thêm nữa, bây giờ bạn đang code clear và dễ hiểu, bạn có khả năng để kiếm được phương thức hiệu quả cho việc tái cấu trúc và đạt được hiệu quả thực tế nếu như yêu cầu phát sinh.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/phuong-thuc-dai/">Series Refactoring &#8211; #5: Phương thức dài?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Series Refactoring &#8211; #4: Refactor như thế nào?</title>
+		<link>https://blog.doanhien.cf/refactor-nhu-the-nao/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=refactor-nhu-the-nao</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2020 10:22:33 +0000</pubDate>
+				<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1275</guid>
+
+					<description><![CDATA[<p>Refactor nên được thực hiện từ&#160; các thay đổi nhỏ, mỗi thay đổi làm cho code hiện tại trở nên tốt hơn trong khi vẫn để chương trình chính đảm bảo hoạt động bình thường. Dưới đây là danh sách các việc cần phải làm để refactor đúng cách Code nên trở nên clean hơn &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/refactor-nhu-the-nao/"> <span class="screen-reader-text">Series Refactoring &#8211; #4: Refactor như thế nào?</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/refactor-nhu-the-nao/">Series Refactoring &#8211; #4: Refactor như thế nào?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1275" class="elementor elementor-1275" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-7618fd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7618fd6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e83f72b elementor-column elementor-col-100 elementor-top-column" data-id="e83f72b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4e894da elementor-widget elementor-widget-text-editor" data-id="4e894da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Refactor nên được thực hiện từ  các thay đổi nhỏ, mỗi thay đổi làm cho code hiện tại trở nên tốt hơn trong khi vẫn để chương trình chính đảm bảo hoạt động bình thường.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-41581c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="41581c5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-ac3067e elementor-column elementor-col-100 elementor-top-column" data-id="ac3067e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-dec5866 elementor-widget elementor-widget-text-editor" data-id="dec5866" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dưới đây là danh sách các việc cần phải làm để refactor đúng cách</strong></p><ul><li><strong>Code nên trở nên clean hơn</strong></li></ul><p>&#8211; Nếu mà code vẫn chưa clean sau khi refactor&#8230; chà, tôi xin lỗi, nhưng bạn vừa lãng phí cả tiếng đồng hồ của mình. Hãy cố gắng tìm ra tại sao điều này xảy ra.</p><p>&#8211; Điều này thường xuyên xảy ra khi bạn di chuyển những thay đổi nhỏ và gom các refactor thành một thay đổi lớn. Vì thế, nó rất dễ dẫn bạn đi hướng sai, đặc biệt là khi bạn có thời gian giới hạn.</p><p>&#8211; Nhưng nó có thể xảy ra khi làm việc với những đoạn code cẩu thả. Bất kỳ cái gì bạn muốn cải thiện, code của bạn nhìn chung là một thảm họa</p><p>&#8211; Trong trường hợp này, đáng để nghĩ về cách viết hoàn thiện các phần code. Nhưng trước khi làm việc đó, bạn nên viết những bản kiểm thử và dành ra một khoảng thời gian. Nếu không, bạn sẽ kết thúc với kết quả giống như câu đầu tôi nói ở trên</p><ul><li><strong>Chức năng mới không nên được viết trong lúc refactor</strong></li></ul><p>Đừng có gom việc refactor và tạo tính năng mới trực tiếp. Hãy cố gắng tách những quá trình đó ra ít nhất là giới hạn lại trong những commit riêng biệt.</p><ul><li><strong>Tất cả những kiểm thử phải được pass sau khi refactor</strong></li></ul><p>&#8211; Có hai trường hợp khi kiểm thử fail sau khi refactor</p><p>+ <strong>Bạn làm ra lỗi trong lúc refactor</strong>: Không cần phải suy nghĩ chi nhiều: bắt tay vào sửa cái lỗi đấy liền.</p><p>+<strong> Bản kiểm thử của bạn có cấp độ quá thấp</strong>: Ví dụ, bạn kiểm thử các phương thức private của các class</p><p>Trong trường hợp này, các bản kiểm thử có lỗi. Bạn có thể refactor những bản kiểm thử hoặc viết một cái mới hoàn toàn mà cấp độ cao hơn. Cách tốt nhất để tránh trường hợp này là viết bản kiểm thử <strong>BDD-style.</strong></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/refactor-nhu-the-nao/">Series Refactoring &#8211; #4: Refactor như thế nào?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring &#8211; #3: Khi nào cần phải refactor?</title>
 		<link>https://blog.doanhien.cf/khi-nao-can-phai-refactor/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=khi-nao-can-phai-refactor</link>
 		
@@ -840,89 +1009,6 @@
 			</div>
 		</div>
 		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/github-folder-issue-and-pull-request-templates/">.github folder ? | Issue and Pull Request templates</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>What is Information Gain ?</title>
-		<link>https://blog.doanhien.cf/what-is-information-gain/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-is-information-gain</link>
-		
-		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
-		<pubDate>Thu, 16 Apr 2020 05:10:02 +0000</pubDate>
-				<category><![CDATA[Data Mining]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1072</guid>
-
-					<description><![CDATA[<p>Nice explanation here: https://victorzhou.com/blog/information-gain/</p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/what-is-information-gain/">What is Information Gain ?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1072" class="elementor elementor-1072" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-d5080cd elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d5080cd" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-866fdbf elementor-column elementor-col-100 elementor-top-column" data-id="866fdbf" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-5906528 elementor-widget elementor-widget-text-editor" data-id="5906528" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Nice explanation here: <a href="https://victorzhou.com/blog/information-gain/">https://victorzhou.com/blog/information-gain/</a><br></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/what-is-information-gain/">What is Information Gain ?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Pandas &#124; Python Data Analysis Library</title>
-		<link>https://blog.doanhien.cf/pandas-python-data-analysis-library/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pandas-python-data-analysis-library</link>
-		
-		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
-		<pubDate>Thu, 16 Apr 2020 04:01:53 +0000</pubDate>
-				<category><![CDATA[Data Mining]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1066</guid>
-
-					<description><![CDATA[<p>pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,<br />
-built on top of the Python programming language. </p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/pandas-python-data-analysis-library/">Pandas | Python Data Analysis Library</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1066" class="elementor elementor-1066" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-37af370 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="37af370" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-1e3a8a6 elementor-column elementor-col-100 elementor-top-column" data-id="1e3a8a6" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-67966a5 elementor-widget elementor-widget-text-editor" data-id="67966a5" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>For more information, visit here: <a href="https://pandas.pydata.org/">https://pandas.pydata.org/</a><br></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/pandas-python-data-analysis-library/">Pandas | Python Data Analysis Library</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
