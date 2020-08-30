@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Thu, 20 Aug 2020 15:40:13 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 30 Aug 2020 05:42:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,116 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring &#8211; #6: Lớp lớn?</title>
+		<link>https://blog.doanhien.cf/lop-lon/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-lon</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Sun, 30 Aug 2020 05:37:36 +0000</pubDate>
+				<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1286</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhận biết &#8211; Một class chứa nhiều field/phương thức/nhiều dòng code. Lý do của những vấn đề này Class lúc đầu mới viết thì nó nhỏ lắm. Nhưng từ từ thì nó càng phình ra khi chương trình nó phát triển. Cũng giống như trường hợp phương thức dài, lập trình viên thường &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/lop-lon/"> <span class="screen-reader-text">Series Refactoring &#8211; #6: Lớp lớn?</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lop-lon/">Series Refactoring &#8211; #6: Lớp lớn?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1286" class="elementor elementor-1286" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-7618fd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7618fd6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e83f72b elementor-column elementor-col-100 elementor-top-column" data-id="e83f72b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4e894da elementor-widget elementor-widget-text-editor" data-id="4e894da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhận biết</strong></p><p>&#8211; Một class chứa nhiều field/phương thức/nhiều dòng code.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-41581c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="41581c5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-ac3067e elementor-column elementor-col-100 elementor-top-column" data-id="ac3067e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-dec5866 elementor-widget elementor-widget-text-editor" data-id="dec5866" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Class lúc đầu mới viết thì nó nhỏ lắm. Nhưng từ từ thì nó càng phình ra khi chương trình nó phát triển.</li><li>Cũng giống như trường hợp phương thức dài, lập trình viên thường thấy việc viết một tính năng mới trong một class có sẵn thì dễ hơn tạo một lớp cho tính năng đó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-c787a45 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="c787a45" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1c8b289 elementor-column elementor-col-100 elementor-top-column" data-id="1c8b289" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6dd8d96 elementor-widget elementor-widget-text-editor" data-id="6dd8d96" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><p>Khi một class mà có quá nhiều chức năng, hãy nghĩ đến chuyện tách nó ra nhé:</p><ul><li>Tách class giúp cho mỗi phần nhỏ của class lớn có thể được tách thành một phần riêng biệt.</li><li><span style="font-size: 16px;">Tách thành các lớp con giúp cho các lớp lớn có thể implement theo nhiều cách khác nhau hoặc sử dụng trong một số trường hợp đặc biệt.</span></li><li><span style="font-size: 16px;">Tách Interface vì nó rất hữu ích khi nếu chỉ cần xem danh sách các phương thức chức năng mà client có thể sử dụng.</span></li><li><span style="font-size: 16px;">Nếu một class lớn có liên quan đến giao diện đồ họa, bạn có thể di chuyển data của nó và tách thành một object riêng. Bởi vì, nó có thể dùng để chứa một vài data giống nhau nhưng ở chỗ khác và như vậy thì sẽ giúp data không thay đổi.</span></li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dc3e9b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dc3e9b5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0a119f7 elementor-column elementor-col-100 elementor-top-column" data-id="0a119f7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-74b6854 elementor-widget elementor-widget-text-editor" data-id="74b6854" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Refactor những cái class này giúp cho lập trình viên dễ nhớ các thuộc tính của một class.</li><li>Trong nhiều trường hợp, tách các lớp lớn thành các phần để tránh sự lặp lại code và chức năng</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-e468853 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e468853" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-18fe9b1 elementor-column elementor-col-100 elementor-top-column" data-id="18fe9b1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-dc439a4 elementor-widget elementor-widget-text-editor" data-id="dc439a4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ: <a href="https://refactoring.guru/smells/large-class"><em>https://refactoring.guru/smells/large-class</em></a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lop-lon/">Series Refactoring &#8211; #6: Lớp lớn?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring &#8211; #5: Phương thức dài?</title>
 		<link>https://blog.doanhien.cf/phuong-thuc-dai/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=phuong-thuc-dai</link>
 		
@@ -968,47 +1078,6 @@
 			</div>
 		</div>
 		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/whats-the-difference-between-scss-and-sass/">What&#8217;s the difference between SCSS and Sass?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>.github folder ? &#124; Issue and Pull Request templates</title>
-		<link>https://blog.doanhien.cf/github-folder-issue-and-pull-request-templates/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=github-folder-issue-and-pull-request-templates</link>
-		
-		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
-		<pubDate>Thu, 16 Apr 2020 08:29:38 +0000</pubDate>
-				<category><![CDATA[Github]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1080</guid>
-
-					<description><![CDATA[<p>Answer here: https://github.blog/2016-02-17-issue-and-pull-request-templates/</p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/github-folder-issue-and-pull-request-templates/">.github folder ? | Issue and Pull Request templates</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1080" class="elementor elementor-1080" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-7dcc118 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7dcc118" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-ad65ae4 elementor-column elementor-col-100 elementor-top-column" data-id="ad65ae4" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-e76e3dd elementor-widget elementor-widget-text-editor" data-id="e76e3dd" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Answer here: <a href="https://github.blog/2016-02-17-issue-and-pull-request-templates/">https://github.blog/2016-02-17-issue-and-pull-request-templates/</a><br></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/github-folder-issue-and-pull-request-templates/">.github folder ? | Issue and Pull Request templates</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
