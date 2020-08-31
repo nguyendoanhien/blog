@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Sun, 30 Aug 2020 05:42:12 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 31 Aug 2020 07:30:32 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,19 +21,133 @@
 	<generator>https://wordpress.org/?v=5.5</generator>
 
 <image>
-	<url>https://blog.doanhien.cf/wp-content/uploads/2020/04/favicon-150x150.png</url>
+	<url>https://blog.doanhien.cf/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
 	<title>Hien Nguyen Blog</title>
 	<link>https://blog.doanhien.cf/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</title>
+		<link>https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lam-dung-cac-kieu-du-lieu-nguyen-thuy</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Sun, 30 Aug 2020 10:14:29 +0000</pubDate>
+				<category><![CDATA[Bloaters]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<category><![CDATA[bloaters]]></category>
+		<guid isPermaLink="false">https://192.168.88.33/hiennguyen/?p=1321</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Sử dụng những kiểu dữ liệu thông dụng những object nhỏ cho những task đơn giản (ví dụ tiền tệ, phạm vi, chuỗi ký tự đặc biệt cho số điện thoại,v..v..) Sử dụng hằng số cho các thông tin khi code ( ví dụ như hằng số USER_ADMIN_ROLE = 1 cho &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/"> <span class="screen-reader-text">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1321" class="elementor elementor-1321" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Sử dụng những kiểu dữ liệu thông dụng những object nhỏ cho những task đơn giản (ví dụ tiền tệ, phạm vi, chuỗi ký tự đặc biệt cho số điện thoại,v..v..)</li><li>Sử dụng hằng số cho các thông tin khi code ( ví dụ như hằng số USER_ADMIN_ROLE = 1 cho những người dùng có quyền admin)</li><li>Sử dụng hằng số chuỗi làm field name trong mảng dữ liệu</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Cũng giống như những code smell khác, primitive obsession này được hình thành khi người lập trình viên nói &#8220;Chỉ có cần một field thôi!&#8221;. Tạo thêm một primitive field thì dễ hơn tạo một class rồi đúng không? Và xong, chỉ cần vậy thôi. Đến một field khác cần thiết và người lập trình viên cũng thêm như cách ở trên. Lạ chưa kìa, lớp càng ngày càng to lớn và cồng kềnh.</li><li>Primitive thường được sử dụng để &#8220;mô phỏng&#8221; loại. Thay vì tách một kiểu dữ liệu, bạn có một bộ số và chuỗi để tạo thành list của những giá trị cho phép cho một số entity. Tên dễ hiểu được đặt cho những con số và chuỗi xác định như hằng số, đó là lý do mà việc làm đó phổ biến.</li><li>Một ví dụ khác của poor primitive là mô phỏng trường. Class gồm một mảng lớn chứa nhiều dữ liệu và hằng số chuỗi (được xác định trong class) được sử dụng như chỉ số để lấy data. Có nghĩa là thay vì một lớp chỉ có những thuộc tính của lớp đó thì ở đây nó dùng các trường để lưu data được lấy từ nơi khác.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu bạn có một lượng lớn trường primitive, bạn có thể nhóm mấy trường liên quan đến nhau tạo thành một class riêng. Tốt hơn nữa, bạn đem luôn cả các phương thức liên quan vào class đó luôn. Bạn có thể tham khảo ở đây, <a href="https://refactoring.guru/replace-data-value-with-object">Replace Data Value With Object</a>.</li><li>Nếu giá trị của trường primitive được sử dụng trong phương thức có tham số, hãy xem thử <a href="https://refactoring.guru/introduce-parameter-object">Introduce Parameter Object</a> hoặc Preserve <a href="https://refactoring.guru/preserve-whole-object">Whole Object</a>.</li><li>Khi mà dữ liệu phức tạp được dùng trong biến, sử dụng <a href="https://refactoring.guru/replace-type-code-with-class">Replace Type Code With Class</a>, <a href="https://refactoring.guru/replace-type-code-with-subclasses">Replace Type Code with Subclasses</a> hoặc <a href="https://refactoring.guru/replace-type-code-with-state-strategy">Replace Type Code with State/Strategy</a>.</li><li>Nếu trong các biến có kiểu dữ liệu mảng, sử dụng <a href="https://refactoring.guru/replace-array-with-object">Replace Array With Object</a></li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Code trở nên linh hoạt hơn nhờ vào lợi ích của object thay vì primitives</li><li>Code dễ hiểu và dễ tổ chức hơn. Vận hành dữ liệu riêng biệt khi ở cùng một nơi, thay vì ở rải rác. Không cần phải đoán về lý do của những hằng số và tại sao đó là một mảng.</li><li>Dễ tìm những code bị trùng lặp.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/primitive-obsession">Refactoring Guru &#8211; Primative Obsession</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring &#8211; #6: Lớp lớn?</title>
 		<link>https://blog.doanhien.cf/lop-lon/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-lon</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Sun, 30 Aug 2020 05:37:36 +0000</pubDate>
-				<category><![CDATA[Refactoring]]></category>
+				<category><![CDATA[Bloaters]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<category><![CDATA[bloaters]]></category>
 		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1286</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhận biết &#8211; Một class chứa nhiều field/phương thức/nhiều dòng code. Lý do của những vấn đề này Class lúc đầu mới viết thì nó nhỏ lắm. Nhưng từ từ thì nó càng phình ra khi chương trình nó phát triển. Cũng giống như trường hợp phương thức dài, lập trình viên thường &#8230;</p>
@@ -119,7 +233,7 @@
 					<div class="elementor-widget-wrap">
 				<div class="elementor-element elementor-element-dc439a4 elementor-widget elementor-widget-text-editor" data-id="dc439a4" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ: <a href="https://refactoring.guru/smells/large-class"><em>https://refactoring.guru/smells/large-class</em></a></p></div>
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/large-class">Refactoring Guru &#8211; Large Class</a></p></div>
 				</div>
 				</div>
 						</div>
@@ -143,7 +257,9 @@
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Thu, 20 Aug 2020 15:33:32 +0000</pubDate>
-				<category><![CDATA[Refactoring]]></category>
+				<category><![CDATA[Bloaters]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<category><![CDATA[bloaters]]></category>
 		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1280</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhận biết Một phương thức có quá nhiều dòng. Thông thường, bất kỳ phương thức nào dài hơn 10 dòng thì nên bắt đầu đặt các câu hỏi. Lý do của những vấn đề này Giống như khách sạn California, đã đi vô rồi thì sẽ không muốn đi ra, giống như khi &#8230;</p>
@@ -238,6 +354,23 @@
 						</div>
 			</div>
 		</section>
+				<section class="elementor-element elementor-element-4d87e80 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d87e80" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bdb2ae5 elementor-column elementor-col-100 elementor-top-column" data-id="bdb2ae5" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-89435af elementor-widget elementor-widget-text-editor" data-id="89435af" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/long-method">Refactoring Guru &#8211; Long Method</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
 						</div>
 			</div>
 		</div>
@@ -256,7 +389,7 @@
 				<category><![CDATA[Refactoring]]></category>
 		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1275</guid>
 
-					<description><![CDATA[<p>Refactor nên được thực hiện từ&#160; các thay đổi nhỏ, mỗi thay đổi làm cho code hiện tại trở nên tốt hơn trong khi vẫn để chương trình chính đảm bảo hoạt động bình thường. Dưới đây là danh sách các việc cần phải làm để refactor đúng cách Code nên trở nên clean hơn &#8230;</p>
+					<description><![CDATA[<p>Refactor nên được thực hiện từ  các thay đổi nhỏ, mỗi thay đổi làm cho code hiện tại trở nên tốt hơn trong khi vẫn để chương trình chính đảm bảo hoạt động bình thường. Dưới đây là danh sách các việc cần phải làm để refactor đúng cách Code nên trở nên clean hơn &#8230;</p>
 <p class="read-more"> <a class="" href="https://blog.doanhien.cf/refactor-nhu-the-nao/"> <span class="screen-reader-text">Series Refactoring &#8211; #4: Refactor như thế nào?</span> Read More »</a></p>
 <p>The post <a rel="nofollow" href="https://blog.doanhien.cf/refactor-nhu-the-nao/">Series Refactoring &#8211; #4: Refactor như thế nào?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></description>
@@ -289,6 +422,23 @@
 				<div class="elementor-element elementor-element-dec5866 elementor-widget elementor-widget-text-editor" data-id="dec5866" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dưới đây là danh sách các việc cần phải làm để refactor đúng cách</strong></p><ul><li><strong>Code nên trở nên clean hơn</strong></li></ul><p>&#8211; Nếu mà code vẫn chưa clean sau khi refactor&#8230; chà, tôi xin lỗi, nhưng bạn vừa lãng phí cả tiếng đồng hồ của mình. Hãy cố gắng tìm ra tại sao điều này xảy ra.</p><p>&#8211; Điều này thường xuyên xảy ra khi bạn di chuyển những thay đổi nhỏ và gom các refactor thành một thay đổi lớn. Vì thế, nó rất dễ dẫn bạn đi hướng sai, đặc biệt là khi bạn có thời gian giới hạn.</p><p>&#8211; Nhưng nó có thể xảy ra khi làm việc với những đoạn code cẩu thả. Bất kỳ cái gì bạn muốn cải thiện, code của bạn nhìn chung là một thảm họa</p><p>&#8211; Trong trường hợp này, đáng để nghĩ về cách viết hoàn thiện các phần code. Nhưng trước khi làm việc đó, bạn nên viết những bản kiểm thử và dành ra một khoảng thời gian. Nếu không, bạn sẽ kết thúc với kết quả giống như câu đầu tôi nói ở trên</p><ul><li><strong>Chức năng mới không nên được viết trong lúc refactor</strong></li></ul><p>Đừng có gom việc refactor và tạo tính năng mới trực tiếp. Hãy cố gắng tách những quá trình đó ra ít nhất là giới hạn lại trong những commit riêng biệt.</p><ul><li><strong>Tất cả những kiểm thử phải được pass sau khi refactor</strong></li></ul><p>&#8211; Có hai trường hợp khi kiểm thử fail sau khi refactor</p><p>+ <strong>Bạn làm ra lỗi trong lúc refactor</strong>: Không cần phải suy nghĩ chi nhiều: bắt tay vào sửa cái lỗi đấy liền.</p><p>+<strong> Bản kiểm thử của bạn có cấp độ quá thấp</strong>: Ví dụ, bạn kiểm thử các phương thức private của các class</p><p>Trong trường hợp này, các bản kiểm thử có lỗi. Bạn có thể refactor những bản kiểm thử hoặc viết một cái mới hoàn toàn mà cấp độ cao hơn. Cách tốt nhất để tránh trường hợp này là viết bản kiểm thử <strong>BDD-style.</strong></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-33e2597 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="33e2597" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-4b0ff03 elementor-column elementor-col-100 elementor-top-column" data-id="4b0ff03" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4c69826 elementor-widget elementor-widget-text-editor" data-id="4c69826" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/refactoring/how-to">Refactoring Guru &#8211; How to refactor</a></p></div>
 				</div>
 				</div>
 						</div>
@@ -390,6 +540,23 @@
 						</div>
 			</div>
 		</section>
+				<section class="elementor-element elementor-element-fed18d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="fed18d8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-4c4548d elementor-column elementor-col-100 elementor-top-column" data-id="4c4548d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-04e28e4 elementor-widget elementor-widget-text-editor" data-id="04e28e4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/refactoring/when">Refactoring Guru &#8211; When to refactor</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
 						</div>
 			</div>
 		</div>
@@ -465,6 +632,23 @@
 						</div>
 			</div>
 		</section>
+				<section class="elementor-element elementor-element-1355833 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="1355833" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-11f2af0 elementor-column elementor-col-100 elementor-top-column" data-id="11f2af0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f65a678 elementor-widget elementor-widget-text-editor" data-id="f65a678" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/refactoring/technical-debt">Refactoring Guru &#8211; Technical debt</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
 						</div>
 			</div>
 		</div>
@@ -483,7 +667,7 @@
 				<category><![CDATA[Refactoring]]></category>
 		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1267</guid>
 
-					<description><![CDATA[<p>Clean code Mục đích chính của refactoring là chống lại nợ kĩ thuật. Có nghĩa là làm cho một đống lộn xộn trở nên sạch sẽ gọn gàng với thiết kế đơn giản. Hay đấy! Nhưng clean code là cái quái gì? Dưới đây là một vài tính năng của nó:&#160; Clean code thì sẽ &#8230;</p>
+					<description><![CDATA[<p>Clean code Mục đích chính của refactoring là chống lại nợ kĩ thuật. Có nghĩa là làm cho một đống lộn xộn trở nên sạch sẽ gọn gàng với thiết kế đơn giản. Hay đấy! Nhưng clean code là cái quái gì? Dưới đây là một vài tính năng của nó:  Clean code thì sẽ &#8230;</p>
 <p class="read-more"> <a class="" href="https://blog.doanhien.cf/clean-code-la-gi/"> <span class="screen-reader-text">Series Refactoring &#8211; #1: Clean code là gì?</span> Read More »</a></p>
 <p>The post <a rel="nofollow" href="https://blog.doanhien.cf/clean-code-la-gi/">Series Refactoring &#8211; #1: Clean code là gì?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></description>
@@ -601,6 +785,23 @@
 				<div class="elementor-element elementor-element-102e881 elementor-widget elementor-widget-text-editor" data-id="102e881" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p><b>Clean code thì dễ và rẻ để bảo trì hơn</b></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-e89b23b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e89b23b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-b40e08f elementor-column elementor-col-100 elementor-top-column" data-id="b40e08f" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-c638e96 elementor-widget elementor-widget-text-editor" data-id="c638e96" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/refactoring/what-is-refactoring">Refactoring Guru &#8211; Clean Code</a> </p></div>
 				</div>
 				</div>
 						</div>
@@ -1023,61 +1224,6 @@
 			</div>
 		</div>
 		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/c45/">C4.5</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>What&#8217;s the difference between SCSS and Sass?</title>
-		<link>https://blog.doanhien.cf/whats-the-difference-between-scss-and-sass/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=whats-the-difference-between-scss-and-sass</link>
-		
-		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
-		<pubDate>Fri, 17 Apr 2020 13:00:57 +0000</pubDate>
-				<category><![CDATA[Questions]]></category>
-		<category><![CDATA[Stackoverflow]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1084</guid>
-
-					<description><![CDATA[<p>Let find out the differences</p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/whats-the-difference-between-scss-and-sass/">What&#8217;s the difference between SCSS and Sass?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1084" class="elementor elementor-1084" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-9153259 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="9153259" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8a76bb6 elementor-column elementor-col-100 elementor-top-column" data-id="8a76bb6" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b304c99 elementor-widget elementor-widget-text-editor" data-id="b304c99" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><div><p>Original answer here: <a href="https://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass">https://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass</a></p><p>Sass is a CSS pre-processor with syntax advancements. Style sheets in<br />the advanced syntax are processed by the program, and turned into<br />regular CSS style sheets. However, they do <strong>not</strong> extend the CSS standard itself.</p><p>CSS variables are supported and can be utilized but not as well as pre-processor variables.</p><p>For the difference between SCSS and Sass, this text on the <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax" rel="noreferrer">Sass documentation page</a> should answer the question:</p><blockquote><p>There are two syntaxes available for Sass. The first, known as SCSS<br />(Sassy CSS) and used throughout this reference, is an extension of the<br />syntax of CSS. This means that every valid CSS stylesheet is a valid<br />SCSS file with the same meaning. This syntax is enhanced with the Sass<br />features described below. Files using this syntax have the <strong>.scss</strong> extension.</p><p>The second and <strong>older syntax</strong>, known as the indented<br />syntax (or sometimes just “Sass”), provides a more concise way of<br />writing CSS. It uses indentation rather than brackets to indicate<br />nesting of selectors, and newlines rather than semicolons to separate<br />properties. Files using this syntax have the <strong>.sass</strong> extension.</p></blockquote><p>However, all this works only with the Sass pre-compiler which in the<br />end creates CSS. It is not an extension to the CSS standard itself.</p></div></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-bea19f6 elementor-widget elementor-widget-divider" data-id="bea19f6" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-91a6681 elementor-widget elementor-widget-text-editor" data-id="91a6681" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><b>SCSS </b>is a better choice<br></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/whats-the-difference-between-scss-and-sass/">What&#8217;s the difference between SCSS and Sass?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
