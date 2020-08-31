@@ -5,8 +5,15 @@
 		<lastmod>2020-08-15T12:38:22+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://blog.doanhien.cf/category/refactoring/smells/bloaters/</loc>
+		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://blog.doanhien.cf/category/csharp/</loc>
 		<lastmod>2020-04-09T02:34:43+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/category/refactoring/smells/</loc>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/data-mining/</loc>
@@ -34,7 +41,7 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/refactoring/</loc>
-		<lastmod>2020-08-30T05:42:12+00:00</lastmod>
+		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/responsive-design/</loc>
