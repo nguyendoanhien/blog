@@ -147,31 +147,31 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/technical-debt-la-gi/</loc>
-		<lastmod>2020-08-17T06:06:50+00:00</lastmod>
+		<lastmod>2020-08-30T09:38:47+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/technical-deb-1.jpg</image:loc>
 			<image:title><![CDATA[technical-deb]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/khi-nao-can-phai-refactor/</loc>
-		<lastmod>2020-08-19T03:14:17+00:00</lastmod>
-		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/khi-nao-can-phai-refactor.jpg</image:loc>
-			<image:title><![CDATA[khi-nao-can-phai-refactor]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://blog.doanhien.cf/clean-code-la-gi/</loc>
-		<lastmod>2020-08-19T03:15:49+00:00</lastmod>
+		<lastmod>2020-08-30T09:39:12+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/clean-code.jpg</image:loc>
 			<image:title><![CDATA[clean-code]]></image:title>
 		</image:image>
 	</url>
 	<url>
+		<loc>https://blog.doanhien.cf/khi-nao-can-phai-refactor/</loc>
+		<lastmod>2020-08-30T09:43:06+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/khi-nao-can-phai-refactor.jpg</image:loc>
+			<image:title><![CDATA[khi-nao-can-phai-refactor]]></image:title>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://blog.doanhien.cf/refactor-nhu-the-nao/</loc>
-		<lastmod>2020-08-20T10:33:47+00:00</lastmod>
+		<lastmod>2020-08-30T09:43:17+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/refactor-nhu-the-nao.jpg</image:loc>
 			<image:title><![CDATA[refactor-nhu-the-nao]]></image:title>
@@ -179,7 +179,7 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/phuong-thuc-dai/</loc>
-		<lastmod>2020-08-20T15:40:13+00:00</lastmod>
+		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/phuong-thuc-dai.jpg</image:loc>
 			<image:title><![CDATA[phuong-thuc-dai]]></image:title>
@@ -187,10 +187,18 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/lop-lon/</loc>
-		<lastmod>2020-08-30T05:42:12+00:00</lastmod>
+		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/lop-lon.jpg</image:loc>
 			<image:title><![CDATA[lop-lon]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/</loc>
+		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/primative-obsession.jpg</image:loc>
+			<image:title><![CDATA[primative-obsession]]></image:title>
 		</image:image>
 	</url>
 </urlset>
