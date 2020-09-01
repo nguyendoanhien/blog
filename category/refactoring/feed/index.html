@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/refactoring/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Mon, 31 Aug 2020 07:30:32 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 01 Sep 2020 07:36:37 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,135 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #8: Danh sách tham số dài</title>
+		<link>https://blog.doanhien.cf/danh-sach-tham-so-dai/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=danh-sach-tham-so-dai</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2020 07:36:35 +0000</pubDate>
+				<category><![CDATA[Bloaters]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<category><![CDATA[bloaters]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1341</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Hơn ba hoặc bốn biến trong một phương thức Lý do của những vấn đề này Một danh sách các biến dài có thể có khi sau một vài loại thuật toán được gộp trong một phương thức. Danh sách này có thể được tạo để điều khiển thuật toán sẽ &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/danh-sach-tham-so-dai/"> <span class="screen-reader-text">Series Refactoring – #8: Danh sách tham số dài</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/danh-sach-tham-so-dai/">Series Refactoring – #8: Danh sách tham số dài</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1341" class="elementor elementor-1341" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Hơn ba hoặc bốn biến trong một phương thức</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Một danh sách các biến dài có thể có khi sau một vài loại thuật toán được gộp trong một phương thức. Danh sách này có thể được tạo để điều khiển thuật toán sẽ được chạy.</li><li>Một danh sách biến dài có thể là tác dụng phụ của những nỗ lực làm cho class độc lập hơn so với các class khác. Ví dụ, code để tạo một object xác định trong một phương thức được di chuyển từ phương thức đến code mà gọi phương thức đó, nhưng object được tạo được truyền qua phương thức như một biến. Do đó class gốc không biết về mối quan hệ giữa các object, và giảm sự phụ thuộc nhau. Nhưng nếu vài object này được tạo, mỗi cái trong đó sẽ yêu cầu biến của riêng nó, ý là một danh sách biến dài hơn.</li><li>Nó hơi khó hiểu và hơi mâu thuẫn và khó để sử dụng khi mà cái danh sách biến này nó dài hơn. Thay vì sử dụng một đống biến, thì một phương thức có thể sử dụng một object với các property như các biến. Nếu object hiện tại không chứa tất cả những dữ liệu cần thiết, một object khác ( mà chứa những dữ liệu cần thiết) có thể được truyền thông qua tham số phương thức.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Kiểm tra giá trị nào được truyền bến tham số. Nếu một số đối số chỉ là kết quả của các lệnh gọi phương thức của đối tượng khác, sử dụng Preserve Whole Object.</li><li>Nếu có một vài thành phần dữ liệu không liên quan, đôi khi bạn có thể gộp chúng chung một object tham số duy nhất, tham khảo Introduce Parameter Object(https://refactoring.guru/introduce-parameter-object) nhé</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Dễ đọc, code ngắn hơn</li><li>Refactor dễ phát hiện code bị trùng lặp mà chưa biết trước đó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-ba1cd65 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="ba1cd65" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-42ec05a elementor-column elementor-col-100 elementor-top-column" data-id="42ec05a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-200e15b elementor-widget elementor-widget-text-editor" data-id="200e15b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào thì nên bỏ qua việc này</strong></p><ul><li>Dễ đọc, code ngắn hơn</li><li>Refactor dễ phát hiện code bị trùng lặp mà chưa biết trước đó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/long-parameter-list">Long Parameter List</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/danh-sach-tham-so-dai/">Series Refactoring – #8: Danh sách tham số dài</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</title>
 		<link>https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lam-dung-cac-kieu-du-lieu-nguyen-thuy</link>
 		
