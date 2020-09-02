@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/refactoring/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Tue, 01 Sep 2020 07:36:37 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 02 Sep 2020 16:06:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,135 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #9: Dữ liệu nhồi nhét</title>
+		<link>https://blog.doanhien.cf/du-lieu-nhoi-nhet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=du-lieu-nhoi-nhet</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Wed, 02 Sep 2020 16:06:43 +0000</pubDate>
+				<category><![CDATA[Bloaters]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<category><![CDATA[bloaters]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1336</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Đôi khi những phần khác nhau trong code chứa những nhóm biến giống hệt nhau (ví dụ như là những tham số cho việc kết nối cơ sở dữ liệu). Những cục data này nên được để trong một cái class của riêng nó. Lý do của những vấn đề này &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/du-lieu-nhoi-nhet/"> <span class="screen-reader-text">Series Refactoring – #9: Dữ liệu nhồi nhét</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/du-lieu-nhoi-nhet/">Series Refactoring – #9: Dữ liệu nhồi nhét</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1336" class="elementor elementor-1336" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Đôi khi những phần khác nhau trong code chứa những nhóm biến giống hệt nhau (ví dụ như là những tham số cho việc kết nối cơ sở dữ liệu). Những cục data này nên được để trong một cái class của riêng nó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Thường những nhóm dữ liệu này là do cấu trúc chương trình dở hoặc là do &#8220;copypasta programming&#8221;.</li><li>Nếu bạn muốn biết một số dữ liệu có phải là data clump không thì chỉ cần xóa một giá trị trong đống data đó và xem những giá trị khác còn ý nghĩa hay không. Nếu những giá trị khác vẫn còn giá trị thì đó là dấu hiệu tốt cho thấy nhóm biến này nên được kết hợp thành một object.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu dữ liệu lặp lại bao gồm các trường của một lớp, hãy sử dụng <a href="https://refactoring.guru/extract-class">Extract Class</a> để di chuyển các trường vào class của nó.</li><li>Nếu một data clumps được truyền trong tham số của phương thức, hãy sử dụng <a href="https://refactoring.guru/introduce-parameter-object">Introduce Parameter Object</a> để đặt chúng thành một lớp.</li><li>Nếu một vài dữ liệu được truyền đến một phương thức khác, hãy nghĩ về việc truyền hết toàn bộ data của object vô phương thức thay vì chỉ những trường độc lập. <a href="https://refactoring.guru/preserve-whole-object">Preserve Whole Object</a> sẽ có ích trong việc đó.</li><li>Nhìn vào code mà sử dụng các trường của data clumps đó. Ý hay là di chuyển code đó vô trong một data class.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cải thiện việc dễ hiểu và tổ chức của code. Các thao tác trên dữ liệu cụ thể giờ được tập hợp ở một nơi duyên nhất thay vì một cách ngẫu nhiên trong code.</li><li>Giảm chiều dài code. </li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-ba1cd65 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="ba1cd65" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-42ec05a elementor-column elementor-col-100 elementor-top-column" data-id="42ec05a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-200e15b elementor-widget elementor-widget-text-editor" data-id="200e15b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào thì nên bỏ qua việc này</strong></p><ul><li>Truyền nguyên một object trong một tham số của phương thức, thay vì truyền từng value (kiểu primitvie), có thể tạo một phụ thuộc không mong muốn giữa hai lớp.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/data-clumps">Data Clumps</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/du-lieu-nhoi-nhet/">Series Refactoring – #9: Dữ liệu nhồi nhét</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #8: Danh sách tham số dài</title>
 		<link>https://blog.doanhien.cf/danh-sach-tham-so-dai/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=danh-sach-tham-so-dai</link>
 		
