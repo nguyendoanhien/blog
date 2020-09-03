@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Object-Orientation Abusers &#8211; Hien Nguyen Blog</title>
+	<atom:link href="https://blog.doanhien.cf/category/refactoring/smells/object-orientation-abusers/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.doanhien.cf/</link>
+	<description>Learning and sharing developer&#039;s experiences</description>
+	<lastBuildDate>Thu, 03 Sep 2020 05:04:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5</generator>
+
+<image>
+	<url>https://blog.doanhien.cf/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
+	<title>Object-Orientation Abusers &#8211; Hien Nguyen Blog</title>
+	<link>https://blog.doanhien.cf/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Series Refactoring – #10: Câu lệnh Switch</title>
+		<link>https://blog.doanhien.cf/cau-lenh-switch/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=cau-lenh-switch</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2020 07:28:12 +0000</pubDate>
+				<category><![CDATA[Object-Orientation Abusers]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1355</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Khi bạn có sự kết hợp phức tạp giữa các toán tử &#8220;switch&#8221; hoặc một đống mệnh đề &#8220;if&#8221;. Lý do của những vấn đề này Tương đối hiếm sử dụng toán tử switch và case là một dấu hiệu của code hướng đối tượng. Thường một switch đơn lẻ hay &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/cau-lenh-switch/"> <span class="screen-reader-text">Series Refactoring – #10: Câu lệnh Switch</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/cau-lenh-switch/">Series Refactoring – #10: Câu lệnh Switch</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1355" class="elementor elementor-1355" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Khi bạn có sự kết hợp phức tạp giữa các toán tử &#8220;switch&#8221; hoặc một đống mệnh đề &#8220;if&#8221;.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Tương đối hiếm sử dụng toán tử <strong>switch</strong> và <strong>case</strong> là một dấu hiệu của code hướng đối tượng. Thường một <strong>switch</strong> đơn lẻ hay rải rác ở nhiều nơi trong chương trình. Khi có thêm điều kiện mới, bạn phải kiếm hết tất cả các code <strong>switch</strong> và sửa lại chúng.</li><li>Theo kinh nghiệm, khi bạn sử dụng <strong>switch</strong> bạn hãy nghĩ đến tính đa hình. </li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Tách <strong>switch</strong> và đặt nó vô đúng class, bạn sẽ phải cần đọc <a href="https://refactoring.guru/extract-method">Extract Method</a> và sau đó là <a href="https://refactoring.guru/move-method">Move Method</a>.</li><li>Nếu một <strong>switch</strong> được dựa trên một loại code, nhưng là mode runtime của chương trình là switch, tham khảo <a href="https://refactoring.guru/replace-type-code-with-subclasses">Replace Type Code with Subclasses</a> hoặc <a href="https://refactoring.guru/replace-type-code-with-state-strategy">Replace Type Code with State/Strategy</a></li><li>Sau khi xác định cấu trúc thừa kế, sử dụng <a href="https://refactoring.guru/replace-conditional-with-polymorphism">Replace Conditional with Polymorphism</a>.</li><li>Nếu không có quá nhiều điều kiện trong toán tử và tất cả đều gọi cùng một phương thức với tham số khác nhau, tính đa hình sẽ bị thừa. Trong trường hợp này, bạn có thể tách phương thức thành nhiều phương thức con với <a href="https://refactoring.guru/replace-parameter-with-explicit-methods">Replace Parameter with Explicit Methods</a> và thay đổi <strong>switch</strong> phù hợp.</li><li>Nếu một trong các điều kiện tùy chọn là null, sử dụng <a href="https://refactoring.guru/introduce-null-object">Introduce Null Object</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cải thiện tổ chức của code.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-ba1cd65 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="ba1cd65" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-42ec05a elementor-column elementor-col-100 elementor-top-column" data-id="42ec05a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-200e15b elementor-widget elementor-widget-text-editor" data-id="200e15b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào thì nên bỏ qua việc này</strong></p><ul><li>Khi toán tử <strong>switch</strong> diễn tả một hành động đơn giản và không có lý do nào để làm code thay đổi</li><li>Thương thì toán tử <strong>switch</strong> được sử dụng cho design pattern (<a href="https://refactoring.guru/design-patterns/factory-method">Factory Method</a> hoặc <a href="https://refactoring.guru/design-patterns/abstract-factory">Abstract Factory</a>) để chọn một class được tạo.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/switch-statements">Switch Statements</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/cau-lenh-switch/">Series Refactoring – #10: Câu lệnh Switch</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
