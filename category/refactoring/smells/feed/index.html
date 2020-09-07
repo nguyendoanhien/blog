@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/refactoring/smells/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Fri, 04 Sep 2020 10:03:24 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 07 Sep 2020 08:45:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,117 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #12: Từ chối sự kế thừa</title>
+		<link>https://blog.doanhien.cf/tu-choi-su-ke-thua/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tu-choi-su-ke-thua</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Mon, 07 Sep 2020 08:45:39 +0000</pubDate>
+				<category><![CDATA[Object-Orientation Abusers]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1370</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Nếu một lớp con chỉ sử dụng một vài phương thức và thuộc tính kế thừa từ lớp cha của nó, thì hệ thống cấp bậc không đúng thứ tự. Những phương thức cần thiết có thể dễ dàng trở nên không sử dụng hoặc là phải được định nghĩa lại &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/tu-choi-su-ke-thua/"> <span class="screen-reader-text">Series Refactoring – #12: Từ chối sự kế thừa</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/tu-choi-su-ke-thua/">Series Refactoring – #12: Từ chối sự kế thừa</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1370" class="elementor elementor-1370" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Nếu một lớp con chỉ sử dụng một vài phương thức và thuộc tính kế thừa từ lớp cha của nó, thì hệ thống cấp bậc không đúng thứ tự. Những phương thức cần thiết có thể dễ dàng trở nên không sử dụng hoặc là phải được định nghĩa lại và đưa ra các ngoại lệ.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Một người nào đó tạo lớp con để kế thừa lớp cha với mục đích là sử dụng lại code của lớp cha. Nhưng lớp cha và lớp con hoàn toàn khác nhau.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu thừa kế không có ý nghĩa và những lớp con không làm gì hết với lớp cha, thì loại bỏ thừa kế là cách tốt nhất, hãy xem thử <a href="https://refactoring.guru/replace-inheritance-with-delegation">Replace Inheritance with Delegation</a>.</li><li>Nếu kế thừa đúng, thì loại bỏ những trường và phương thức trong lớp con. Lấy tất cả trường và phương thức cần thiết cho lớp con từ lớp cha, đặt chúng trong lớp mới, và cả hai lớp (lớp cha và con ban đầu) đều kế thừa lớp vừa mới tạo. (<a href="https://refactoring.guru/extract-superclass">Extract Superclass</a>)</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cải thiện tổ chức code và code rõ ràng hơn. Bạn sau này sẽ không cần phải suy nghĩ tạo sao lớp <strong>Dog</strong> kết thừa lớp <strong>Chair</strong> (mặc dù cả hai đều có 4 chân)</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/refused-bequest">Refused Bequest</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/tu-choi-su-ke-thua/">Series Refactoring – #12: Từ chối sự kế thừa</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #11: Trường tạm</title>
 		<link>https://blog.doanhien.cf/truong-tam/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=truong-tam</link>
 		
