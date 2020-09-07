@@ -242,19 +242,19 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/understanding-data-attribute-types-qualitative-and-quantitative/</loc>
-		<lastmod>2020-09-03T07:02:39+00:00</lastmod>
-		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/a-2729773_640.png</image:loc>
-			<image:title><![CDATA[a-2729773_640]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://blog.doanhien.cf/truong-tam/</loc>
 		<lastmod>2020-09-04T10:03:24+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/temporary-field.png</image:loc>
 			<image:title><![CDATA[temporary-field]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/tu-choi-su-ke-thua/</loc>
+		<lastmod>2020-09-07T08:45:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/refused-bequest.png</image:loc>
+			<image:title><![CDATA[refused-bequest]]></image:title>
 		</image:image>
 	</url>
 </urlset>
