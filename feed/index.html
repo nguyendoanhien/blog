@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Mon, 07 Sep 2020 08:45:42 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 15 Sep 2020 07:52:30 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,134 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #13: Lớp thay thế với interface khác nhau</title>
+		<link>https://blog.doanhien.cf/lop-thay-the-voi-interface-khac-nhau/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-thay-the-voi-interface-khac-nhau</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2020 07:32:08 +0000</pubDate>
+				<category><![CDATA[Object-Orientation Abusers]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1381</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Nếu một lớp con chỉ sử dụng một vài phương thức và thuộc tính kế thừa từ lớp cha của nó, thì hệ thống cấp bậc không đúng thứ tự. Những phương thức cần thiết có thể dễ dàng trở nên không sử dụng hoặc là phải được định nghĩa lại &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/lop-thay-the-voi-interface-khac-nhau/"> <span class="screen-reader-text">Series Refactoring – #13: Lớp thay thế với interface khác nhau</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lop-thay-the-voi-interface-khac-nhau/">Series Refactoring – #13: Lớp thay thế với interface khác nhau</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1381" class="elementor elementor-1381" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Nếu một lớp con chỉ sử dụng một vài phương thức và thuộc tính kế thừa từ lớp cha của nó, thì hệ thống cấp bậc không đúng thứ tự. Những phương thức cần thiết có thể dễ dàng trở nên không sử dụng hoặc là phải được định nghĩa lại và đưa ra các ngoại lệ.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Người lập trình viên tạo 1 trong những lớp đó hoàn toàn không biết là đã tồn tại class có chức năng tương tự như vậy rồi.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Thử đặt interface của các lớp chung một mẫu số chung:<br />+ <a href="https://refactoring.guru/rename-method">Đổi tên phương thức</a> để làm chúng giống nhau trong mọi lớp thay thế.<br />+ <a href="https://refactoring.guru/move-method">Thêm phương thức</a>, <a href="https://refactoring.guru/add-parameter">thêm tham số</a> và <a href="https://refactoring.guru/parameterize-method">Phương thức tham số hóa</a> để làm dấu và thực thi phương thức giống nhau<br />+ Nếu chỉ 1 phần trong chức năng của lớp bị lặp lại, hãy sử dụng <a href="https://refactoring.guru/extract-superclass">Extract Superclass</a>. Trong trường hợp này, lớp tồn tại sẽ trở thành lớp con.<br />+ Sau khi xác định được cách xử lý phương thức nào sử dụng và thực hiện nó, bạn có thể sẽ phải xóa một vài lớp.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Sẽ không có code không cần thiết lặp lại, kết quả làm cho code cồng kềnh.</li><li>Code trở nên dễ đọc và dễ hiểu (bạn không cần phải đoán lý do của sự tồn lại của lớp thứ hai khi nó thực hiện chức năng giống như lớp thứ nhất)</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-02154ca elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="02154ca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0f35251 elementor-column elementor-col-100 elementor-top-column" data-id="0f35251" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6d51f8c elementor-widget elementor-widget-text-editor" data-id="6d51f8c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào thì nên bỏ qua việc này</strong></p><p>Đôi khi gộp các lớp lại là điều không thể hoặc khá khó dẫn đến vô nghĩa. Một ví dụ là khi các lớp thay thế sử dụng những thư viện khác nhau, lúc đó mỗi lớp sẽ thực hiện đúng phiên bản của nó.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/alternative-classes-with-different-interfaces">Alternative Classes with Different Interfaces</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lop-thay-the-voi-interface-khac-nhau/">Series Refactoring – #13: Lớp thay thế với interface khác nhau</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #12: Từ chối sự kế thừa</title>
 		<link>https://blog.doanhien.cf/tu-choi-su-ke-thua/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tu-choi-su-ke-thua</link>
 		
@@ -1059,116 +1187,6 @@
 			</div>
 		</div>
 		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/refactor-nhu-the-nao/">Series Refactoring &#8211; #4: Refactor như thế nào?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring &#8211; #3: Khi nào cần phải refactor?</title>
-		<link>https://blog.doanhien.cf/khi-nao-can-phai-refactor/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=khi-nao-can-phai-refactor</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Wed, 19 Aug 2020 03:11:00 +0000</pubDate>
-				<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1247</guid>
-
-					<description><![CDATA[<p>Quy luật ba số ( Quy luật Three) Khi bạn đang làm gì đó lần đầu tiên, thì cứ làm đi. Khi bạn làm một tương tự việc trước lần thứ hai, dù phải lặp lại nhưng có thể chấp nhận được. Khi bạn làm lại lần thứ 3, thì đây là lúc bắt đầu &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/khi-nao-can-phai-refactor/"> <span class="screen-reader-text">Series Refactoring &#8211; #3: Khi nào cần phải refactor?</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/khi-nao-can-phai-refactor/">Series Refactoring &#8211; #3: Khi nào cần phải refactor?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1247" class="elementor elementor-1247" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-7618fd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7618fd6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-e83f72b elementor-column elementor-col-100 elementor-top-column" data-id="e83f72b" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-4e894da elementor-widget elementor-widget-text-editor" data-id="4e894da" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Quy luật ba số ( Quy luật Three)</strong></p><ol><li>Khi bạn đang làm gì đó lần đầu tiên, thì cứ làm đi.</li><li>Khi bạn làm một tương tự việc trước lần thứ hai, dù phải lặp lại nhưng có thể chấp nhận được.</li><li>Khi bạn làm lại lần thứ 3, thì đây là lúc bắt đầu refactor.</li></ol></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-41581c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="41581c5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-ac3067e elementor-column elementor-col-100 elementor-top-column" data-id="ac3067e" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-dec5866 elementor-widget elementor-widget-text-editor" data-id="dec5866" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi thêm một tính năng</strong></p><ul><li>Refactor giúp bạn hiểu hơn về code của những người khác. Nếu bạn phải sử dụng lại code của ai đó mà không được tốt, hãy cố gắng refactor nó trước. Clean code sẽ dễ hiểu hơn nhiều. Bạn sẽ cải thiện không chỉ cho riêng mình mà còn cho những người khác sau này sử dụng nữa.</li><li>Refactor làm cho mình dễ thêm những tính năng mới vô. Sẽ dễ thay đổi hơn nhiều khi code của mình clean.</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-8322efe elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8322efe" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-c85a332 elementor-column elementor-col-100 elementor-top-column" data-id="c85a332" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-a01c2dd elementor-widget elementor-widget-text-editor" data-id="a01c2dd" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi fix bug</strong></p><ul><li>Bugs trong code cư xử cũng giống như ngoài đời thật vậy: nó sống trong bóng tối, nơi &#8220;bẩn&#8221; nhất trong code. Nếu code của bạn clean thì hầu như sẽ phát hiện ra các lỗi do những con bug đó.</li><li>Cấp trên đánh giá cao việc chủ động tự refactor code vì nó cần thiết cho những task refactor sau này. Sếp vui thì lập trình viên cũng vui!</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-6c15f20 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="6c15f20" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-0d907b8 elementor-column elementor-col-100 elementor-top-column" data-id="0d907b8" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-67707e0 elementor-widget elementor-widget-text-editor" data-id="67707e0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Trong lúc review code</strong></p><ul><li>Code review có thể là cơ hội cuối cùng để làm gọn code của bạn trước khi nó sử dụng môi trường thực tế.</li><li>Tốt nhất là thực hiện các bài đánh giá code như vậy cùng với người viết chúng. Bằng cách này, bạn có thể khắc phục các sự cố đơn giản một cách nhanh chóng và dành thời gian để khắc phục những sự cố khó hơn</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-fed18d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="fed18d8" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-4c4548d elementor-column elementor-col-100 elementor-top-column" data-id="4c4548d" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-04e28e4 elementor-widget elementor-widget-text-editor" data-id="04e28e4" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/refactoring/when">Refactoring Guru &#8211; When to refactor</a></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/khi-nao-can-phai-refactor/">Series Refactoring &#8211; #3: Khi nào cần phải refactor?</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
