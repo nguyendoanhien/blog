@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/refactoring/smells/change-preventers/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Sat, 19 Sep 2020 05:49:56 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 23 Sep 2020 09:19:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,117 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</title>
+		<link>https://blog.doanhien.cf/nhieu-su-thay-doi-o-nhieu-lop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhieu-su-thay-doi-o-nhieu-lop</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Wed, 23 Sep 2020 09:15:16 +0000</pubDate>
+				<category><![CDATA[Change Preventers]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1406</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Khi có bất kỳ yêu cầu chỉnh sửa mà bạn phải làm nhiều thay đổi nhỏ đến nhiều lớp khác nhau. (Giống như shotgun một khi bắn sẽ bắn nhiều chỗ, thì này là một yêu cầu thay đổi là phải thay đổi nhiều nơi.) Lý do của những vấn đề &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/nhieu-su-thay-doi-o-nhieu-lop/"> <span class="screen-reader-text">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">minute</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1406" class="elementor elementor-1406" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Khi có bất kỳ yêu cầu chỉnh sửa mà bạn phải làm nhiều thay đổi nhỏ đến nhiều lớp khác nhau. (Giống như shotgun một khi bắn sẽ bắn nhiều chỗ, thì này là một yêu cầu thay đổi là phải thay đổi nhiều nơi.)</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Một tính năng được chia nhỏ ở trong nhiều lớp. Đây có thể là do việc lạm dụng quá mức của <a href="https://refactoring.guru/smells/divergent-change">Divergent Change</a>. Nghĩa là khi thay đổi trong một lớp đủ, xong người lập trình viên thay đổi ở lớp còn lại liên quan đến tính năng đó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Sử dụng <strong>Move Method</strong> và <strong>Move Field</strong> để di chuyển phương thức tồn tại của lớp đến một lớp độc lập. Nếu không có lớp nào để thực hiện việc đó thì hãy tạo một lớp mới.</li><li>Nếu di chuyển code đến một lớp tương tự và làm cho gốc hầu như rỗng, hãy thử bỏ hết những lớp dư thừa đó bằng việc sử dụng <a href="https://refactoring.guru/inline-class">Inline Class</a></li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cấu trúc code tốt hơn</li><li>Code ít bị trùng</li><li>Dễ bảo trì</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/shotgun-surgery">Shotgun Surgery</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #14: Sự thay đổi ở nhiều nơi trong một lớp</title>
 		<link>https://blog.doanhien.cf/su-thay-o-nhieu-noi-trong-mot-lop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=su-thay-o-nhieu-noi-trong-mot-lop</link>
 		
