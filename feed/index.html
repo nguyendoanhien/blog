@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Thu, 24 Sep 2020 03:20:59 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 25 Sep 2020 02:26:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,134 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #17: Code trùng</title>
+		<link>https://blog.doanhien.cf/code-trung/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-trung</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Fri, 25 Sep 2020 02:26:17 +0000</pubDate>
+				<category><![CDATA[Dispensables]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1425</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Hai phần code nhìn tương đối giống nhau. Lý do của những vấn đề này Code lặp lại thường hay xảy ra khi nhiều dev đang làm phần khác nhau của một dự án cùng một lúc. Họ làm hai nhiệm vụ khác nhau, họ không biết là đồng nghiệp của &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/code-trung/"> <span class="screen-reader-text">Series Refactoring – #17: Code trùng</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1425" class="elementor elementor-1425" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Hai phần code nhìn tương đối giống nhau.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Code lặp lại thường hay xảy ra khi nhiều dev đang làm phần khác nhau của một dự án cùng một lúc. Họ làm hai nhiệm vụ khác nhau, họ không biết là đồng nghiệp của họ đã viết cái code mà code đó có cùng mục đích như code mà bạn viết</li><li>Có một số trường hợp tế nhị về việc trùng code, khi mà một phần code nhìn thì khác nhưng thật sự là nó đang làm cùng một công việc. Những kiểu như thế này thì rất khó để kiếm ra và fix</li><li>Đôi khi, trùng code là có mục đích. Khi tới deadline và code hiện tại thì &#8216;khá đúng&#8217; cho cái task đó, những người lập trình viên mới không thể cưỡng cự lại với việc copy và dán code liên quan vô. Và trong một vài trường hợp, người lập trình viên đơn giản là lười làm cho code bớt lộn xộn.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu thấy code giống nhau trong hai hoặc nhiều phương thức trong cùng một lớp: sử dụng <a href="https://refactoring.guru/extract-method">Extract Method</a> và thay thế bằng phương thức mới ở cả hai nơi.<ol><li>Nếu code giống ở hai lớp con cùng cấp:<br />+ Sử dụng <a href="https://refactoring.guru/extract-method">Extract Method</a> cho cả hai lớp, kế tiếp sử dụng <a href="https://refactoring.guru/pull-up-field">Pull Up Field</a> cho trường được sử dụng trong phương thức mà bạn kéo về.<br />+ Nếu code trùng ở trong hàm khởi tạo, sử dụng <a href="https://refactoring.guru/pull-up-constructor-body">Pull Up Constructor Body</a>.<br />+ Nếu code trùng nhưng không giống hệt nhau, sử dụng <a href="https://refactoring.guru/form-template-method">Form Template Method</a>.<br />+ Nếu hai phương thức làm cùng một chức năng nhưng sử dụng khác thuật toán, chọn thuật toán tốt nhất và áp dụng <a href="https://refactoring.guru/substitute-algorithm">Substitute Algorithm</a>.</li><li>Nếu code trùng ở hai lớp khác nhau:<br />+ Nếu lớp không có kế thừa nhau, sử dụng <a href="https://refactoring.guru/extract-superclass">Extract Superclass</a> để tạo một lớp cha cho những lớp trên kế thừa để duy trì tất cả chức năng trước đó.<br />+ Nếu khó hoặc không thể tạo lớp cha, sử dụng <a href="https://refactoring.guru/extract-class">Extract Class</a> trong cùng một lớp và sử dụng một thành phần mới trong lớp còn lại.</li><li>Nếu một lương lớn biểu thức chính quy thể hiện trong cùng đoạn code (chỉ khác nhau điều kiện của nó), gộp những toán tử đó lại thành 1 điều kiện duy nhất bằng cách sử dụng <a href="https://refactoring.guru/consolidate-conditional-expression">Consolidate Conditional Expresion</a> và sử dụng <a href="https://refactoring.guru/extract-method">Extract Method</a> để thay thế điều kiện đó trong phương thức riêng biệt với cái tên phương thức dễ hiểu.</li></ol></li><li>Nếu code giống nhau thể hiện ở nhiều nhánh của một biểu thức chính quy: thay thế code giống hệt nhau đó ở ngoài cây điều kiện bằng cách sử dụng <a href="https://refactoring.guru/consolidate-duplicate-conditional-fragments">Consolidate Duplicate Conditional Fragments</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Gộp code trùng làm đơn giản hóa cấu trúc code và làm code ngắn gọn hơn.</li><li>Đơn giản hóa + ngắn gọn = code đơn giản và dễ hiểu, dễ bảo trì</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-a80286e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="a80286e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-2a69e8b elementor-column elementor-col-100 elementor-top-column" data-id="2a69e8b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d656b73 elementor-widget elementor-widget-text-editor" data-id="d656b73" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào có thể bỏ qua việc này</strong></p><p>Trong rất nhiều trường hợp, gộp những đoạn code giống hệt nhau làm cho code không trực quan và không rõ ràng.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/duplicate-code">Dupplicate Code</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #16: Comments</title>
 		<link>https://blog.doanhien.cf/comments/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=comments</link>
 		
@@ -1142,118 +1270,6 @@
 			</div>
 		</div>
 		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/danh-sach-tham-so-dai/">Series Refactoring – #8: Danh sách tham số dài</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</title>
-		<link>https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lam-dung-cac-kieu-du-lieu-nguyen-thuy</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Sun, 30 Aug 2020 10:14:29 +0000</pubDate>
-				<category><![CDATA[Bloaters]]></category>
-		<category><![CDATA[Refactoring]]></category>
-		<category><![CDATA[bloaters]]></category>
-		<guid isPermaLink="false">https://192.168.88.33/hiennguyen/?p=1321</guid>
-
-					<description><![CDATA[<p>Dấu hiệu nhân biết Sử dụng những kiểu dữ liệu thông dụng những object nhỏ cho những task đơn giản (ví dụ tiền tệ, phạm vi, chuỗi ký tự đặc biệt cho số điện thoại,v..v..) Sử dụng hằng số cho các thông tin khi code ( ví dụ như hằng số USER_ADMIN_ROLE = 1 cho &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/"> <span class="screen-reader-text">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1321" class="elementor elementor-1321" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Sử dụng những kiểu dữ liệu thông dụng những object nhỏ cho những task đơn giản (ví dụ tiền tệ, phạm vi, chuỗi ký tự đặc biệt cho số điện thoại,v..v..)</li><li>Sử dụng hằng số cho các thông tin khi code ( ví dụ như hằng số USER_ADMIN_ROLE = 1 cho những người dùng có quyền admin)</li><li>Sử dụng hằng số chuỗi làm field name trong mảng dữ liệu</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Cũng giống như những code smell khác, primitive obsession này được hình thành khi người lập trình viên nói &#8220;Chỉ có cần một field thôi!&#8221;. Tạo thêm một primitive field thì dễ hơn tạo một class rồi đúng không? Và xong, chỉ cần vậy thôi. Đến một field khác cần thiết và người lập trình viên cũng thêm như cách ở trên. Lạ chưa kìa, lớp càng ngày càng to lớn và cồng kềnh.</li><li>Primitive thường được sử dụng để &#8220;mô phỏng&#8221; loại. Thay vì tách một kiểu dữ liệu, bạn có một bộ số và chuỗi để tạo thành list của những giá trị cho phép cho một số entity. Tên dễ hiểu được đặt cho những con số và chuỗi xác định như hằng số, đó là lý do mà việc làm đó phổ biến.</li><li>Một ví dụ khác của poor primitive là mô phỏng trường. Class gồm một mảng lớn chứa nhiều dữ liệu và hằng số chuỗi (được xác định trong class) được sử dụng như chỉ số để lấy data. Có nghĩa là thay vì một lớp chỉ có những thuộc tính của lớp đó thì ở đây nó dùng các trường để lưu data được lấy từ nơi khác.</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu bạn có một lượng lớn trường primitive, bạn có thể nhóm mấy trường liên quan đến nhau tạo thành một class riêng. Tốt hơn nữa, bạn đem luôn cả các phương thức liên quan vào class đó luôn. Bạn có thể tham khảo ở đây, <a href="https://refactoring.guru/replace-data-value-with-object">Replace Data Value With Object</a>.</li><li>Nếu giá trị của trường primitive được sử dụng trong phương thức có tham số, hãy xem thử <a href="https://refactoring.guru/introduce-parameter-object">Introduce Parameter Object</a> hoặc Preserve <a href="https://refactoring.guru/preserve-whole-object">Whole Object</a>.</li><li>Khi mà dữ liệu phức tạp được dùng trong biến, sử dụng <a href="https://refactoring.guru/replace-type-code-with-class">Replace Type Code With Class</a>, <a href="https://refactoring.guru/replace-type-code-with-subclasses">Replace Type Code with Subclasses</a> hoặc <a href="https://refactoring.guru/replace-type-code-with-state-strategy">Replace Type Code with State/Strategy</a>.</li><li>Nếu trong các biến có kiểu dữ liệu mảng, sử dụng <a href="https://refactoring.guru/replace-array-with-object">Replace Array With Object</a></li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Code trở nên linh hoạt hơn nhờ vào lợi ích của object thay vì primitives</li><li>Code dễ hiểu và dễ tổ chức hơn. Vận hành dữ liệu riêng biệt khi ở cùng một nơi, thay vì ở rải rác. Không cần phải đoán về lý do của những hằng số và tại sao đó là một mảng.</li><li>Dễ tìm những code bị trùng lặp.</li></ul></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/primitive-obsession">Refactoring Guru &#8211; Primative Obsession</a></p></div>
-				</div>
-				</div>
-						</div>
-			</div>
-		</div>
-						</div>
-			</div>
-		</section>
-						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/">Series Refactoring – #7: Lạm dụng các kiểu dữ liệu nguyên thủy</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
