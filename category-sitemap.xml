@@ -20,12 +20,20 @@
 		<loc>https://blog.doanhien.cf/category/refactoring/smells/</loc>
 	</url>
 	<url>
+		<loc>https://blog.doanhien.cf/category/design-patterns/creational-patterns/</loc>
+		<lastmod>2020-09-30T05:33:53+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://blog.doanhien.cf/category/data-mining/</loc>
 		<lastmod>2020-04-16T05:12:43+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://blog.doanhien.cf/category/design-patterns/</loc>
+		<lastmod>2020-09-30T05:33:53+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://blog.doanhien.cf/category/refactoring/smells/dispensables/</loc>
-		<lastmod>2020-09-29T14:41:12+00:00</lastmod>
+		<lastmod>2020-09-30T05:32:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/github/</loc>
@@ -57,7 +65,7 @@
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/refactoring/</loc>
-		<lastmod>2020-09-29T14:41:12+00:00</lastmod>
+		<lastmod>2020-09-30T05:32:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://blog.doanhien.cf/category/responsive-design/</loc>
