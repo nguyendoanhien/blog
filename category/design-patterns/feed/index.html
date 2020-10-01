@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/design-patterns/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Wed, 30 Sep 2020 05:33:53 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 01 Oct 2020 14:47:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,8 +28,204 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Design Patterns – #2: Abstract Factory</title>
+		<link>https://blog.doanhien.cf/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2020 08:16:45 +0000</pubDate>
+				<category><![CDATA[Creational Patterns]]></category>
+		<category><![CDATA[Design Patterns]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1499</guid>
+
+					<description><![CDATA[<p>Ý định Abstract Method là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể. Vấn đề Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm: 1. Một họ &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1499" class="elementor elementor-1499" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Abstract Method </strong>là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm:</p><p>1. Một họ products liên quan: <strong>Chair </strong>+ <strong>Sofa</strong> + <strong>CoffeeTable</strong></p><p>2. Một vai họ khác là. Ví dụ, products <strong>Chair </strong>+ <strong>Sofa </strong>+ <strong>CoffeeTable</strong> có trong những nhóm: <strong>Modern</strong>, <strong>Victorian</strong>, <strong>ArtDeco</strong><strong> </strong></p><p>Bạn cần một cách để tạo những đối tượng nội thất riêng biệt này, để chúng khớp với những đối tượng khác cùng family. Khách hàng sẽ cáu nếu như họ không nhận được nội thất khớp.</p><p>Và bạn không muốn thay đổi code cũ khi thêm mới products hoặc families of products vào chương trình. Nhà cung cấp nội thất cập nhật danh mục thường xuyên và không muốn thay đổi code chính mỗi khi điều này xảy ra.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Điều đầu tiên mà Abstract Pattern đề nghị là khai báo tách biệt interface cho mỗi product khác nhau của product family (ví dụ chair, sofa hoặc coffee table). Sau này bạn có thể làm cho tất cả loại products này theo những interfaces đó. Ví dụ, tất cả nhóm chair có thể thực thi <strong>Chair </strong>interface; Tất cả loại coffee table có thể thực thi <strong>CoffeeTable </strong>interface và v.v.</p><p>Bước tiếp theo là di chuyển khai báo <em>Abstract Factory </em>&#8211; một interface với danh sách những hàm tạo cho tất cả products mà là một phần của product family (ví dụ, <strong>createChair</strong>, <strong>createSofa</strong>, và <strong>createCoffeeTable</strong>). Những method này phải trả về loại <strong>abstract </strong>product đã được làm ở trên: <strong>Chair</strong>, <strong>Sofa</strong>, <strong>CoffeeTable </strong>và v.v</p><p>Bây giờ, những product variants như thế nào? Cho mỗi variant của product family, ta tạo một lớp factory tách biệt dựa trên <strong>AbstractFactory </strong>interface. Factory là một lớp mà trả về products cụ thể. Ví dụ, <strong>ModernFunitureFactory</strong> có thể chỉ tạo đối tượng  <strong>ModernChair</strong>, <strong>ModernSofa</strong> và <strong>ModernCoffeeTable</strong>.<strong> </strong></p><p>Client code phải làm việc với cả 2 factories và products thông qua abstract interfaces tương ứng. Điều này giúp bạn thay đổi loại của factory mà bạn truyền vào cho client code, cũng như product variant mà client code nhận, mà không phá vỡ code hiện tại.</p><p>Nói rằng client muốn một factory để sinh ra chair. Client code không có biết trước được lớp factory, cũng như loại chair mà nó lấy. Liệu nó có phải là một mẫu Modern hay là Victorian-style chair, client phải xem tất cả bằng một cách duy nhất, sử dụng abstract <strong>Chair</strong> interface. Với cách tiếp cận này, điêu duy nhất là client biết về chair là nó có thực thi phương thức <strong>sitOn</strong>. Cũng như bất kì variant của chair được trả về, nó sẽ luôn luôn khớp với loại của sofa hoặc coffee table sinh ra từ đối tượng factory.</p><p>Có một điều cần làm rõ là: nếu client chỉ expose abstract interfaces, vậy cái gì tạo ra một đối tượng factory thật sự? Thông thường, ứng dụng tạo ra một đối tượng factory cụ thể ở bước khởi tạo. Trước đó, ứng dụng sẽ chọn loại factory dựa trên tùy chỉnh hoặc môi trường cấu hình.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-52ae78e elementor-column elementor-col-100 elementor-top-column" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p><strong>1. Abstract Products </strong>khai báo interface cho bộ độc lập nhưng liên quán đến products tạo ra product family.</p><p><strong>2. Concrete products</strong> là những sự thực thi đa dạng của abstract products, nhóm bởi variants. Mỗi abstract product (chair/sofa) phải thực thi tất cả variants (Victorian/Modern).</p><p><strong>3. Abstract Factory </strong>interface khai báo tập phương thức cho việc tạo mỗi abstract product</p><p><strong>4. Concrete Factories </strong>thực thi hàm tạo từ abstract factory. Mỗi concrete factory đại diện cho một variant products và chỉ tạo những products của variant ấy.</p><p>5. Mặc dù những thực thể concrete factories concrete products, dấu hiệu của hàm tạo phải trả về abstract products. Bằng cách này client code mà sử dụng factory không dính liền với một variant cụ thể của product nào từ factory. <strong>Client</strong> có thể làm việc với bất kì factory/product variant, miến là nó giao tiếp với đối tượng của chúng thông qua abstract interfaces.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-aded6e6 elementor-column elementor-col-100 elementor-top-column" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Ví dụ sau đây mô phỏng cách <strong>Abstract Factory </strong>pattern có thể sử dụng để tạo phần tử UI cross-platform mà không phụ thuộc client code đến lớp concrete UI, trong khi vấn giữ tất cả phần tử được tạo nhất quán với hệ điều hành được chọn.</p><p>Những phần tử UI ứng dụng cross-platform được kì vọng là sẽ có hành vì tương tự nhau, nhưng phải trông khác nhau một chút ở mỗi hệ điều hành khác nhau. Hơn thế nữa, đó là công việc của bạn để đảm bảo rằng phần tử UI khớp với style của hệ điều hành hiện tại. Bạn sẽ không muốn chương trình của bạn render macOS controls trên Windows.</p><p>Abstract Factory interface khai báo một bộ hàm tạo mà client code có thể sử dụng để sinh ra những phần tử UI khác loại. Lớp concrete factories tương ứng với từng hệ điều hành cụ thể và tạo những phần tử UI khớp với hệ điều hành đó.</p><p>Nó làm việc giống như thế này: khi một ứng dụng được chạy, nó sẽ kiểm tra loại hệ điều hành. Ứng dụng sử dụng thông tin này để tạo ra đối tượng factory từ một lớp đúng với hệ điều hành đó. Và toàn bộ code sẽ sử dụng factory này để tạo phần tử UI. Việc này ngăn chặn việc tạo sai element.</p><p>Với cách này, client code ko phụ thuộc vào concrete classes của factories và UI element miên là nó làm việc được với những đối tượng thông qua abstract interface của chúng. Và việc này cũng khiến client code hỗ trỡ những factories khác hoặc UI elements mà bạn có thể thêm trong tương lai.</p><p>Kết quả là, bạn không cần phải sửa client code mỗi khi thêm một loại phần tử UI mới vào ứng dụng. Bạn chỉ phải tạo thêm một lớp factory mới sinh ra những elements và thay đổi một tí ở bước khởi tạo code để lựa chọn lớp thích hợp.</p><p> </p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e5dd5e0 elementor-column elementor-col-100 elementor-top-column" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Abstract Factory khi code bạn cần làm việc với nhiều families của related products, nhưng bạn không muốn nó phụ thuộc vào concrete classes của products &#8211; chúng có thể không được biết trước hoặc chỉ đơn giản bạn muốn cho phép nó mở rộng sau này.</strong></p><p>Abstract Factory cho bạn một interface để tạo đối tượng mỗi lớp của product family. Miễn là code bạn tạo đối tượng thông qua interface này, bạn không phải lo lắng về việc tạo sai variant của product mà không khớp với products tạo sẵn bởi ứng dụng.</p><ul><li>Xem xét việc triển khai Abstract Factory khi bạn có một lớp với một bộ <strong>Factory Method </strong>mà mờ đi nhiệm vụ chính.</li><li>Trong một chương trình được thiết kế tốt, mỗi lớp chỉ có nhiệm vụ cho một thứ. Khi một lớp làm việc với nhiều loại product, cần xem xét việc tách factory methods thành một lớp factory như là một Abstract Factory.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Map ma trạn của những product riêng biệt với những variants products.</p><p>2. Khai bảo abstract product interfaces cho tất cả product types. Và cho phép tất cả concrete product classes implement những interface này.</p><p>3. Khai báo abstract factory interface với bộ hàm tạo cho tất cả abstract products.</p><p>4. Implement bộ concrete factory classes, một cho từng product variant.</p><p>5. Tạo code khởi tạo factory trong app. Nó nên được khởi tạo một trong những concrete factory classes, phụ thuộc vào cấu hình app hoặc environment hiện tại. Truyền đối tượng factory này vào tất cả lớp mà xây dựng products.</p><p>6. Quét tất cả code và tìm những đoạn gọi trực tiếp đến constructors. Thay thế chúng với một hàm tạo phù hợp trong đối tượng factory.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-c8d0bdf elementor-column elementor-col-100 elementor-top-column" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể đảm bảo product lấy từ factory tương thích với nhau.</li><li>Tránh phụ thuộc giữa concrete product và client code</li><li><em>Single Reponsibility Principle</em>. Bạn có thể tách code tạo product ra nơi khác, khiến code dễ bảo trì hơn.</li><li><em>Open/Closed Principle. </em>Bạn có thể đưa vào mọt variant product mới mà không thay đổi code cũ.</li></ul><p><strong>Nhược:</strong></p><ul><li>Code có thể trở nên phức tạp hơn bình thường, bởi vì có nhiều class và interface trong pattern này.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-95f1038 elementor-column elementor-col-100 elementor-top-column" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li><strong>Builder </strong>tập trung vào việc khởi tạo đối tượng phức tạp từng bước một. <strong>Abstract Factory</strong> đặc biệt trong việc tạo familes của những đối tượng liên quan. <em>Abstract Factory </em>trả về product ngay lập tức, trong khi <em>Builder </em>cho bạn chạy một số bước trước khi trả về product.</li><li>Lớp<strong> Abstract Factory</strong> thường được dựa trên bộ <strong>Factory Method</strong>, nhưng bạn có thể sử dụng <strong>Prototype</strong> để kết hợp những phương thức của nhiều lớp.</li><li><strong>Abstract Factory </strong>có thể dùng thay thế cho <strong>Facade</strong> khi bạn chỉ muốn che đi cách mà đối tượng subsystem được tạo từ client code.</li><li>Bạn có thể sử dụng <strong>Factory Method</strong> cùng với <strong>Bridge</strong>. Việc pairing này hữu dụng khi một vài abstractions được định nghĩa bởi <em>Bridge </em>có thể làm việc với implementation cụ thể. Trong trường hợp này, <em>Abstract Factory</em> có thể encapsulate mỗi quan hệ và che đi tính phức tạp từ client code.</li><li><strong>Abstract Factory, Builders, </strong>và <strong>Prototypes </strong>có thể implemented như <strong>Singletons.</strong></li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-9def2aa elementor-column elementor-col-100 elementor-top-column" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/abstract-factory">Abstract Factory</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Design Patterns – #1: Factory Method</title>
-		<link>https://blog.doanhien.cf/series-design-patterns-1-factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=series-design-patterns-1-factory-method</link>
+		<link>https://blog.doanhien.cf/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Tue, 29 Sep 2020 15:24:22 +0000</pubDate>
@@ -37,11 +233,11 @@
 		<category><![CDATA[Design Patterns]]></category>
 		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1478</guid>
 
-					<description><![CDATA[<p>Được biết đến như: Hàm khởi tạo ảo Ý định Factory Method&#160;là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo. Vấn đề Tưởng tượng rằng bạn đang tạo ra một &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/series-design-patterns-1-factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/series-design-patterns-1-factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+					<description><![CDATA[<p>Được biết đến như: Hàm khởi tạo ảo Ý định Factory Method là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo. Vấn đề Tưởng tượng rằng bạn đang tạo ra một &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">8</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
 			<div class="elementor-inner">
 				<div class="elementor-section-wrap">
 							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
@@ -69,7 +265,7 @@
 					<div class="elementor-widget-wrap">
 				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><b>Ý định</b></p><p><strong>Factory Method </strong>là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo.</p></div>
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Factory Method </strong>là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo.</p></div>
 				</div>
 				</div>
 						</div>
@@ -86,7 +282,7 @@
 					<div class="elementor-widget-wrap">
 				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Vấn đề</strong></p><p>Tưởng tượng rằng bạn đang tạo ra một ứng dụng quản lý ngành logistics. Phiên bản đầu tiên của ứng dụng bạn chỉ có thể giải quyết phương tiện là xe tải, vì thế phần lớn code của bạn sẽ nằm trong lớp <strong>Truck</strong>.</p><p>Một thời gian sau, ứng dụng của bạn trở nên phổ biến, mỗi ngày bạn nhận được nhiều yêu cầu từ những công ty vận chuyển đường biển để tích hợp sea logistic vô ứng dụng.</p><p>Điều đó là tốt, phải không? Nhưng về code thì tính sao? Hiện tại hầu hết code của bạn dính liền với lớp <strong>Truck</strong>. Thêm <strong>Ships </strong>vào ứng dụng sẽ yêu cầu thay đổi lại code. Hơn thế nữa, sau này bạn quyết định thêm một loại khác của phương tiện vận chuyển vào ứng dụng, bạn có thể sẽ làm điều này một lần nữa.</p><p>Và kết quả, code bạn sẽ trở nên bừa bộn, khó hiểu với những điều kiện mà thay đối cách thức xử lý của ứng dụng dựa vào đối tượng lớp vận chuyển</p></div>
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn đang tạo ra một ứng dụng quản lý ngành logistics. Phiên bản đầu tiên của ứng dụng bạn chỉ có thể giải quyết phương tiện là xe tải, vì thế phần lớn code của bạn sẽ nằm trong lớp <strong>Truck</strong>.</p><p>Một thời gian sau, ứng dụng của bạn trở nên phổ biến, mỗi ngày bạn nhận được nhiều yêu cầu từ những công ty vận chuyển đường biển để tích hợp sea logistic vô ứng dụng.</p><p>Điều đó là tốt, phải không? Nhưng về code thì tính sao? Hiện tại hầu hết code của bạn dính liền với lớp <strong>Truck</strong>. Thêm <strong>Ships </strong>vào ứng dụng sẽ yêu cầu thay đổi lại code. Hơn thế nữa, sau này bạn quyết định thêm một loại khác của phương tiện vận chuyển vào ứng dụng, bạn có thể sẽ làm điều này một lần nữa.</p><p>Và kết quả, code bạn sẽ trở nên bừa bộn, khó hiểu với những điều kiện mà thay đối cách thức xử lý của ứng dụng dựa vào đối tượng lớp vận chuyển</p></div>
 				</div>
 				</div>
 						</div>
@@ -103,7 +299,7 @@
 					<div class="elementor-widget-wrap">
 				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Giải pháp</strong></p><p>Factory Method pattern sẽ yêu cầu bạn thay thể cách gọi khởi tạo đối tượng trực tiếp (sử dụng toán tử <strong>new</strong>) với một hàm factory đặc biệt. Đừng lo lắng, đối tượng sẽ vẫn được tạo thông qua toán tử <strong>new</strong>, nhưng nó sẽ được gọi thông qua một factory method. Đối tượng trả về bởi factory method thường được xem như là <em>products</em> </p><p> </p><p>Thoạt nhìn, sự thay đổi này trông như vô nghĩa: chúng ta chỉ di chuyển cách gọi hàm khởi tạo từ một nơi của chương trình sang nơi khác. Tuy nhiên, hãy xem xet điều này: bây giờ bạn có thể override factory method trong lớp con và thay đổi lớp products được tạo bởi hàm này.</p><p>Có một nhược điểm là: lớp con có thể trả về những loại products khác nhau chỉ khi nếu những products có một lớp chung hoặc interface. Factory method trong lớp gốc nên có khai bảo trả về loại như là interface.</p><p> </p><p>Ví dụ, cả 2 lớp <strong>Truck</strong> và lớp <strong>Ship </strong>nên thực thi interface <strong>Transport </strong>đã được khai bào phương thức <strong>deliver</strong>. Mỗi lớp thực thi phương thức bằng những cách khác nhau: trucks thì deliver hàng hóa trên đường bộ, ship thì deliver hàng hóa bằng đường thủy. Factory method trong lớp <strong>RoadLogistics</strong> sẽ trả về một đối tượng truck, trong khi factory method trong lớp <strong>SeaLogistics </strong>trả về ship.</p><p> </p><p>Code sử dụng factory method (thường được gọi là <em>client</em> code) sẽ không thấy được sự khác biệt giữa products thực tế được trả về bởi những lớp con khác. Client sẽ xem những products như là trừu tượng <strong>Transport</strong>. Client sẽ biết được những đối tượng vận chuyển nào sẽ có phương thức <strong>deliver</strong>, nhưng nó hoạt động cụ thể ra sao thì không quan trọng cho client</p></div>
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Factory Method pattern sẽ yêu cầu bạn thay thể cách gọi khởi tạo đối tượng trực tiếp (sử dụng toán tử <strong>new</strong>) với một hàm factory đặc biệt. Đừng lo lắng, đối tượng sẽ vẫn được tạo thông qua toán tử <strong>new</strong>, nhưng nó sẽ được gọi thông qua một factory method. Đối tượng trả về bởi factory method thường được xem như là <em>products</em> </p><p>Thoạt nhìn, sự thay đổi này trông như vô nghĩa: chúng ta chỉ di chuyển cách gọi hàm khởi tạo từ một nơi của chương trình sang nơi khác. Tuy nhiên, hãy xem xet điều này: bây giờ bạn có thể override factory method trong lớp con và thay đổi lớp products được tạo bởi hàm này.</p><p>Có một nhược điểm là: lớp con có thể trả về những loại products khác nhau chỉ khi nếu những products có một lớp chung hoặc interface. Factory method trong lớp gốc nên có khai bảo trả về loại như là interface.</p><p>Ví dụ, cả 2 lớp <strong>Truck</strong> và lớp <strong>Ship </strong>nên thực thi interface <strong>Transport </strong>đã được khai bào phương thức <strong>deliver</strong>. Mỗi lớp thực thi phương thức bằng những cách khác nhau: trucks thì deliver hàng hóa trên đường bộ, ship thì deliver hàng hóa bằng đường thủy. Factory method trong lớp <strong>RoadLogistics</strong> sẽ trả về một đối tượng truck, trong khi factory method trong lớp <strong>SeaLogistics </strong>trả về ship.</p><p>Code sử dụng factory method (thường được gọi là <em>client</em> code) sẽ không thấy được sự khác biệt giữa products thực tế được trả về bởi những lớp con khác. Client sẽ xem những products như là trừu tượng <strong>Transport</strong>. Client sẽ biết được những đối tượng vận chuyển nào sẽ có phương thức <strong>deliver</strong>, nhưng nó hoạt động cụ thể ra sao thì không quan trọng cho client</p></div>
 				</div>
 				</div>
 						</div>
@@ -234,7 +430,7 @@
 						</div>
 			</div>
 		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/series-design-patterns-1-factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
 ]]></content:encoded>
 					
 		
