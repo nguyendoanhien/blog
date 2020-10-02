@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.doanhien.cf/category/design-patterns/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.doanhien.cf/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Thu, 01 Oct 2020 14:47:40 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 02 Oct 2020 02:12:07 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,219 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Design Patterns – #3: Builder</title>
+		<link>https://blog.doanhien.cf/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Fri, 02 Oct 2020 02:12:04 +0000</pubDate>
+				<category><![CDATA[Creational Patterns]]></category>
+		<category><![CDATA[Design Patterns]]></category>
+		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1510</guid>
+
+					<description><![CDATA[<p>Ý định Builder&#160;là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code. Vấn đề Tưởng tượng rằng một đối tượng phức tạp cần sức lực &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.doanhien.cf/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1510" class="elementor elementor-1510" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Builder </strong>là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng một đối tượng phức tạp cần sức lực lâu dài, từng bước một khởi tạo nhiều fields và đối tượng lồng. Như là code khởi tạo thường chộn bên trong một constructor quái dị với nhiều parameters. Thậm chí tệ hơn là: rãi rác khắp mọi nơi trong code.</p><p>Ví dụ, hãy nghĩ đến việc tạo một đối tượng <strong>House.</strong> Để xây một house đơn giản, bạn cần xây 4 bưc tường, và nền nhà, lắp đặt cửa, cửa sổ, và xây một cái mái nhà. Nhưng nếu bạn muốn một house bự, sáng hơn, với một cái sân và những đồ khác (như lò sưởi, máy bơm, dây điện)?</p><p>Giải pháp dễ nhất là extend lớp <strong>House </strong>gốc và tạo một bộ những lớp con mà từ sự kết hợp của parameters. Nhưng sẽ rất nhiều lớp con được tạo. Mỗi parameter mới, ví dụ phong cách hiên nhà, có thể làm hierachy trở nên phức tạp.</p><p>Có một cách khác mà không đụng đến việc tạo lớp con. Bạn có thể tạo một constructor không lồ trong lớp <strong>House </strong>gốc với tất cả những tham số có thể điều khiển đối tượng <strong>House</strong>. Cách này tuy không cần lớp con nhưng sinh ra vấn đề khác.</p><p>Trong hầu hết trường hợp, tham số sẽ không xài hết,  <strong>làm hàm khởi tạo trở nên xấu hơn.</strong> Cho thực thể, duy nhất một phần của houses có hồ bơi, vì vậy tham số liên quan đến hồ bơi sẽ không được dùng 9/10 lần.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Builder pattern đề nghị rằng bạn tách code hàm khởi tạo của đối tượng ra một lớp riêng và di chuyển chúng vào một đối tượng rời là <em>builders.</em></p><p>Pattern tổ chức khởi tạo đối tượng thành từng bước một (<strong>buildWalls</strong>, <strong>buildDoor</strong>, v.v). Để tạo một đối tượng, bạn sẽ thực hiện nhiều bước trên đối tượng builder. Phần quan trong là bạn không cần phải gọi hết tất cả steps. Bạn chỉ gọi những steps mà thật sự cần thiết cho cấu hình của đối tượng.</p><p>Một vài bước khởi tạo sẽ cần những cách thức triển khai khác nhau khi bạn cần xây dựng nhiều bản của product. Ví dụ, wall của cabin có thể xây bởi gỗ, nhưng castewall phải được xây bởi đá.</p><p>Trong trường hợp nỳ, bạn có thể tạo ra một vài lớp builder khác nhau thực thi cùng tập những steps, nhưng một cách khác. Sau dó bạn có thể sửa dụng builders trong quá trình construction (các tập gọi theo thứ tự của building steps) để tạo ra những đối tượng khác nhau.</p><p>Ví dụ, tưởng tượng rằng builder thứ 1 xây mọi thứ từ wood, glass và builder 2 xây từ stone và iron và m và builder 3 xây từ gold và diamonds. Việc gọi cùng một bộ steps, bạn sẽ có được một house bình thường từ builder 1, một castle house từ builder 2, và một palace house từ builder 3. Tuy nhiên điều này chỉ xảy ra khi mà client code gọi building steps tương tác được với builder thông qua interface chung.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-f9c1718 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f9c1718" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-a78350f elementor-column elementor-col-100 elementor-top-column" data-id="a78350f" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-13c0589 elementor-widget elementor-widget-text-editor" data-id="13c0589" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Người tổ chức</h1><div>Bạn có thể đi xa hơn và có được nhiều làn gọi đến builder steps bạn sử dụng để xây product thành một lớp riêng gọi là <em>director. </em>Lớp director định nghĩa thứ tự mà thực hiện building step, trong khi builder cung cấp cách thực hiện cho những steps đó.</div><div>Có một lớp director trong chương trình không bắt buộc cần thiết. Bạn có thể gọi building steps trực tiếp từ client code. Tuy nhiên lớp director có thể là nơi tốt nhất để đặt những phần dùng chung cho bạn có thể sử dụng xuyên suốt chương trình.</div><div>Thêm vào nữa, lớp director hoàn toàn che đi chi tiết của product construction từ client code. Client chỉ cần nối builder với director, chạy hàm khởi tạo của director và lấy kết quả từ builder.</div></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-52ae78e elementor-column elementor-col-100 elementor-top-column" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p>1. <strong>Builder </strong>interface khai báo các steps khởi tạo product mà chung nhất cho tất cả loại builders.</p><p>2. <strong>Concrete Builders </strong>cung cấp nhiều cách thực khi khác nhau của construction steps. Concrete builders có thể sinh ra products mà không theo interface chung.</p><p>3. <strong>Products </strong>là những đối tượng kết quả. Products được xây bởi những builders khác nhau, không phải thuộc về cùng một lớp hierachy hoặc interface.</p><p>4. Lớp <strong>Director</strong> định nghĩa thứ tự gọi construction steps, bạn có thể tái sử dụng một cấu hình cụ thể của products.</p><p>5. <strong>Client</strong> phải liên kết với một đối tượng builder với director. Thông thường, việc đó chỉ làm một lần, thông qua tham số của hàm khởi tạo của director. Sau đó director sử dụng đối tượng builder cho tất cả những construction sau này. Tuy nhiên, có một cách khác khi client truyên vô đối tượng builder vô hàm production của director. Trong trường hợp này, bạn có thể sử dụng những builder khác nhau mọi lúc bạn cần tạo gì đó với director.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-aded6e6 elementor-column elementor-col-100 elementor-top-column" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Ví dụ của <b>Builder </b>pattern mô phỏng cách bạn có thể tái sử dụng code khởi tạo đối tượng khi xây dựng những loại products khác nhau, ví dụ cars, và tạo cách thức cho chúng.</p><p>Car là một đối tượng phức tạp có thể xây bằng trăm cách khác nhau. Thay vì cho lớp <strong>Car</strong> với hàm constructor lớn, chúng ta có thể tách code các thành phần của car ra thành lớp car builder. Lớp này có bộ phương thức cho việc cấu hình từng thành phần của car.</p><p>Nếu client code cần kết hợp môt mẫu đặc biết, tốt hơn của car, nó có thể làm việc với builder directly. Mặt khác, client có thể delegate thành phần vô lớp director, đã biết được cách sử dụng builder xây một vài mẫu cars phổ biến.</p><p>Bạn có thể kinh ngạc, nhưng mọi car đều cần manual (nghiêm túc, ai mà đọc nó). Manual mô tả chức năng của car, vì thế chi tiết của manuals đa dạng cho từng mẫu. Đó là tại sao phải tái sử dụng lại quá trình constructor cho real cars  và manuals. Tất nhiên, việc xây manual không giống với xây car, đó là tại sao ta phải thêm một builder class chuyên về kết hợp manual. Lớp này thực thi giống hàm building như là car building, nhưng thay vì lắp ráp từng thành phần xe, thì nó mô tả chúng. Bằng việc thêm những builder trên cho cùng một đối tượng director, chúng ta co thể xây car và manual.</p><p>Phần cuối là lấy đối tượng kết quả. Một metal bằng đồng và một manual giấy, mặt dù có liên quan, nhưng vẫn có sự khác biệt. Ta không thể đạt hàm cho việc lấy kết quả trong director mà không coupling director với lớp concrete product. Vì vậy, ta đạt kết quả của construction từ builder thực hiện công việc này.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e5dd5e0 elementor-column elementor-col-100 elementor-top-column" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Builder pattern để xóa đi &#8220;telescopic constructor&#8221;</strong></p><p>Ví dụ bạn có một hàm khởi tạo với 10 tham số không bắt buộc. Gọi hàm này rõ ràng là không tiện lợi; vì vậy bạn overload constructor và tạo ra một vài phiên bản khác với tham số ít hơn. Những constructor này vấn trỏ về hàm chính, truyền những giá trị mặc định và phớt lờ đi tham số dư.</p><p>Builder patern cho phép bạn xây một đối tượng từng bước một, sử dụng những bước mà bạn thật sự cần. Sau khi triền khai pattern, bạn không phải nhồi nhét hàng tá tham số vào hàm khởi tạo thêm nữa.</p><p><strong>Sử dụng Builder pattern nếu như bạn muốn code bạn có thể tạo ra nhiều thể hiện của product (ví dụ, stone và wooden houses).</strong></p><p>Builder pattern có thể áp dụng khi construction của nhiều đại diện product liên quan đến các bước nhưng chỉ khác nhau về chi tiết.</p><p>Interface builder gốc khai báo tất cả những construction steps, và concrete builder thực thi những steps này để construct một đại diện cụ thể của product, trong khi lớp director chỉ về thứ tự của construction.</p><p><strong>Sử dụng Builder để construct <span style="text-decoration: underline;">Composite</span> trees hoặc những đối tượng phức tạp.</strong></p><p>Builder pattern cho phrps bạn construct product từng bước. Bạn có thể hoãn vài step mà không phá đi kết quả product cuối cùng. Bạn thạm chí có thể gọi steps đệ qui, một cách tiện lợi nếu bạn cần xây một object tree.</p><p>Builder không phơi ra những product chưa hoàn thành trong khi chạy construction step. Việc này ngăn chặn client code lấy kết quả chưa hoàn thiện.</p><p> </p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Đảm bảo rằng bạn có thể định nghĩa rõ ràng construction steps chung cho building tất cả đại diện có sẵn của product. Ngược lại, bạn sẽ không thể tiếp tục triển khai pattern.</p><p>2. Khai báo steps trong base builder interface </p><p>3. Tạo một lớp concrete builder cho mỗi đại diện product và implement construction steps của chúng.</p><p>Đừng quên việc implement phương thức lấy kết quả của construction. Đó là lý do tại sao phương thức này không thể khai báo bên trong builder interface bởi vì various builders có thể construct product không có interface chung. Tuy nhiên nếu bạn xử lý với products cùng một hierachy, phương thức lấy két quả có thể được thêm an toàn vào base interface.</p><p>4. Nghĩ về việc tạo lớp director. Nó có thể escapsulate bằng nhiều cách để construct product sử dụng cùng một đối tượng builder.</p><p>5. Client code tạo đối tượng builder và director. Trước khi construction bắt đầu, client phải truyền đối tượng builder vào director. Thông thường, client làm việc này duy nhất một lần, thông qua tham số constructor của director. Director sử dụng đối tượng builder trong những construction khác. Có một cách thay thế, là builder được truyền trực tiếp vào phương thức construction của director.</p><p>6. Kết quả construction, có thể lấy trực tiếp từ director nếu như tất cả product cùng interface. Ngược lại, client phải lấy kết quả từ builder.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-c8d0bdf elementor-column elementor-col-100 elementor-top-column" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể construct đối tượng từng bước một, bỏ step hoặc đệ qui step.</li><li>Có thể tái sử dụng cùng code construction khi build nhiều đại diện của products.</li><li><em>Single Reponsibility Principle</em>. Bạn có thể tách code construction phức tạp từ logic nghiệp vụ của product.</li></ul><p><strong>Nhược:</strong></p><ul><li>Sự phức tạp của code tăng nếu pattern cần tạo nhiều lớp mới.</li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-95f1038 elementor-column elementor-col-100 elementor-top-column" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li><strong>Builder </strong>tập trung vào việc khởi tạo đối tượng phức tạp từng bước một. <strong>Abstract Factory</strong> đặc biệt trong việc tạo familes của những đối tượng liên quan. <em>Abstract Factory </em>trả về product ngay lập tức, trong khi <em>Builder </em>cho bạn chạy một số bước trước khi trả về product.</li><li>Bạn có thể sử dụng <strong>Builder</strong> khi tạo ra một <strong>Composite </strong>trees phức tạp, bởi vì bạn có thể lập trình construction steps để làm đệ qui.</li><li>Bạn có thể kết hợp <strong>Builder </strong>với <strong>Bridge</strong>: lớp director có vai trò của abstraction, trong khi những builders khác có vai trò như là implementations.</li><li><strong>Abstract Factory, Builders, </strong>và <strong>Prototypes </strong>có thể implemented như <strong>Singletons.</strong></li></ul></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-9def2aa elementor-column elementor-col-100 elementor-top-column" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/builder">Builder</a></p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Design Patterns – #2: Abstract Factory</title>
 		<link>https://blog.doanhien.cf/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
 		
@@ -418,7 +631,7 @@
 					<div class="elementor-widget-wrap">
 				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/dead-code">Factory Method</a></p></div>
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/factory-method">Factory Method</a></p></div>
 				</div>
 				</div>
 						</div>
