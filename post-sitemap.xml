@@ -330,19 +330,35 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://blog.doanhien.cf/abtract-history/</loc>
+		<lastmod>2020-10-01T14:47:40+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/abstract-factory.png</image:loc>
+			<image:title><![CDATA[abstract-factory]]></image:title>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://blog.doanhien.cf/factory-method/</loc>
-		<lastmod>2020-09-30T07:30:45+00:00</lastmod>
+		<lastmod>2020-10-01T15:29:24+00:00</lastmod>
 		<image:image>
 			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/factory-method.png</image:loc>
 			<image:title><![CDATA[factory-method]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/abtract-history/</loc>
-		<lastmod>2020-10-01T14:47:40+00:00</lastmod>
+		<loc>https://blog.doanhien.cf/builder/</loc>
+		<lastmod>2020-10-02T02:12:07+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/abstract-factory.png</image:loc>
-			<image:title><![CDATA[abstract-factory]]></image:title>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/builder.png</image:loc>
+			<image:title><![CDATA[builder]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.doanhien.cf/tinh-nang-ghen-ty/</loc>
+		<lastmod>2020-10-02T02:23:19+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/feature-envy.jpg</image:loc>
+			<image:title><![CDATA[feature-envy]]></image:title>
 		</image:image>
 	</url>
 </urlset>
