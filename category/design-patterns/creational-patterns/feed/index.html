@@ -8,233 +8,446 @@
 	>
 
 <channel>
-	<title>Creational Patterns &#8211; Hien Nguyen Blog</title>
-	<atom:link href="https://blog.doanhien.cf/category/design-patterns/creational-patterns/feed/" rel="self" type="application/rss+xml" />
-	<link>https://blog.doanhien.cf/</link>
+	<title>Creational Patterns &#8211; 9x Developers&#039;s Blog</title>
+	<atom:link href="https://blog.9xdevelopers.com/category/design-patterns/creational-patterns/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.9xdevelopers.com/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Fri, 02 Oct 2020 02:12:07 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 03 Oct 2020 10:15:44 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.5</generator>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
 
 <image>
-	<url>https://blog.doanhien.cf/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
-	<title>Creational Patterns &#8211; Hien Nguyen Blog</title>
-	<link>https://blog.doanhien.cf/</link>
+	<url>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
+	<title>Creational Patterns &#8211; 9x Developers&#039;s Blog</title>
+	<link>https://blog.9xdevelopers.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Design Patterns – #4: Prototype</title>
+		<link>https://blog.9xdevelopers.com/prototype/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=prototype</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Sat, 03 Oct 2020 06:35:30 +0000</pubDate>
+				<category><![CDATA[Creational Patterns]]></category>
+		<category><![CDATA[Design Patterns]]></category>
+		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1519</guid>
+
+					<description><![CDATA[<p>Ý định Prototype là một pattern khởi tạo cho phép bạn copy đối tượng đã tồn tại mà không làm code bạn phụ thuộc vào những của chúng. Vấn đề Tưởng tượng rằng bạn có một đối tượng, và bạn muốn tạo chính xác một bản sao của nó. Vậy bạn làm như thế nào? Đầu &#8230;</p>
+<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/prototype/"> <span class="screen-reader-text">Series Design Patterns – #4: Prototype</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1519" class="elementor elementor-1519" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Prototype </strong>là một pattern khởi tạo cho phép bạn copy đối tượng đã tồn tại mà không làm code bạn phụ thuộc vào những của chúng.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn có một đối tượng, và bạn muốn tạo chính xác một bản sao của nó. Vậy bạn làm như thế nào? Đầu tiên, bàn phải tạo một đối tượng mới cùng lớp. Sau đó bạn phải đi qua tất cả các fields của đối tượng gốc và copy giá trị tương ứng cho đối tượng mới.</p><p>Tuyệt! như chưa hẳn. Không phải tất cả đối tượng có thể được copy bằng cách đó bởi vì một vài field của đối tượng có thể private và không visible ra bên ngoài của đối tượng đó.</p><p>Có một vấn đề nữa với cách trực tiếp trên. Bởi vì bạn phải biết được lớp của đối tượng để tạo bản sao, code bạn phải phụ thuộc vào lớp đó. Nếu sự phụ thuộc đó không làm bạn bận tâm, thì có một vấn đề khác. Đôi khi bạn chỉ duy nhất biết được interface mà đối tượng đó theo, không phải lớp concrete, khi, ví dụ, một tham số trong phương thức chấp nhận một vài đối tượng follow một vài interface.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Prototype pattern delegate quá trình nhân bản một đối tượng cho đối tượng thực tế bị nhân bản. Pattern khai báo một interface chung cho tất cả đối tượng hỗ trợ việc nhân bản. Interface này cho phép bạn nhân bản đối tượng mà không phụ thuộc code vào lớp của đối tượng đó. Thông thường, một interface chỉ chứa một hàm <strong>clone</strong>.</p><p>Hàm <strong>clone</strong> trong giống nhau ở mọi lớp. Hàm tạo ra một đối tượng của lớp hiện tại và mang tất cả fields của đối tượng cũ sang đối tượng mới. Bạn có thể thậm chỉ copy private fields bởi vì hầu hết ngôn ngữ lập trình cho phép đối tượng truy cập vào private field của đối tượng khác cùng lớp nhân bản.</p><p>Đối tượng hỗ trợ nhân bản gọi là <em>prototype</em>. Khi đối tượng của bạn có hàng tá fields và hàng trăm cấu hình, việc nhân bản chúng có thể thực hiện như việc thay thế lớp con.</p><p> Đây là cách vận hành: bạn tạo một tập các đối tượng, cấu hình nhiều cách. Khi bạn cần một đối tợng như bạn đã cấu hình, bạn chỉ cần nhân bản prototype thay vì xây dựng một đối tượng mới từ đầu.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4487fc2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4487fc2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-390ea1a" data-id="390ea1a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c4b831 elementor-widget elementor-widget-text-editor" data-id="1c4b831" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Liên hệ thực tế</h1><p>Trong đời thực, prototypes được sử dụng để triển khai những bộ tests trước khi bắt đầu đưa product lên môi trường production. Tuy nhiên, trong trường hợp này, prototype không tham gia vào bất kì production thực tế nào mà chỉ đảm nhận một vai trò bị động.</p><p>Bởi vì prototypes không thực sự nhân bản chính nó, một cách gần giống vơi pattern là quá trình phân bào (còn nhớ sinh học chứ?). Sau quá trình phân bào, một cặp tế bào được hình thành. Tế bào gốc có thể coi là prototype và đảm nhận vài trò chủ động trong việc tạo nhân bản.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p>1. <strong>Prototype </strong>interface khai báo một phương thức nhân bản. Thường thì đây là hàm <strong>clone</strong>.</p><p>2. Lớp <strong>Concrete Prototype</strong> thực thi hàm nhân bản. Thêm vào đó copy dữ liệu của đối tượng gốc sang đối tượng được nhân bản, phương thức này có thể xử lý những trường hợp khó của nhân bản liên quan đến việc nhân bản đối tượng liên kết, phụ thuộc đệ quy, v.v.</p><p>3. <strong>Client</strong> có thể tạo ra nhân bản của bất kì đối tượng nào mà theo prototype interface.</p><p><strong>Prototype registry implementation</strong></p><p>1. <strong>Prototype Registry </strong>cung cấp một cách đơn giản để truy cập vào những prototypes thường dùng. Nó lưu danh sách những đối tượng đã xây sẵn mà sẵn sàng để được nhân bản. Prototype registry đơn giản nhất là <strong>name -&gt; prototype</strong> hashmap. Tuy nhiên, nếu bạn cần điều kiện tìm kiếm tốt hơn thay vì chi theo tên, bạn cần xây thêm nhiều phiên bản của registry.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Trong ví dụ này, <strong>Prototype</strong> pattern cho phép bạn tạo ra chính xác những nhân bản của đối tượng geometric, mà không lệ thuộc vào lớp của chúng.</p><p>Tất cả lớp shape đều theo cùng interface, mà cung cấp một hàm nhân bản. Lớp con có thể gọi phương thức nhân bản của lớp cha trước khi nhân bản những field của lớp con đó vô đối tượng kết quả.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Prototype pattern khi code bạn không nên phụ thuộc vào lớp concrete của đối tượng bạn cân nhân bản</strong></p><p>Điều này xay ra thường xuyên khi code bạn làm việc với đối tượng được truyền đến từ 3rd-party code thông qua interface. Lớp concrete của chúng là đối tượng không biết rõ, vì vậy bạn không thể phụ thuộc vào chúng dù bạn có muốn.</p><p>Prototype pattern cung cấp client code một interface chung để làm việc với tất cả đối tượng hỗ trợ nhân bản. Interface này làm client code độc lập với lớp concrete của đối tượng nó nhân bản.</p><p><strong>Sử dụng pattern khi bạn muốn giảm số lượng lớp con mà chi khác nhau duy nhất cách khởi tạo đối tượng tương ứng.  Một ai đó có thể đã tạo những lớp con để tạo ra đối tượng với cấu hình cụ thể.</strong></p><p>Prototype pattern cho phép bạn sử dụng một tập những đối tượng xây sẵn, cấu hình chúng bằng nhiều cách như là prototypes.</p><p>Thay vì làm thực thể lớp con để khớp cấu hình, client có thể đơn giản tìm một prototype phù hợp và nhân bản nó.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Tạo một prototype interface và khai báo hàm <strong>clone </strong>trong nó. Hoặc chỉ thêm phương thức cho tất cả các lớp của lớp hierachy có sẵn.</p><p>2. Lớp prototype phải định nghĩa một constructor thay thế mà chấp nhận đối tượng của lớp đó như là tham số. Constructor phải copy tất cả giá trị của tất cả fields định nghĩa trong lớp từ đối tượng truyền vào đưa vô thực thể vừa tạo. Nếu bạn thay đổi một lớp con, bạn phải gọi constructor cha để lớp cha xử lý nhân bản những private fields của chúng.</p><p>Nếu ngôn ngữ lập trình của bạn không hỗ trợ overloading, bạn có thể sẽ phải định nghĩa một phương thức đặt biệt cho việc nhân bản dữ liệu đối tượng. Constructor sẽ là một nơi tiện lợi để làm việc này bởi vì nó phân phát đối tượng kết quả ngay sau gọi toán tử <strong>new</strong>.</p><p>3. Hàm nhân bản thường bao gồm 1 dòng: chạy toán tử <strong>new</strong> vơi prototypical version của constructor. Lưu ý, mỗi lớp phải trực tiếp override hàm nhân bản và sử dụng tên lớp của chúng cùng với toán tử <strong>new</strong>. Nếu không, việc nhân bản có thể sinh ra đối tượng của lớp cha.</p><p>4. Tùy chỉnh, tạo một centralized prototype registry để lưu danh mục những prototype thường dùng.</p><p>Bạn có thể implement registry như một lớp factory mới hoặc đặt nó bên trong lớp prototype gốc với một static method cho việc lấy prototype. Hàm này nên tìm kiếm một prototype dựa trên điều kiện tìm mà client code truyền vào phương thức. Điệu kiện có thể đơn giản như một string tag hay là một bộ tham số phức tạp. Sau khi prototype phù hợp được tìm thấy, registry sẽ nhân bản nó và trả về cho client.</p><p>Cuối cùng, thay thế gọi trực tiếp đến constructors lớp con với lời gọi trực tiếp đến factory method của prototype registry.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể nhân bản mà không phụ thuộc vào lớp concrete</li><li>Bạn có thể xóa bỏ sự lặp lại trong code khởi tạo giá trị bằng việc nhân bản những prototypes dựng sẵn.</li><li>Bạn có thể sinh ra những đối tượng phức tạp một cách tiện lợi hơn.</li><li>Bạn có thể có được sự thay thế cho kế thừa khi tiếp xúc với những cấu hình cho đối tượng phức tạp.</li></ul><p><strong>Nhược:</strong></p><ul><li>Nhân bản đối tượng phức tạp mà có circular reference sẽ khá là khó.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li>Lớp <strong>Abstract Factory </strong>thường dựa trên bộ <strong>Factory Method</strong>, nhưng bạn có thể sử dụng <strong>Prototype</strong> để kết hợp những phương thức cho những lớp đó.</li><li><strong>Prototype </strong>có thể giúp khi bạn cần lưu những bản sao của <strong>Command</strong> vô lịch sử.</li><li>Thiết kế sử dụng nhiều <strong>Composite</strong> và <strong>Decorator</strong> có thể hưởng lọi bằng việc sử dụng <strong>Prototype</strong>. Áp dụng pattern cho phép bạn nhân bản cấu trúc phức tạp thay vì xây lại từ đầu.</li><li><strong>Prototype </strong>không dựa vào kế thừa, nên nó không có hạn chế. Ngược lại, <em>Prototype </em>yêu cầu một sự khởi tạo phức tạp của đối tượng nhân bản. <strong>Factory Method</strong> dựa trên kế thừam nhưng không yêu cầu bước khởi tạo.</li><li>Đôi khi <strong>Prototype</strong> có thể là sự thay thế đơn giản hơn của <strong>Memento</strong>. Nó sẽ hoạt động nếu đối tượng, trạng thái mà bạn muốn lưu lịch sử, rõ ràng và không liên kết với một tài nguyên nào khác, hoặc liên kết đó đơn giản để thiết lập lại.</li><li><strong>Abstract Factory, Builders, </strong>và <strong>Prototypes </strong>có thể implemented như <strong>Singletons.</strong></li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/prototype">Prototype</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Design Patterns – #3: Builder</title>
-		<link>https://blog.doanhien.cf/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
+		<link>https://blog.9xdevelopers.com/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Fri, 02 Oct 2020 02:12:04 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1510</guid>
+		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1510</guid>
 
 					<description><![CDATA[<p>Ý định Builder&#160;là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code. Vấn đề Tưởng tượng rằng một đối tượng phức tạp cần sức lực &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1510" class="elementor elementor-1510" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1510" class="elementor elementor-1510" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Builder </strong>là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng một đối tượng phức tạp cần sức lực lâu dài, từng bước một khởi tạo nhiều fields và đối tượng lồng. Như là code khởi tạo thường chộn bên trong một constructor quái dị với nhiều parameters. Thậm chí tệ hơn là: rãi rác khắp mọi nơi trong code.</p><p>Ví dụ, hãy nghĩ đến việc tạo một đối tượng <strong>House.</strong> Để xây một house đơn giản, bạn cần xây 4 bưc tường, và nền nhà, lắp đặt cửa, cửa sổ, và xây một cái mái nhà. Nhưng nếu bạn muốn một house bự, sáng hơn, với một cái sân và những đồ khác (như lò sưởi, máy bơm, dây điện)?</p><p>Giải pháp dễ nhất là extend lớp <strong>House </strong>gốc và tạo một bộ những lớp con mà từ sự kết hợp của parameters. Nhưng sẽ rất nhiều lớp con được tạo. Mỗi parameter mới, ví dụ phong cách hiên nhà, có thể làm hierachy trở nên phức tạp.</p><p>Có một cách khác mà không đụng đến việc tạo lớp con. Bạn có thể tạo một constructor không lồ trong lớp <strong>House </strong>gốc với tất cả những tham số có thể điều khiển đối tượng <strong>House</strong>. Cách này tuy không cần lớp con nhưng sinh ra vấn đề khác.</p><p>Trong hầu hết trường hợp, tham số sẽ không xài hết,  <strong>làm hàm khởi tạo trở nên xấu hơn.</strong> Cho thực thể, duy nhất một phần của houses có hồ bơi, vì vậy tham số liên quan đến hồ bơi sẽ không được dùng 9/10 lần.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Builder pattern đề nghị rằng bạn tách code hàm khởi tạo của đối tượng ra một lớp riêng và di chuyển chúng vào một đối tượng rời là <em>builders.</em></p><p>Pattern tổ chức khởi tạo đối tượng thành từng bước một (<strong>buildWalls</strong>, <strong>buildDoor</strong>, v.v). Để tạo một đối tượng, bạn sẽ thực hiện nhiều bước trên đối tượng builder. Phần quan trong là bạn không cần phải gọi hết tất cả steps. Bạn chỉ gọi những steps mà thật sự cần thiết cho cấu hình của đối tượng.</p><p>Một vài bước khởi tạo sẽ cần những cách thức triển khai khác nhau khi bạn cần xây dựng nhiều bản của product. Ví dụ, wall của cabin có thể xây bởi gỗ, nhưng castewall phải được xây bởi đá.</p><p>Trong trường hợp nỳ, bạn có thể tạo ra một vài lớp builder khác nhau thực thi cùng tập những steps, nhưng một cách khác. Sau dó bạn có thể sửa dụng builders trong quá trình construction (các tập gọi theo thứ tự của building steps) để tạo ra những đối tượng khác nhau.</p><p>Ví dụ, tưởng tượng rằng builder thứ 1 xây mọi thứ từ wood, glass và builder 2 xây từ stone và iron và m và builder 3 xây từ gold và diamonds. Việc gọi cùng một bộ steps, bạn sẽ có được một house bình thường từ builder 1, một castle house từ builder 2, và một palace house từ builder 3. Tuy nhiên điều này chỉ xảy ra khi mà client code gọi building steps tương tác được với builder thông qua interface chung.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-f9c1718 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f9c1718" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f9c1718 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9c1718" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-a78350f elementor-column elementor-col-100 elementor-top-column" data-id="a78350f" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-13c0589 elementor-widget elementor-widget-text-editor" data-id="13c0589" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a78350f" data-id="a78350f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-13c0589 elementor-widget elementor-widget-text-editor" data-id="13c0589" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Người tổ chức</h1><div>Bạn có thể đi xa hơn và có được nhiều làn gọi đến builder steps bạn sử dụng để xây product thành một lớp riêng gọi là <em>director. </em>Lớp director định nghĩa thứ tự mà thực hiện building step, trong khi builder cung cấp cách thực hiện cho những steps đó.</div><div>Có một lớp director trong chương trình không bắt buộc cần thiết. Bạn có thể gọi building steps trực tiếp từ client code. Tuy nhiên lớp director có thể là nơi tốt nhất để đặt những phần dùng chung cho bạn có thể sử dụng xuyên suốt chương trình.</div><div>Thêm vào nữa, lớp director hoàn toàn che đi chi tiết của product construction từ client code. Client chỉ cần nối builder với director, chạy hàm khởi tạo của director và lấy kết quả từ builder.</div></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0e0d589" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-52ae78e elementor-column elementor-col-100 elementor-top-column" data-id="52ae78e" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p>1. <strong>Builder </strong>interface khai báo các steps khởi tạo product mà chung nhất cho tất cả loại builders.</p><p>2. <strong>Concrete Builders </strong>cung cấp nhiều cách thực khi khác nhau của construction steps. Concrete builders có thể sinh ra products mà không theo interface chung.</p><p>3. <strong>Products </strong>là những đối tượng kết quả. Products được xây bởi những builders khác nhau, không phải thuộc về cùng một lớp hierachy hoặc interface.</p><p>4. Lớp <strong>Director</strong> định nghĩa thứ tự gọi construction steps, bạn có thể tái sử dụng một cấu hình cụ thể của products.</p><p>5. <strong>Client</strong> phải liên kết với một đối tượng builder với director. Thông thường, việc đó chỉ làm một lần, thông qua tham số của hàm khởi tạo của director. Sau đó director sử dụng đối tượng builder cho tất cả những construction sau này. Tuy nhiên, có một cách khác khi client truyên vô đối tượng builder vô hàm production của director. Trong trường hợp này, bạn có thể sử dụng những builder khác nhau mọi lúc bạn cần tạo gì đó với director.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3ca97f1" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-aded6e6 elementor-column elementor-col-100 elementor-top-column" data-id="aded6e6" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Ví dụ của <b>Builder </b>pattern mô phỏng cách bạn có thể tái sử dụng code khởi tạo đối tượng khi xây dựng những loại products khác nhau, ví dụ cars, và tạo cách thức cho chúng.</p><p>Car là một đối tượng phức tạp có thể xây bằng trăm cách khác nhau. Thay vì cho lớp <strong>Car</strong> với hàm constructor lớn, chúng ta có thể tách code các thành phần của car ra thành lớp car builder. Lớp này có bộ phương thức cho việc cấu hình từng thành phần của car.</p><p>Nếu client code cần kết hợp môt mẫu đặc biết, tốt hơn của car, nó có thể làm việc với builder directly. Mặt khác, client có thể delegate thành phần vô lớp director, đã biết được cách sử dụng builder xây một vài mẫu cars phổ biến.</p><p>Bạn có thể kinh ngạc, nhưng mọi car đều cần manual (nghiêm túc, ai mà đọc nó). Manual mô tả chức năng của car, vì thế chi tiết của manuals đa dạng cho từng mẫu. Đó là tại sao phải tái sử dụng lại quá trình constructor cho real cars  và manuals. Tất nhiên, việc xây manual không giống với xây car, đó là tại sao ta phải thêm một builder class chuyên về kết hợp manual. Lớp này thực thi giống hàm building như là car building, nhưng thay vì lắp ráp từng thành phần xe, thì nó mô tả chúng. Bằng việc thêm những builder trên cho cùng một đối tượng director, chúng ta co thể xây car và manual.</p><p>Phần cuối là lấy đối tượng kết quả. Một metal bằng đồng và một manual giấy, mặt dù có liên quan, nhưng vẫn có sự khác biệt. Ta không thể đạt hàm cho việc lấy kết quả trong director mà không coupling director với lớp concrete product. Vì vậy, ta đạt kết quả của construction từ builder thực hiện công việc này.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d1dd127" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-e5dd5e0 elementor-column elementor-col-100 elementor-top-column" data-id="e5dd5e0" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Builder pattern để xóa đi &#8220;telescopic constructor&#8221;</strong></p><p>Ví dụ bạn có một hàm khởi tạo với 10 tham số không bắt buộc. Gọi hàm này rõ ràng là không tiện lợi; vì vậy bạn overload constructor và tạo ra một vài phiên bản khác với tham số ít hơn. Những constructor này vấn trỏ về hàm chính, truyền những giá trị mặc định và phớt lờ đi tham số dư.</p><p>Builder patern cho phép bạn xây một đối tượng từng bước một, sử dụng những bước mà bạn thật sự cần. Sau khi triền khai pattern, bạn không phải nhồi nhét hàng tá tham số vào hàm khởi tạo thêm nữa.</p><p><strong>Sử dụng Builder pattern nếu như bạn muốn code bạn có thể tạo ra nhiều thể hiện của product (ví dụ, stone và wooden houses).</strong></p><p>Builder pattern có thể áp dụng khi construction của nhiều đại diện product liên quan đến các bước nhưng chỉ khác nhau về chi tiết.</p><p>Interface builder gốc khai báo tất cả những construction steps, và concrete builder thực thi những steps này để construct một đại diện cụ thể của product, trong khi lớp director chỉ về thứ tự của construction.</p><p><strong>Sử dụng Builder để construct <span style="text-decoration: underline;">Composite</span> trees hoặc những đối tượng phức tạp.</strong></p><p>Builder pattern cho phrps bạn construct product từng bước. Bạn có thể hoãn vài step mà không phá đi kết quả product cuối cùng. Bạn thạm chí có thể gọi steps đệ qui, một cách tiện lợi nếu bạn cần xây một object tree.</p><p>Builder không phơi ra những product chưa hoàn thành trong khi chạy construction step. Việc này ngăn chặn client code lấy kết quả chưa hoàn thiện.</p><p> </p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Đảm bảo rằng bạn có thể định nghĩa rõ ràng construction steps chung cho building tất cả đại diện có sẵn của product. Ngược lại, bạn sẽ không thể tiếp tục triển khai pattern.</p><p>2. Khai báo steps trong base builder interface </p><p>3. Tạo một lớp concrete builder cho mỗi đại diện product và implement construction steps của chúng.</p><p>Đừng quên việc implement phương thức lấy kết quả của construction. Đó là lý do tại sao phương thức này không thể khai báo bên trong builder interface bởi vì various builders có thể construct product không có interface chung. Tuy nhiên nếu bạn xử lý với products cùng một hierachy, phương thức lấy két quả có thể được thêm an toàn vào base interface.</p><p>4. Nghĩ về việc tạo lớp director. Nó có thể escapsulate bằng nhiều cách để construct product sử dụng cùng một đối tượng builder.</p><p>5. Client code tạo đối tượng builder và director. Trước khi construction bắt đầu, client phải truyền đối tượng builder vào director. Thông thường, client làm việc này duy nhất một lần, thông qua tham số constructor của director. Director sử dụng đối tượng builder trong những construction khác. Có một cách thay thế, là builder được truyền trực tiếp vào phương thức construction của director.</p><p>6. Kết quả construction, có thể lấy trực tiếp từ director nếu như tất cả product cùng interface. Ngược lại, client phải lấy kết quả từ builder.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8fd831a" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-c8d0bdf elementor-column elementor-col-100 elementor-top-column" data-id="c8d0bdf" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể construct đối tượng từng bước một, bỏ step hoặc đệ qui step.</li><li>Có thể tái sử dụng cùng code construction khi build nhiều đại diện của products.</li><li><em>Single Reponsibility Principle</em>. Bạn có thể tách code construction phức tạp từ logic nghiệp vụ của product.</li></ul><p><strong>Nhược:</strong></p><ul><li>Sự phức tạp của code tăng nếu pattern cần tạo nhiều lớp mới.</li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4fa2c19" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-95f1038 elementor-column elementor-col-100 elementor-top-column" data-id="95f1038" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li><strong>Builder </strong>tập trung vào việc khởi tạo đối tượng phức tạp từng bước một. <strong>Abstract Factory</strong> đặc biệt trong việc tạo familes của những đối tượng liên quan. <em>Abstract Factory </em>trả về product ngay lập tức, trong khi <em>Builder </em>cho bạn chạy một số bước trước khi trả về product.</li><li>Bạn có thể sử dụng <strong>Builder</strong> khi tạo ra một <strong>Composite </strong>trees phức tạp, bởi vì bạn có thể lập trình construction steps để làm đệ qui.</li><li>Bạn có thể kết hợp <strong>Builder </strong>với <strong>Bridge</strong>: lớp director có vai trò của abstraction, trong khi những builders khác có vai trò như là implementations.</li><li><strong>Abstract Factory, Builders, </strong>và <strong>Prototypes </strong>có thể implemented như <strong>Singletons.</strong></li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="08b3d95" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-9def2aa elementor-column elementor-col-100 elementor-top-column" data-id="9def2aa" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/builder">Builder</a></p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
 						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -242,195 +455,195 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #2: Abstract Factory</title>
-		<link>https://blog.doanhien.cf/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
+		<link>https://blog.9xdevelopers.com/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Thu, 01 Oct 2020 08:16:45 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1499</guid>
+		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1499</guid>
 
 					<description><![CDATA[<p>Ý định Abstract Method là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể. Vấn đề Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm: 1. Một họ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1499" class="elementor elementor-1499" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1499" class="elementor elementor-1499" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Abstract Method </strong>là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm:</p><p>1. Một họ products liên quan: <strong>Chair </strong>+ <strong>Sofa</strong> + <strong>CoffeeTable</strong></p><p>2. Một vai họ khác là. Ví dụ, products <strong>Chair </strong>+ <strong>Sofa </strong>+ <strong>CoffeeTable</strong> có trong những nhóm: <strong>Modern</strong>, <strong>Victorian</strong>, <strong>ArtDeco</strong><strong> </strong></p><p>Bạn cần một cách để tạo những đối tượng nội thất riêng biệt này, để chúng khớp với những đối tượng khác cùng family. Khách hàng sẽ cáu nếu như họ không nhận được nội thất khớp.</p><p>Và bạn không muốn thay đổi code cũ khi thêm mới products hoặc families of products vào chương trình. Nhà cung cấp nội thất cập nhật danh mục thường xuyên và không muốn thay đổi code chính mỗi khi điều này xảy ra.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Điều đầu tiên mà Abstract Pattern đề nghị là khai báo tách biệt interface cho mỗi product khác nhau của product family (ví dụ chair, sofa hoặc coffee table). Sau này bạn có thể làm cho tất cả loại products này theo những interfaces đó. Ví dụ, tất cả nhóm chair có thể thực thi <strong>Chair </strong>interface; Tất cả loại coffee table có thể thực thi <strong>CoffeeTable </strong>interface và v.v.</p><p>Bước tiếp theo là di chuyển khai báo <em>Abstract Factory </em>&#8211; một interface với danh sách những hàm tạo cho tất cả products mà là một phần của product family (ví dụ, <strong>createChair</strong>, <strong>createSofa</strong>, và <strong>createCoffeeTable</strong>). Những method này phải trả về loại <strong>abstract </strong>product đã được làm ở trên: <strong>Chair</strong>, <strong>Sofa</strong>, <strong>CoffeeTable </strong>và v.v</p><p>Bây giờ, những product variants như thế nào? Cho mỗi variant của product family, ta tạo một lớp factory tách biệt dựa trên <strong>AbstractFactory </strong>interface. Factory là một lớp mà trả về products cụ thể. Ví dụ, <strong>ModernFunitureFactory</strong> có thể chỉ tạo đối tượng  <strong>ModernChair</strong>, <strong>ModernSofa</strong> và <strong>ModernCoffeeTable</strong>.<strong> </strong></p><p>Client code phải làm việc với cả 2 factories và products thông qua abstract interfaces tương ứng. Điều này giúp bạn thay đổi loại của factory mà bạn truyền vào cho client code, cũng như product variant mà client code nhận, mà không phá vỡ code hiện tại.</p><p>Nói rằng client muốn một factory để sinh ra chair. Client code không có biết trước được lớp factory, cũng như loại chair mà nó lấy. Liệu nó có phải là một mẫu Modern hay là Victorian-style chair, client phải xem tất cả bằng một cách duy nhất, sử dụng abstract <strong>Chair</strong> interface. Với cách tiếp cận này, điêu duy nhất là client biết về chair là nó có thực thi phương thức <strong>sitOn</strong>. Cũng như bất kì variant của chair được trả về, nó sẽ luôn luôn khớp với loại của sofa hoặc coffee table sinh ra từ đối tượng factory.</p><p>Có một điều cần làm rõ là: nếu client chỉ expose abstract interfaces, vậy cái gì tạo ra một đối tượng factory thật sự? Thông thường, ứng dụng tạo ra một đối tượng factory cụ thể ở bước khởi tạo. Trước đó, ứng dụng sẽ chọn loại factory dựa trên tùy chỉnh hoặc môi trường cấu hình.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0e0d589" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-52ae78e elementor-column elementor-col-100 elementor-top-column" data-id="52ae78e" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p><strong>1. Abstract Products </strong>khai báo interface cho bộ độc lập nhưng liên quán đến products tạo ra product family.</p><p><strong>2. Concrete products</strong> là những sự thực thi đa dạng của abstract products, nhóm bởi variants. Mỗi abstract product (chair/sofa) phải thực thi tất cả variants (Victorian/Modern).</p><p><strong>3. Abstract Factory </strong>interface khai báo tập phương thức cho việc tạo mỗi abstract product</p><p><strong>4. Concrete Factories </strong>thực thi hàm tạo từ abstract factory. Mỗi concrete factory đại diện cho một variant products và chỉ tạo những products của variant ấy.</p><p>5. Mặc dù những thực thể concrete factories concrete products, dấu hiệu của hàm tạo phải trả về abstract products. Bằng cách này client code mà sử dụng factory không dính liền với một variant cụ thể của product nào từ factory. <strong>Client</strong> có thể làm việc với bất kì factory/product variant, miến là nó giao tiếp với đối tượng của chúng thông qua abstract interfaces.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3ca97f1" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-aded6e6 elementor-column elementor-col-100 elementor-top-column" data-id="aded6e6" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Ví dụ sau đây mô phỏng cách <strong>Abstract Factory </strong>pattern có thể sử dụng để tạo phần tử UI cross-platform mà không phụ thuộc client code đến lớp concrete UI, trong khi vấn giữ tất cả phần tử được tạo nhất quán với hệ điều hành được chọn.</p><p>Những phần tử UI ứng dụng cross-platform được kì vọng là sẽ có hành vì tương tự nhau, nhưng phải trông khác nhau một chút ở mỗi hệ điều hành khác nhau. Hơn thế nữa, đó là công việc của bạn để đảm bảo rằng phần tử UI khớp với style của hệ điều hành hiện tại. Bạn sẽ không muốn chương trình của bạn render macOS controls trên Windows.</p><p>Abstract Factory interface khai báo một bộ hàm tạo mà client code có thể sử dụng để sinh ra những phần tử UI khác loại. Lớp concrete factories tương ứng với từng hệ điều hành cụ thể và tạo những phần tử UI khớp với hệ điều hành đó.</p><p>Nó làm việc giống như thế này: khi một ứng dụng được chạy, nó sẽ kiểm tra loại hệ điều hành. Ứng dụng sử dụng thông tin này để tạo ra đối tượng factory từ một lớp đúng với hệ điều hành đó. Và toàn bộ code sẽ sử dụng factory này để tạo phần tử UI. Việc này ngăn chặn việc tạo sai element.</p><p>Với cách này, client code ko phụ thuộc vào concrete classes của factories và UI element miên là nó làm việc được với những đối tượng thông qua abstract interface của chúng. Và việc này cũng khiến client code hỗ trỡ những factories khác hoặc UI elements mà bạn có thể thêm trong tương lai.</p><p>Kết quả là, bạn không cần phải sửa client code mỗi khi thêm một loại phần tử UI mới vào ứng dụng. Bạn chỉ phải tạo thêm một lớp factory mới sinh ra những elements và thay đổi một tí ở bước khởi tạo code để lựa chọn lớp thích hợp.</p><p> </p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d1dd127" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-e5dd5e0 elementor-column elementor-col-100 elementor-top-column" data-id="e5dd5e0" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Abstract Factory khi code bạn cần làm việc với nhiều families của related products, nhưng bạn không muốn nó phụ thuộc vào concrete classes của products &#8211; chúng có thể không được biết trước hoặc chỉ đơn giản bạn muốn cho phép nó mở rộng sau này.</strong></p><p>Abstract Factory cho bạn một interface để tạo đối tượng mỗi lớp của product family. Miễn là code bạn tạo đối tượng thông qua interface này, bạn không phải lo lắng về việc tạo sai variant của product mà không khớp với products tạo sẵn bởi ứng dụng.</p><ul><li>Xem xét việc triển khai Abstract Factory khi bạn có một lớp với một bộ <strong>Factory Method </strong>mà mờ đi nhiệm vụ chính.</li><li>Trong một chương trình được thiết kế tốt, mỗi lớp chỉ có nhiệm vụ cho một thứ. Khi một lớp làm việc với nhiều loại product, cần xem xét việc tách factory methods thành một lớp factory như là một Abstract Factory.</li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Map ma trạn của những product riêng biệt với những variants products.</p><p>2. Khai bảo abstract product interfaces cho tất cả product types. Và cho phép tất cả concrete product classes implement những interface này.</p><p>3. Khai báo abstract factory interface với bộ hàm tạo cho tất cả abstract products.</p><p>4. Implement bộ concrete factory classes, một cho từng product variant.</p><p>5. Tạo code khởi tạo factory trong app. Nó nên được khởi tạo một trong những concrete factory classes, phụ thuộc vào cấu hình app hoặc environment hiện tại. Truyền đối tượng factory này vào tất cả lớp mà xây dựng products.</p><p>6. Quét tất cả code và tìm những đoạn gọi trực tiếp đến constructors. Thay thế chúng với một hàm tạo phù hợp trong đối tượng factory.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8fd831a" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-c8d0bdf elementor-column elementor-col-100 elementor-top-column" data-id="c8d0bdf" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể đảm bảo product lấy từ factory tương thích với nhau.</li><li>Tránh phụ thuộc giữa concrete product và client code</li><li><em>Single Reponsibility Principle</em>. Bạn có thể tách code tạo product ra nơi khác, khiến code dễ bảo trì hơn.</li><li><em>Open/Closed Principle. </em>Bạn có thể đưa vào mọt variant product mới mà không thay đổi code cũ.</li></ul><p><strong>Nhược:</strong></p><ul><li>Code có thể trở nên phức tạp hơn bình thường, bởi vì có nhiều class và interface trong pattern này.</li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4fa2c19" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-95f1038 elementor-column elementor-col-100 elementor-top-column" data-id="95f1038" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li><strong>Builder </strong>tập trung vào việc khởi tạo đối tượng phức tạp từng bước một. <strong>Abstract Factory</strong> đặc biệt trong việc tạo familes của những đối tượng liên quan. <em>Abstract Factory </em>trả về product ngay lập tức, trong khi <em>Builder </em>cho bạn chạy một số bước trước khi trả về product.</li><li>Lớp<strong> Abstract Factory</strong> thường được dựa trên bộ <strong>Factory Method</strong>, nhưng bạn có thể sử dụng <strong>Prototype</strong> để kết hợp những phương thức của nhiều lớp.</li><li><strong>Abstract Factory </strong>có thể dùng thay thế cho <strong>Facade</strong> khi bạn chỉ muốn che đi cách mà đối tượng subsystem được tạo từ client code.</li><li>Bạn có thể sử dụng <strong>Factory Method</strong> cùng với <strong>Bridge</strong>. Việc pairing này hữu dụng khi một vài abstractions được định nghĩa bởi <em>Bridge </em>có thể làm việc với implementation cụ thể. Trong trường hợp này, <em>Abstract Factory</em> có thể encapsulate mỗi quan hệ và che đi tính phức tạp từ client code.</li><li><strong>Abstract Factory, Builders, </strong>và <strong>Prototypes </strong>có thể implemented như <strong>Singletons.</strong></li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="08b3d95" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-9def2aa elementor-column elementor-col-100 elementor-top-column" data-id="9def2aa" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/abstract-factory">Abstract Factory</a></p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
 						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -438,212 +651,212 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #1: Factory Method</title>
-		<link>https://blog.doanhien.cf/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
+		<link>https://blog.9xdevelopers.com/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Tue, 29 Sep 2020 15:24:22 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.doanhien.cf/?p=1478</guid>
+		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1478</guid>
 
 					<description><![CDATA[<p>Được biết đến như: Hàm khởi tạo ảo Ý định Factory Method là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo. Vấn đề Tưởng tượng rằng bạn đang tạo ra một &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.doanhien.cf/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">minutes</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
-			<div class="elementor-inner">
-				<div class="elementor-section-wrap">
-							<section class="elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e5c8cd1" data-element_type="section">
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-3624e6d elementor-column elementor-col-100 elementor-top-column" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p><b>Được biết đến như: </b>Hàm khởi tạo ảo</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4d3f663" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-79497fd elementor-column elementor-col-100 elementor-top-column" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Factory Method </strong>là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="dbe06ff" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8a4f3c1 elementor-column elementor-col-100 elementor-top-column" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn đang tạo ra một ứng dụng quản lý ngành logistics. Phiên bản đầu tiên của ứng dụng bạn chỉ có thể giải quyết phương tiện là xe tải, vì thế phần lớn code của bạn sẽ nằm trong lớp <strong>Truck</strong>.</p><p>Một thời gian sau, ứng dụng của bạn trở nên phổ biến, mỗi ngày bạn nhận được nhiều yêu cầu từ những công ty vận chuyển đường biển để tích hợp sea logistic vô ứng dụng.</p><p>Điều đó là tốt, phải không? Nhưng về code thì tính sao? Hiện tại hầu hết code của bạn dính liền với lớp <strong>Truck</strong>. Thêm <strong>Ships </strong>vào ứng dụng sẽ yêu cầu thay đổi lại code. Hơn thế nữa, sau này bạn quyết định thêm một loại khác của phương tiện vận chuyển vào ứng dụng, bạn có thể sẽ làm điều này một lần nữa.</p><p>Và kết quả, code bạn sẽ trở nên bừa bộn, khó hiểu với những điều kiện mà thay đối cách thức xử lý của ứng dụng dựa vào đối tượng lớp vận chuyển</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b226f43" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-bd4a605 elementor-column elementor-col-100 elementor-top-column" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Factory Method pattern sẽ yêu cầu bạn thay thể cách gọi khởi tạo đối tượng trực tiếp (sử dụng toán tử <strong>new</strong>) với một hàm factory đặc biệt. Đừng lo lắng, đối tượng sẽ vẫn được tạo thông qua toán tử <strong>new</strong>, nhưng nó sẽ được gọi thông qua một factory method. Đối tượng trả về bởi factory method thường được xem như là <em>products</em> </p><p>Thoạt nhìn, sự thay đổi này trông như vô nghĩa: chúng ta chỉ di chuyển cách gọi hàm khởi tạo từ một nơi của chương trình sang nơi khác. Tuy nhiên, hãy xem xet điều này: bây giờ bạn có thể override factory method trong lớp con và thay đổi lớp products được tạo bởi hàm này.</p><p>Có một nhược điểm là: lớp con có thể trả về những loại products khác nhau chỉ khi nếu những products có một lớp chung hoặc interface. Factory method trong lớp gốc nên có khai bảo trả về loại như là interface.</p><p>Ví dụ, cả 2 lớp <strong>Truck</strong> và lớp <strong>Ship </strong>nên thực thi interface <strong>Transport </strong>đã được khai bào phương thức <strong>deliver</strong>. Mỗi lớp thực thi phương thức bằng những cách khác nhau: trucks thì deliver hàng hóa trên đường bộ, ship thì deliver hàng hóa bằng đường thủy. Factory method trong lớp <strong>RoadLogistics</strong> sẽ trả về một đối tượng truck, trong khi factory method trong lớp <strong>SeaLogistics </strong>trả về ship.</p><p>Code sử dụng factory method (thường được gọi là <em>client</em> code) sẽ không thấy được sự khác biệt giữa products thực tế được trả về bởi những lớp con khác. Client sẽ xem những products như là trừu tượng <strong>Transport</strong>. Client sẽ biết được những đối tượng vận chuyển nào sẽ có phương thức <strong>deliver</strong>, nhưng nó hoạt động cụ thể ra sao thì không quan trọng cho client</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0e0d589" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-52ae78e elementor-column elementor-col-100 elementor-top-column" data-id="52ae78e" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p><strong>1. Product</strong> khai báo một interface, để làm chung cho tất cả những đối tượng mà có thể được tạo bởi creator và lớp con của chúng.</p><p><strong>2. Concrete Products </strong>là những thực thi khác nhau của product interface</p><p><strong>3. Creator</strong> là lớp khai bao factory method trả về một đối tượng product mới. Phương thức này quan trọng bởi loại mà phương thức này trả về phải khớp với product interface.</p><p>Bạn có thể khai báo factory method là trừu tượng buộc những lớp con của nó thực thi phiên bản phương thức của chúng. Ngoài ra, base factory method có thể trả về loại product mặc định.</p><p>Lưu ý, mặc dù tên, product creation <strong>không</strong> phải là nhiệm vụ chính của creatỏr. Thông thường, lớp creator sẽ có sẵn những logic nghiệp vụ chính liên quan đến products. Factory method giúp giảm phụ thuộc những logic này từ những lớp product con. Đây là một điều tương tự:  Một công ty phát triển phần mềm lớn có thể có những khóa huấn luyện cho lập trình viên. Tuy nhiên, nhiệm vụ chính của công ty vẫn là viết code, chứ không phải đào tạo ra lập trình viên.</p><p><strong>4. Concrete Creators </strong>đè lên factory method gốc để có thể trả về những loại product khác nhau.</p><p>Lưu ý rằng factory method không cần phải lúc nào cũng tạo ra thực thể. Nó có thể trả về một đối tượng đã tồn tại từ cache, một đối tượng pool hoặc nguồn khác.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3ca97f1" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-aded6e6 elementor-column elementor-col-100 elementor-top-column" data-id="aded6e6" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Ví dụ này sẽ mô phỏng cách mà <strong>Factory Method </strong>có thể được sử dụng để tạo cross-platform UI mà không dính liền với client code với lớp UI cụ thể.</p><p> </p><p>Lớp dialog gốc sử dụng những phần tử UI khác nhau để render cửa sổ. Dưới mỗi hệ điều hành, những phần tử sẽ trông có chút khác biệt, nhưng chúng vẫn xử lý giống nhau. Một cái nút trên Windows vẫn là một cái nút trên Linux.</p><p>Khi factory method được áp dụng, bạn không cần phải viết lại logic của dialog cho từng hệ điều hành. Nếu chúng ta khai báo một factory method sinh ra cái nút bên trong một lớp base dialog, chúng ta có thể tạo một lớp con trả về mốt cái nút kiểu Windows từ factory method. Lớp con được kế thừa hầu hết dialog code từ lớp gốc, nhưng, nhờ có factory method, có thể render một cái nút như của Windows trên màn hình.</p><p>Để ứng dụng pattern này, base dialog phải làm việc với abstract buttons: Là một base class hoặc một interface ma những lớp con theo. Bằng cách này, code của dialog được giữ lại chức năng, bất kể loại button nào làm việc với.</p><p>Tất nhiên, bạn có thể áp dụng cách này cho những phần tử UI khác. Tuy nhiên, với mỗi factory method mới bạn thêm vô dialog, bạn càng tiến gần tới <strong>Abstract Factory </strong>pattern. Không đáng sợ, chúng ta sẽ nói về nó sau.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d1dd127" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-e5dd5e0 elementor-column elementor-col-100 elementor-top-column" data-id="e5dd5e0" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p>Sử dụng Factory Method khi bạn không biết trước được chính xác loại và sự phụ thuộc của đối tượng mà code bạn sẽ làm việc tới.</p><p>The Factory Method chia cấu trúc product code từ code thực tế sử dụng product. Vì vậy, nó sẽ dễ mở rộng cấu trúc code product độc lập xuyên suốt code.</p><p>Ví dụ, khi thêm một loại product khác vào ứng dụng, bạn chỉ cần tạo một lớp con creator mới và override factory method trong nó.</p><p>Sử dụng Factory Method khi bạn muốn cung cấp người dùng của thư viện hoặc framework của bạn cách để mở rộng những thành phần nội bộ.</p><p>Kế thừa có lẻ là cách tốt nhất để mở rộng hành vi mặc đinh của thư viện hoặc framework. Nhưng framework sẽ nhận ra rằng lớp con sẽ được dùng thay vì thành phần gốc như thế nào?</p><p>Giải pháp là để giảm code xây dựng thành phần của framework vô một factory method và cho phép mọi người kế thừa phương thức này thêm vào đó là mở rộng thêm.</p><p>Hãy xem ví dụ sau. Tưởng tượng rằng bạn đang viết một framework UI mã nguồn mở. Ứng dụng của bạn nên có một cái nút tròn, nhưng framework chỉ cho cái nút vuông. Bạn mở rộng <strong>Button</strong> gốc với một lớp <strong>RoundButton</strong>. Nhưng bây giờ bạn muốn nói với lớp main <strong>UIFramework</strong><strong> </strong>sử dụng cái nút mới từ lớp con đó thay vì mặc định.</p><p>Để đạt được điều này, bạn tạo một lớp con <strong>UIWithRoundButton</strong> từ lớp framework gốc và override phương thức <strong>createButton. </strong>Trong khi hàm này trả về một đối tượng <strong>Button</strong> trong lớp gốc, bạn thay đối lớp con ấy trả về đối tượng <strong>RoundButton</strong>. Bây giờ sử dụng <strong>UIWithRoundButtons</strong><strong> </strong>thay vì <strong>UIFramework. </strong>Và như thế đã giải quyết được!</p><p><strong>Sử dụng Factory Method khi bạn muốn lưu tài nguyên hệ thống bằng việc tái sử dụng những đối tượng thay vì tạo lại mỗi lần.</strong></p><p>Bạn thường thử thách điều này khi xử lý với những đối tượng lớn và tài nguyên chuyên sâu như kết nối database , hệ thống file và tài nguyên mạng</p><p>Hãy nghĩ về những điều nên được làm khi tải sử dụng đối tượng:</p><p>1. Thứ nhất, bạn cần phải tạo một kho chứ để theo dõi những đối tượng được tạo.</p><p>2. Khi một ai đó yêu cầu đối tượng, chương trình nên kiếm một đối tượng rảnh trong pool</p><p> 3. Và trả nó về cho client code.</p><p>4. Nếu không có đối tượng free, chương trình nên tạo mới (và thêm nó vào pool)</p><p>Đó là rất nhiều code! Và nó phải được đưa vào một nơi mà bạn sẽ không làm xấu chương trình với code trùng.</p><p>Có lẽ nơi rõ ràng và tiện lợi nhất mà code này được đặt là hàm khởi tạo của lớp mà đối tượng của nó chúng ta sẽ tái sử dụng. Tuy nhiên constructor phải luôn trả về một đối tượng mới bởi định nghĩa. Nó không thể trả về những thực thể đã tồn tại.</p><p>Vì vậy, bạn cần phải có một phương thức chính thức để có khả năng tạo mới cũng như tải sử dụng. Trong có vẻ giống như factory method.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="91ca202" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-8f690e4 elementor-column elementor-col-100 elementor-top-column" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Làm cho tất cả product giống interface. Interface này nên khai báo những phương thức có nghĩa cho mỗi product.</p><p>2. Thêm một refactor method rỗng bên trong lớp creator. Kết quả trả về loại của phương thức này giống với product interface chung.</p><p>3. Trong code của creator tìm tới những hàm khởi tảo của product, và lần lượt thay thế nó bởi factory method</p><p>Bạn có thể cần phải thêm một tham số tạm thời cho factory method để xác định loại product trả về.</p><p>Lúc này, code của factory method trông xấu. Nó có thể gồm nhiều toán tử <strong>switch</strong> để xác định loại product nào để tạo. Đừng lo lắng, chúng ta sẽ sửa nó ngay thôi.</p><p>4. Bây giờ tạo ra những bộ lớp con cho từng loại product được liệt kê trong factory method. Override factory method trong lớp con và xử lý lại code cho phù hợp hơn từ hàm gốc.</p><p>5. Nếu có nhiều loại product và nó không có ý nghĩa nếu tạo nhiều lớp con cho chúng, bạn có thể tái sử dụng tham số từ lớp cha trong lớp con.</p><p>Ví dụ, tưởng tượng rằng bạn có một hệ thống lớp cấp bậc sau: Lớp gốc <strong>Mail</strong> với những lớp con: <strong>AirMail </strong>và <strong>GroundMail; </strong>lớp <strong>Transport </strong>là <strong>Plane, Truck</strong> và <strong>Train</strong>. Trong khi lớp <strong>AirMail</strong><strong> </strong>chỉ sử dụng đối tượng <strong>Plane, </strong><strong>GroundMail </strong>chỉ làm việc với <strong>Truck</strong> và <strong>Train</strong>. Bạn có thể tạo những lớp con mới (như <strong>TrainMail</strong>) để giải quyết vấn đề, nhưng có một cách khác. Client code có thể truyền vào tham số của factory method của lớp <strong>GroundMail</strong> để xác định product nào sẽ được sinh ra.</p><p>6. Nếu sau tất cả sự xóa bỏ, hàm factory method gốc trở nên rỗng, bạn có thể làm nó thành abstract. Nếu có điều gì đó còn lại, bạn có thể viết những hành vi mặc định cho hàm đó.</p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8fd831a" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-c8d0bdf elementor-column elementor-col-100 elementor-top-column" data-id="c8d0bdf" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Tránh được sự lệ thuộc giữa creator và concrete products.</li><li><em>Single Reponsibility Principle. </em>Bạn có thể di chuyển code của product creation vào một nơi trong chương trình, làm cho code dễ dàng hơn khi viết thêm.</li><li><em>Open/Closed Principle. </em>Bạn có thể thêm những loại mới của product mà không phá đi code cũ</li></ul><p><strong>Nhược:</strong></p><ul><li>Code có thể trở nên phức tạp nếu bạn thêm nhiều lớp con vào pattern này. Trường hợp tốt nhất khi bạn đưa pattern này vào một hệ thống cấp bậc đã tồn tại của lớp creator</li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4fa2c19" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-95f1038 elementor-column elementor-col-100 elementor-top-column" data-id="95f1038" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Rất nhiều thiết kế bắt đầu sử dụng <strong>Factory Method</strong> (ít phức tạp và có thể mở rộng tùy chỉnh thông qua lớp con) và liên quan tới <strong>Abstract Factory, Prototype, </strong>hoặc <strong>Builder</strong> (Linh hoạt hơn nhưng phức tạp hơn)</li><li>Lớp<strong> Abstract Factory</strong> thường được dựa trên bộ <strong>Factory Method</strong>, nhưng bạn có thể sử dụng <strong>Prototype</strong> để kết hợp những phương thức của nhiều lớp.</li><li>Bạn có thể sử dụng <strong>Factory Method</strong> cùng với <strong>Iterator</strong> để bộ lớp con trả về những loại khác nhau của iterator có thể tương thích với một bộ.</li><li><strong>Prototype </strong>không dựa trên sự kế thừa, vì vậy nó không có điểm trừ. Mặt khác, <em>Prototype </em>yêu cầu một sự khởi tạo phức tạp của đối tượng nhân bản. <strong>Factory Method </strong>dựa trên kế thừa nhưng nó không cần đến bước khởi tạo.</li><li><strong>Factory Method </strong>là một dạng đặc biết của <strong>Template Method</strong>. Đôi khi, <em>Factory Method </em>có thể hỗ trợ nhiều bước trong <em>Template Method </em>lớn.</li></ul></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
-				<section class="elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="08b3d95" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-row">
-				<div class="elementor-element elementor-element-9def2aa elementor-column elementor-col-100 elementor-top-column" data-id="9def2aa" data-element_type="column">
-			<div class="elementor-column-wrap  elementor-element-populated">
-					<div class="elementor-widget-wrap">
-				<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/factory-method">Factory Method</a></p></div>
 				</div>
 				</div>
 						</div>
-			</div>
+					</div>
 		</div>
-						</div>
-			</div>
+								</div>
+					</div>
 		</section>
 						</div>
-			</div>
-		</div>
-		<p>The post <a rel="nofollow" href="https://blog.doanhien.cf/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.doanhien.cf/">Hien Nguyen Blog</a>.</p>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
