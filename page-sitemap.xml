@@ -1,113 +1,129 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//blog.doanhien.cf/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//blog.9xdevelopers.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://blog.doanhien.cf/</loc>
+		<loc>https://blog.9xdevelopers.com/</loc>
 		<lastmod>2020-09-02T16:44:01+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/9x-logo-3.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/9x-logo-3.png</image:loc>
 			<image:title><![CDATA[9x -logo (3)]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/place-holder-avatar.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/place-holder-avatar.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/5847ea22cef1014c0b5e4833.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/5847ea22cef1014c0b5e4833.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/1200px-.NET_Core_Logo.svg-1024x1024.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/1200px-.NET_Core_Logo.svg-1024x1024.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/vertical-logo-monochromatic.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/vertical-logo-monochromatic.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/1200px-Postgresql_elephant.svg.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/1200px-Postgresql_elephant.svg.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/iconfinder_React.js_logo_1174949.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/iconfinder_React.js_logo_1174949.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/1200px-PHP-logo.svg.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/1200px-PHP-logo.svg.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/1-Number-PNG.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/1-Number-PNG.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/2-Number-PNG.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/2-Number-PNG.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/3-Number-PNG.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/3-Number-PNG.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/arif-riyanto-G1N9kDHqBrQ-unsplash-scaled.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/arif-riyanto-G1N9kDHqBrQ-unsplash-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/JavaScript-logo-1024x1024.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/JavaScript-logo-1024x1024.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/C_Sharp_logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/C_Sharp_logo.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/5848152fcef1014c0b5e4967.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/5848152fcef1014c0b5e4967.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/logo_java.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/logo_java.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/contact/</loc>
+		<loc>https://blog.9xdevelopers.com/contact/</loc>
 		<lastmod>2020-08-16T12:48:39+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/team/</loc>
+		<loc>https://blog.9xdevelopers.com/team/</loc>
 		<lastmod>2020-08-17T06:37:04+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/posts/</loc>
+		<loc>https://blog.9xdevelopers.com/posts/</loc>
 		<lastmod>2020-08-17T06:37:35+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/</loc>
 		<lastmod>2020-08-31T07:16:29+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/</loc>
 		<lastmod>2020-08-31T07:19:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/bloaters/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/bloaters/</loc>
 		<lastmod>2020-08-31T07:37:21+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/object-orientation-abusers/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/object-orientation-abusers/</loc>
 		<lastmod>2020-09-01T07:38:28+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/change-preventers/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/change-preventers/</loc>
 		<lastmod>2020-09-15T07:47:38+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/dispensables/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/dispensables/</loc>
 		<lastmod>2020-09-24T02:58:17+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/design-patterns/</loc>
+		<loc>https://blog.9xdevelopers.com/design-patterns/</loc>
 		<lastmod>2020-09-28T05:03:48+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/design-patterns/design-patterns-la-gi/</loc>
+		<loc>https://blog.9xdevelopers.com/design-patterns/design-patterns-la-gi/</loc>
 		<lastmod>2020-09-28T05:06:10+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/design-patterns/lich-su/</loc>
+		<loc>https://blog.9xdevelopers.com/design-patterns/lich-su/</loc>
 		<lastmod>2020-09-29T07:03:35+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/design-patterns/tai-sao-can-hoc-patterns/</loc>
+		<loc>https://blog.9xdevelopers.com/design-patterns/tai-sao-can-hoc-patterns/</loc>
 		<lastmod>2020-10-01T07:06:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactoring/smells/couplers/</loc>
+		<loc>https://blog.9xdevelopers.com/refactoring/smells/couplers/</loc>
 		<lastmod>2020-10-02T02:15:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/shop/</loc>
+		<lastmod>2020-10-02T04:24:21+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/cart/</loc>
+		<lastmod>2020-10-02T04:24:21+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/checkout/</loc>
+		<lastmod>2020-10-02T04:24:22+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/my-account/</loc>
+		<lastmod>2020-10-02T04:24:22+00:00</lastmod>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
