@@ -1,363 +1,379 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//blog.doanhien.cf/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//blog.9xdevelopers.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://blog.doanhien.cf/python-coding-standards-and-naming-conventions/</loc>
+		<loc>https://blog.9xdevelopers.com/python-coding-standards-and-naming-conventions/</loc>
 		<lastmod>2020-04-06T11:58:26+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/code-1586161407726-4599.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/code-1586161407726-4599.jpg</image:loc>
 			<image:title><![CDATA[code-1586161407726-4599]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/learn-react-with-kudvenkat/</loc>
+		<loc>https://blog.9xdevelopers.com/learn-react-with-kudvenkat/</loc>
 		<lastmod>2020-04-07T04:47:57+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/iconfinder_React.js_logo_1174949.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/iconfinder_React.js_logo_1174949.png</image:loc>
 			<image:title><![CDATA[iconfinder_React.js_logo_1174949]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/git-kraken-best-git-ui-for-developers/</loc>
+		<loc>https://blog.9xdevelopers.com/git-kraken-best-git-ui-for-developers/</loc>
 		<lastmod>2020-04-07T05:38:03+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/5847f989cef1014c0b5e48bf.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/5847f989cef1014c0b5e48bf.png</image:loc>
 			<image:title><![CDATA[5847f989cef1014c0b5e48bf]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/learn-net-core-with-kuvenkat/</loc>
+		<loc>https://blog.9xdevelopers.com/learn-net-core-with-kuvenkat/</loc>
 		<lastmod>2020-04-09T02:34:43+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/1200px-.NET_Core_Logo.svg.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/1200px-.NET_Core_Logo.svg.png</image:loc>
 			<image:title><![CDATA[1200px-.NET_Core_Logo.svg]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/learn-responsive-design-from-google/</loc>
+		<loc>https://blog.9xdevelopers.com/learn-responsive-design-from-google/</loc>
 		<lastmod>2020-04-10T05:44:44+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/Screenshot-from-2020-04-10-12-40-50.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/Screenshot-from-2020-04-10-12-40-50.png</image:loc>
 			<image:title><![CDATA[Screenshot from 2020-04-10 12-40-50]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/stackoverflow-survey-2019/</loc>
+		<loc>https://blog.9xdevelopers.com/stackoverflow-survey-2019/</loc>
 		<lastmod>2020-04-10T06:21:15+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/Stackoverflow-Survey-2019.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/Stackoverflow-Survey-2019.png</image:loc>
 			<image:title><![CDATA[Stackoverflow Survey 2019]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/katacoda-platform-to-learn-new-skills-in-information-technology/</loc>
+		<loc>https://blog.9xdevelopers.com/katacoda-platform-to-learn-new-skills-in-information-technology/</loc>
 		<lastmod>2020-04-12T07:19:48+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/katacoda-logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/katacoda-logo.png</image:loc>
 			<image:title><![CDATA[katacoda-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/difference-between-0-0-0-0-127-0-0-1-and-localhost/</loc>
+		<loc>https://blog.9xdevelopers.com/difference-between-0-0-0-0-127-0-0-1-and-localhost/</loc>
 		<lastmod>2020-04-12T14:14:14+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/stackoverflow-logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/stackoverflow-logo.png</image:loc>
 			<image:title><![CDATA[stackoverflow-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/id3/</loc>
+		<loc>https://blog.9xdevelopers.com/id3/</loc>
 		<lastmod>2020-04-15T07:46:52+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/algorithm.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/algorithm.jpg</image:loc>
 			<image:title><![CDATA[algorithm]]></image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/weak-wind-factor-on-decision.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/weak-wind-factor-on-decision.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/strong-wind-factor-on-decision.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/strong-wind-factor-on-decision.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/root-decision.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/root-decision.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/anaconda-the-worlds-most-popular-data-science-platform/</loc>
+		<loc>https://blog.9xdevelopers.com/anaconda-the-worlds-most-popular-data-science-platform/</loc>
 		<lastmod>2020-04-15T08:08:21+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/anaconda-logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/anaconda-logo.png</image:loc>
 			<image:title><![CDATA[anaconda-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/pandas-python-data-analysis-library/</loc>
+		<loc>https://blog.9xdevelopers.com/pandas-python-data-analysis-library/</loc>
 		<lastmod>2020-04-16T04:05:57+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/pandas-logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/pandas-logo.png</image:loc>
 			<image:title><![CDATA[pandas-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/what-is-information-gain/</loc>
+		<loc>https://blog.9xdevelopers.com/what-is-information-gain/</loc>
 		<lastmod>2020-04-16T05:12:43+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/question.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/question.png</image:loc>
 			<image:title><![CDATA[question]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/github-folder-issue-and-pull-request-templates/</loc>
+		<loc>https://blog.9xdevelopers.com/github-folder-issue-and-pull-request-templates/</loc>
 		<lastmod>2020-04-16T08:30:27+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/github-logo.jpeg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/github-logo.jpeg</image:loc>
 			<image:title><![CDATA[github-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/whats-the-difference-between-scss-and-sass/</loc>
+		<loc>https://blog.9xdevelopers.com/whats-the-difference-between-scss-and-sass/</loc>
 		<lastmod>2020-04-17T13:02:59+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/stackoverflow-logo.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/stackoverflow-logo.png</image:loc>
 			<image:title><![CDATA[stackoverflow-logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/how-to-store-dotfiles/</loc>
+		<loc>https://blog.9xdevelopers.com/how-to-store-dotfiles/</loc>
 		<lastmod>2020-04-25T09:23:56+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/dotfiles.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/dotfiles.png</image:loc>
 			<image:title><![CDATA[dotfiles]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/cognitive-complexity/</loc>
+		<loc>https://blog.9xdevelopers.com/cognitive-complexity/</loc>
 		<lastmod>2020-08-15T10:27:40+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/cognitive-complexity.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/cognitive-complexity.jpg</image:loc>
 			<image:title><![CDATA[cognitive-complexity]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/c45/</loc>
+		<loc>https://blog.9xdevelopers.com/c45/</loc>
 		<lastmod>2020-08-15T12:38:22+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/C4.5.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/C4.5.png</image:loc>
 			<image:title><![CDATA[C4.5]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/technical-debt-la-gi/</loc>
+		<loc>https://blog.9xdevelopers.com/technical-debt-la-gi/</loc>
 		<lastmod>2020-08-30T09:38:47+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/technical-deb-1.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/technical-deb-1.jpg</image:loc>
 			<image:title><![CDATA[technical-deb]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/clean-code-la-gi/</loc>
+		<loc>https://blog.9xdevelopers.com/clean-code-la-gi/</loc>
 		<lastmod>2020-08-30T09:39:12+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/clean-code.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/clean-code.jpg</image:loc>
 			<image:title><![CDATA[clean-code]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/khi-nao-can-phai-refactor/</loc>
+		<loc>https://blog.9xdevelopers.com/khi-nao-can-phai-refactor/</loc>
 		<lastmod>2020-08-30T09:43:06+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/khi-nao-can-phai-refactor.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/khi-nao-can-phai-refactor.jpg</image:loc>
 			<image:title><![CDATA[khi-nao-can-phai-refactor]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/refactor-nhu-the-nao/</loc>
+		<loc>https://blog.9xdevelopers.com/refactor-nhu-the-nao/</loc>
 		<lastmod>2020-08-30T09:43:17+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/refactor-nhu-the-nao.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/refactor-nhu-the-nao.jpg</image:loc>
 			<image:title><![CDATA[refactor-nhu-the-nao]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/phuong-thuc-dai/</loc>
+		<loc>https://blog.9xdevelopers.com/phuong-thuc-dai/</loc>
 		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/phuong-thuc-dai.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/phuong-thuc-dai.jpg</image:loc>
 			<image:title><![CDATA[phuong-thuc-dai]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/lop-lon/</loc>
+		<loc>https://blog.9xdevelopers.com/lop-lon/</loc>
 		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/lop-lon.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/lop-lon.jpg</image:loc>
 			<image:title><![CDATA[lop-lon]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/lam-dung-cac-kieu-du-lieu-nguyen-thuy/</loc>
+		<loc>https://blog.9xdevelopers.com/lam-dung-cac-kieu-du-lieu-nguyen-thuy/</loc>
 		<lastmod>2020-08-31T07:30:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/primative-obsession.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/primative-obsession.jpg</image:loc>
 			<image:title><![CDATA[primative-obsession]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/danh-sach-tham-so-dai/</loc>
+		<loc>https://blog.9xdevelopers.com/danh-sach-tham-so-dai/</loc>
 		<lastmod>2020-09-01T07:36:37+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/long-parameter-list.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/long-parameter-list.jpg</image:loc>
 			<image:title><![CDATA[long-parameter-list]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/du-lieu-nhoi-nhet/</loc>
+		<loc>https://blog.9xdevelopers.com/du-lieu-nhoi-nhet/</loc>
 		<lastmod>2020-09-02T16:06:45+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/08/data-clumps.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/data-clumps.jpg</image:loc>
 			<image:title><![CDATA[data-clumps]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/cau-lenh-switch/</loc>
+		<loc>https://blog.9xdevelopers.com/cau-lenh-switch/</loc>
 		<lastmod>2020-09-03T06:58:06+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/switch-statements.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/switch-statements.jpg</image:loc>
 			<image:title><![CDATA[switch-statements]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/javascript-coding-standards-and-naming-conventions/</loc>
+		<loc>https://blog.9xdevelopers.com/javascript-coding-standards-and-naming-conventions/</loc>
 		<lastmod>2020-09-03T07:00:53+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/javascript-coding-standards.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/javascript-coding-standards.jpg</image:loc>
 			<image:title><![CDATA[javascript-coding-standards]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/csharp-coding-standards-and-naming-conventions/</loc>
+		<loc>https://blog.9xdevelopers.com/csharp-coding-standards-and-naming-conventions/</loc>
 		<lastmod>2020-09-03T07:01:14+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/04/CodingConvention.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/04/CodingConvention.png</image:loc>
 			<image:title><![CDATA[CodingConvention]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/truong-tam/</loc>
+		<loc>https://blog.9xdevelopers.com/truong-tam/</loc>
 		<lastmod>2020-09-04T10:03:24+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/temporary-field.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/temporary-field.png</image:loc>
 			<image:title><![CDATA[temporary-field]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/tu-choi-su-ke-thua/</loc>
+		<loc>https://blog.9xdevelopers.com/tu-choi-su-ke-thua/</loc>
 		<lastmod>2020-09-07T08:45:42+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/refused-bequest.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/refused-bequest.png</image:loc>
 			<image:title><![CDATA[refused-bequest]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/lop-thay-the-voi-interface-khac-nhau/</loc>
+		<loc>https://blog.9xdevelopers.com/lop-thay-the-voi-interface-khac-nhau/</loc>
 		<lastmod>2020-09-15T07:52:30+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/alternative-classes-with-different-interfaces.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/alternative-classes-with-different-interfaces.png</image:loc>
 			<image:title><![CDATA[alternative-classes-with-different-interfaces]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/su-thay-o-nhieu-noi-trong-mot-lop/</loc>
+		<loc>https://blog.9xdevelopers.com/su-thay-o-nhieu-noi-trong-mot-lop/</loc>
 		<lastmod>2020-09-19T05:49:56+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/divergent-change.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/divergent-change.jpg</image:loc>
 			<image:title><![CDATA[divergent-change]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/nhieu-su-thay-doi-o-nhieu-lop/</loc>
+		<loc>https://blog.9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/</loc>
 		<lastmod>2020-09-23T09:19:31+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/shortgun-surgery.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/shortgun-surgery.jpg</image:loc>
 			<image:title><![CDATA[shortgun-surgery]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/comments/</loc>
+		<loc>https://blog.9xdevelopers.com/comments/</loc>
 		<lastmod>2020-09-24T03:20:59+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/comments.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/comments.jpg</image:loc>
 			<image:title><![CDATA[comments]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/code-trung/</loc>
+		<loc>https://blog.9xdevelopers.com/code-trung/</loc>
 		<lastmod>2020-09-25T02:26:19+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/dupplicate-code.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/dupplicate-code.jpg</image:loc>
 			<image:title><![CDATA[dupplicate-code]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/lop-luoi/</loc>
+		<loc>https://blog.9xdevelopers.com/lop-luoi/</loc>
 		<lastmod>2020-09-26T07:44:20+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/lazy-class.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/lazy-class.jpg</image:loc>
 			<image:title><![CDATA[lazy-class]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/lop-du-lieu/</loc>
+		<loc>https://blog.9xdevelopers.com/lop-du-lieu/</loc>
 		<lastmod>2020-09-28T02:23:57+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/data-class.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/data-class.jpg</image:loc>
 			<image:title><![CDATA[data-class]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/code-chet/</loc>
+		<loc>https://blog.9xdevelopers.com/code-chet/</loc>
 		<lastmod>2020-09-30T05:24:03+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/dead-code.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/dead-code.jpg</image:loc>
 			<image:title><![CDATA[dead-code]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/chu-trong-bat-can-thiet/</loc>
+		<loc>https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/</loc>
 		<lastmod>2020-09-30T05:32:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/speculative-generality.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/speculative-generality.jpg</image:loc>
 			<image:title><![CDATA[speculative-generality]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/abtract-history/</loc>
+		<loc>https://blog.9xdevelopers.com/abtract-history/</loc>
 		<lastmod>2020-10-01T14:47:40+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/abstract-factory.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/10/abstract-factory.png</image:loc>
 			<image:title><![CDATA[abstract-factory]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/factory-method/</loc>
+		<loc>https://blog.9xdevelopers.com/factory-method/</loc>
 		<lastmod>2020-10-01T15:29:24+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/09/factory-method.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/09/factory-method.png</image:loc>
 			<image:title><![CDATA[factory-method]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/builder/</loc>
+		<loc>https://blog.9xdevelopers.com/builder/</loc>
 		<lastmod>2020-10-02T02:12:07+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/builder.png</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/10/builder.png</image:loc>
 			<image:title><![CDATA[builder]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://blog.doanhien.cf/tinh-nang-ghen-ty/</loc>
-		<lastmod>2020-10-02T02:23:19+00:00</lastmod>
+		<loc>https://blog.9xdevelopers.com/tinh-nang-ghen-ty/</loc>
+		<lastmod>2020-10-03T06:38:33+00:00</lastmod>
 		<image:image>
-			<image:loc>https://blog.doanhien.cf/wp-content/uploads/2020/10/feature-envy.jpg</image:loc>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/10/feature-envy.jpg</image:loc>
+			<image:title><![CDATA[feature-envy]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/prototype/</loc>
+		<lastmod>2020-10-03T10:15:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/10/prototype.png</image:loc>
+			<image:title><![CDATA[prototype]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/</loc>
+		<lastmod>2020-10-03T11:09:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://blog.9xdevelopers.com/wp-content/uploads/2020/10/feature-envy.jpg</image:loc>
 			<image:title><![CDATA[feature-envy]]></image:title>
 		</image:image>
 	</url>
