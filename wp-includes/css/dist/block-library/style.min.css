@@ -8,7 +8,7 @@
 .wp-block-button__link.alignright {text-align: right;}
 .wp-block-button.is-style-squared, .wp-block-button__link.wp-block-button.is-style-squared {border-radius: 0;}
 .wp-block-button.no-border-radius, .wp-block-button__link.no-border-radius {border-radius: 0 !important;}
-.wp-block-button.is-style-outline .wp-block-button__link, .wp-block-button__link.is-style-outline {color: #32373c;background-color: transparent;border: 2px solid;}
+.is-style-outline .wp-block-button__link, .wp-block-button__link.is-style-outline {color: #32373c;background-color: transparent;border: 2px solid;}
 .wp-block-buttons .wp-block-button {display: inline-block;margin-right: 8px;margin-bottom: 8px;}
 .wp-block-buttons .wp-block-button:last-child {margin-right: 0;}
 .wp-block-buttons.alignright .wp-block-button {margin-right: 0;margin-left: 8px;}
