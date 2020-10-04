@@ -1,3 +1,8 @@
-body.elementor-kit-45 {background-color: #fff;font-family: "Times New Roman",Times New Roman;font-size: 16px;}
-body.elementor-kit-45 p {margin-bottom: 10px;}
-body.elementor-kit-45 button, body.elementor-kit-45 input[type="button"], body.elementor-kit-45 input[type="submit"], body.elementor-kit-45 .elementor-button {font-family: "Times New Roman",Times New Roman;text-shadow: 0px 0px 10px rgba(0,0,0,.3);}
+.elementor-kit-45 {--e-global-color-primary: #202020;--e-global-color-secondary: #b7b4b4;--e-global-color-text: #000;--e-global-color-accent: #76cdf2;--e-global-color-a318594: #6ec1e4;--e-global-color-41d60884: #54595f;--e-global-color-2cd982cd: #7a7a7a;--e-global-color-6f4b50ee: #61ce70;--e-global-color-508945b9: #4054b2;--e-global-color-2ff57c2e: #23a455;--e-global-color-188906a6: #000;--e-global-color-b1572ca: #fff;--e-global-typography-primary-font-family: "Times New Roman";--e-global-typography-primary-font-weight: 600;--e-global-typography-secondary-font-family: "Times New Roman";--e-global-typography-secondary-font-weight: 400;--e-global-typography-text-font-family: "Times New Roman";--e-global-typography-text-font-weight: 400;--e-global-typography-accent-font-family: "Times New Roman";--e-global-typography-accent-font-weight: 500;font-family: "Times New Roman",Times New Roman;font-size: 16px;background-color: #fff;}
+.elementor-kit-45 p {margin-bottom: 10px;}
+.elementor-kit-45 button, .elementor-kit-45 input[type="button"], .elementor-kit-45 input[type="submit"], .elementor-kit-45 .elementor-button {font-family: "Times New Roman",Times New Roman;text-shadow: 0px 0px 10px rgba(0,0,0,.3);}
+.elementor-section.elementor-section-boxed > .elementor-container {max-width: 1140px;}
+ {}
+h1.entry-title {display: var(--page-title-display);}
+@media (max-width:1024px) {.elementor-section.elementor-section-boxed > .elementor-container {max-width: 1025px;}}
+@media (max-width:767px) {.elementor-section.elementor-section-boxed > .elementor-container {max-width: 768px;}}
