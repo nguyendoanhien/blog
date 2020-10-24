@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Code Smells &#8211; 9x Developers&#039;s Blog</title>
-	<atom:link href="https://blog.9xdevelopers.com/category/refactoring/smells/feed/" rel="self" type="application/rss+xml" />
-	<link>https://blog.9xdevelopers.com/</link>
+	<atom:link href="https://9xdevelopers.com/category/refactoring/smells/feed/" rel="self" type="application/rss+xml" />
+	<link>https://9xdevelopers.com/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Sat, 03 Oct 2020 11:09:29 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 04 Oct 2020 15:00:16 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,25 +21,153 @@
 	<generator>https://wordpress.org/?v=5.5.1</generator>
 
 <image>
-	<url>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
+	<url>https://9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
 	<title>Code Smells &#8211; 9x Developers&#039;s Blog</title>
-	<link>https://blog.9xdevelopers.com/</link>
+	<link>https://9xdevelopers.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #24: Message Chains</title>
+		<link>https://9xdevelopers.com/message-chains/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=message-chains</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2020 14:54:37 +0000</pubDate>
+				<category><![CDATA[Dispensables]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1634</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Khi bạn thấy trong code có một loạt các lệnh gọi tương tự như này $a-&#62;b()-&#62;c()-&#62;d() Lý do của những vấn đề này Message Chains xảy ra khi một lớp client yêu cầu một đối tượng khác, mà đối tượng đó yêu cầu một đối tượng khác, và tiếp tục như &#8230;</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/message-chains/"> <span class="screen-reader-text">Series Refactoring – #24: Message Chains</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/message-chains/">Series Refactoring – #24: Message Chains</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1634" class="elementor elementor-1634" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Khi bạn thấy trong code có một loạt các lệnh gọi tương tự như này<strong> $a-&gt;b()-&gt;c()-&gt;d()</strong></li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Message Chains xảy ra khi một lớp client yêu cầu một đối tượng khác, mà đối tượng đó yêu cầu một đối tượng khác, và tiếp tục như vậy. Các chuỗi này có nghĩa là lớp client phụ thuộc vào điều hướng theo cấu trúc lớp. Bất kỳ thay đổi nào trong các mối quan hệ này đều phải chỉnh sửa lớp client.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Để xóa một message chain, sử dụng <a href="https://refactoring.guru/hide-delegate">Hide Delegate.</a></li><li>Đôi khi, nghĩ về lý do tại sao một đối tượng cuối cùng được sử dụng. Có thể nó sẽ hợp lý nếu sử dụng <a href="https://refactoring.guru/extract-method">Extract Method</a> cho chức năng và di chuyển đến đầu của chuỗi message, bằng cách sử dụng <a href="https://refactoring.guru/move-method">Move Method</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Giảm sự phụ thuộc giữa các lớp của một chuỗi.</li><li>Code bớt cồng kềnh.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fa0ba13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa0ba13" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb111d4" data-id="bb111d4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-49484c1 elementor-widget elementor-widget-text-editor" data-id="49484c1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><b>khi nào có thể bỏ qua việc này</b></p><ul><li>Việc ẩn các lớp ủy quyền quá mức sẽ khó để thấy chức năng thực sự xảy ra ở đâu. Nói cách khác, tránh luôn cả smell <a href="https://refactoring.guru/smells/middle-man">Middle Man</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/inappropriate-intimacy">Message Chains</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/message-chains/">Series Refactoring – #24: Message Chains</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #23: Thân thiết không thích hợp</title>
-		<link>https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=than-thiet-khong-thich-hop</link>
+		<link>https://9xdevelopers.com/than-thiet-khong-thich-hop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=than-thiet-khong-thich-hop</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Sat, 03 Oct 2020 11:05:03 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1605</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1605</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một lớp sử dụng những trường và phương thức nội bộ của một lớp khác. Lý do của những vấn đề này Dành nhiều thời gian cho việc theo dõi sự kết nối giữ các lớp. Các lớp thì nên biết càng ít về nhau thì càng tốt vì sẽ dễ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/"> <span class="screen-reader-text">Series Refactoring – #23: Thân thiết không thích hợp</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/"> <span class="screen-reader-text">Series Refactoring – #23: Thân thiết không thích hợp</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1605" class="elementor elementor-1605" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -132,7 +260,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -140,17 +268,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #22: Tính năng ghen tỵ</title>
-		<link>https://blog.9xdevelopers.com/tinh-nang-ghen-ty/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tinh-nang-ghen-ty</link>
+		<link>https://9xdevelopers.com/tinh-nang-ghen-ty/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tinh-nang-ghen-ty</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Fri, 02 Oct 2020 02:17:55 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1531</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1531</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một phương thức truy cập dữ liệu của một đối tượng khác nhiều hơn dữ liệu của chính nó. Lý do của những vấn đề này Cái mùi này có thể xảy ra sau khi các trường được di chuyển vô lớp dữ liệu. Nếu trong trường hợp bạn muốn di &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/"> <span class="screen-reader-text">Series Refactoring – #22: Tính năng ghen tỵ</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/tinh-nang-ghen-ty/"> <span class="screen-reader-text">Series Refactoring – #22: Tính năng ghen tỵ</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1531" class="elementor elementor-1531" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -260,7 +388,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -268,17 +396,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #21: Chú trọng bất cần thiết</title>
-		<link>https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chu-trong-bat-can-thiet</link>
+		<link>https://9xdevelopers.com/chu-trong-bat-can-thiet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chu-trong-bat-can-thiet</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Wed, 30 Sep 2020 05:28:12 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1491</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1491</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Có những lớp, phương thức, trường và biến không sử dụng. Lý do của những vấn đề này Đôi khi tạo code &#8216;phòng hờ&#8217; để hỗ trợ cho những tính năng dự đoán trong tương lai mà không giờ được thực thi. Và kết quả là code trở nên khó để &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/"> <span class="screen-reader-text">Series Refactoring – #21: Chú trọng bất cần thiết</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/"> <span class="screen-reader-text">Series Refactoring – #21: Chú trọng bất cần thiết</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1491" class="elementor elementor-1491" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -388,7 +516,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -396,17 +524,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #20: Code chết</title>
-		<link>https://blog.9xdevelopers.com/code-chet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-chet</link>
+		<link>https://9xdevelopers.com/code-chet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-chet</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Tue, 29 Sep 2020 14:36:51 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1465</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1465</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một biến, tham số, trường, phương thức hoặc lớp không được sử dụng (thường là bởi vì nó cũ) Lý do của những vấn đề này Khi yêu cầu phần mềm thay đổi hoặc chỉnh sửa phần mềm lại cho đúng thì sẽ không có ai có thời gian để dọn &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/code-chet/"> <span class="screen-reader-text">Series Refactoring – #20: Code chết</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/code-chet/"> <span class="screen-reader-text">Series Refactoring – #20: Code chết</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1465" class="elementor elementor-1465" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -499,7 +627,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -507,17 +635,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #19: Lớp dữ liệu</title>
-		<link>https://blog.9xdevelopers.com/lop-du-lieu/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-du-lieu</link>
+		<link>https://9xdevelopers.com/lop-du-lieu/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-du-lieu</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Mon, 28 Sep 2020 02:23:55 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1435</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1435</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một lớp dữ liệu thường là những lớp mà nó chỉ bao gồm trường và những phương thức đơn giản với mục đích là để truy cập dữ liệu của chính nó (getters và setters). Nó chỉ chứa dữ liệu được sử dụng trong những lớp khác. Những lớp này không &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/lop-du-lieu/"> <span class="screen-reader-text">Series Refactoring – #19: Lớp dữ liệu</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/lop-du-lieu/"> <span class="screen-reader-text">Series Refactoring – #19: Lớp dữ liệu</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1435" class="elementor elementor-1435" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -610,7 +738,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -618,17 +746,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #18: Lớp lười</title>
-		<link>https://blog.9xdevelopers.com/lop-luoi/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-luoi</link>
+		<link>https://9xdevelopers.com/lop-luoi/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-luoi</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Sat, 26 Sep 2020 07:44:18 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1430</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1430</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Việu duy trì và hiểu các lớp luôn luôn tốn thời gian và tiền bạc. Nên nếu có một lớp không khiến cho bạn chú ý đến thì hãy xóa nó đi. Lý do của những vấn đề này Có thể là do một lớp được thiết kế với đầy đủ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/lop-luoi/"> <span class="screen-reader-text">Series Refactoring – #18: Lớp lười</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/lop-luoi/"> <span class="screen-reader-text">Series Refactoring – #18: Lớp lười</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1430" class="elementor elementor-1430" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -738,7 +866,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -746,17 +874,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #17: Code trùng</title>
-		<link>https://blog.9xdevelopers.com/code-trung/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-trung</link>
+		<link>https://9xdevelopers.com/code-trung/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-trung</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Fri, 25 Sep 2020 02:26:17 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1425</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1425</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Hai phần code nhìn tương đối giống nhau. Lý do của những vấn đề này Code lặp lại thường hay xảy ra khi nhiều dev đang làm phần khác nhau của một dự án cùng một lúc. Họ làm hai nhiệm vụ khác nhau, họ không biết là đồng nghiệp của &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/code-trung/"> <span class="screen-reader-text">Series Refactoring – #17: Code trùng</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/code-trung/"> <span class="screen-reader-text">Series Refactoring – #17: Code trùng</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1425" class="elementor elementor-1425" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -866,7 +994,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/code-trung/">Series Refactoring – #17: Code trùng</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -874,17 +1002,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #16: Comments</title>
-		<link>https://blog.9xdevelopers.com/comments/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=comments</link>
+		<link>https://9xdevelopers.com/comments/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=comments</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Thu, 24 Sep 2020 03:19:59 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1419</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1419</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một phương thức chỉ toàn comment giải thích Lý do của những vấn đề này Comment thường được viết với ý định tốt nhất khi người viết thấy là code của họ không trực quan hoặc không rõ ràng. Trong nhiều trường hợp, comment giống như chiếc mặt nạ khử mùi &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/comments/"> <span class="screen-reader-text">Series Refactoring – #16: Comments</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/comments/">Series Refactoring – #16: Comments</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/comments/"> <span class="screen-reader-text">Series Refactoring – #16: Comments</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/comments/">Series Refactoring – #16: Comments</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1419" class="elementor elementor-1419" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -994,7 +1122,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/comments/">Series Refactoring – #16: Comments</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/comments/">Series Refactoring – #16: Comments</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -1002,17 +1130,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</title>
-		<link>https://blog.9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhieu-su-thay-doi-o-nhieu-lop</link>
+		<link>https://9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhieu-su-thay-doi-o-nhieu-lop</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Wed, 23 Sep 2020 09:15:16 +0000</pubDate>
 				<category><![CDATA[Change Preventers]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1406</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1406</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Khi có bất kỳ yêu cầu chỉnh sửa mà bạn phải làm nhiều thay đổi nhỏ đến nhiều lớp khác nhau. (Giống như shotgun một khi bắn sẽ bắn nhiều chỗ, thì này là một yêu cầu thay đổi là phải thay đổi nhiều nơi.) Lý do của những vấn đề &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/"> <span class="screen-reader-text">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/"> <span class="screen-reader-text">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1406" class="elementor elementor-1406" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -1105,152 +1233,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring – #14: Sự thay đổi ở nhiều nơi trong một lớp</title>
-		<link>https://blog.9xdevelopers.com/su-thay-o-nhieu-noi-trong-mot-lop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=su-thay-o-nhieu-noi-trong-mot-lop</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Sat, 19 Sep 2020 05:49:54 +0000</pubDate>
-				<category><![CDATA[Change Preventers]]></category>
-		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1390</guid>
-
-					<description><![CDATA[<p>Divergent Change giống như Shotgun Surgery&#160;nhưng thật sự là hai cái vấn đề này trái ngược nhau. Divergent Change&#160;khi mà nhiều thay đổi diễn ra trong một lớp. Shotgun Surgery thì khi thay đổi đó làm trên nhiều lớp đồng thời. Dấu hiệu nhân biết Khi mà bạn thấy bạn phải thay đổi nhiều phương &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/su-thay-o-nhieu-noi-trong-mot-lop/"> <span class="screen-reader-text">Series Refactoring – #14: Sự thay đổi ở nhiều nơi trong một lớp</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/su-thay-o-nhieu-noi-trong-mot-lop/">Series Refactoring – #14: Sự thay đổi ở nhiều nơi trong một lớp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1390" class="elementor elementor-1390" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-38895b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38895b8" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f739fb1" data-id="f739fb1" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-ffecdc6 elementor-widget elementor-widget-text-editor" data-id="ffecdc6" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Divergent Change</strong> giống như <strong>Shotgun Surgery</strong> nhưng thật sự là hai cái vấn đề này trái ngược nhau.</p><p><strong>Divergent Change</strong> khi mà nhiều thay đổi diễn ra trong một lớp.</p><p><strong>Shotgun Surgery </strong>thì khi thay đổi đó làm trên nhiều lớp đồng thời.</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Khi mà bạn thấy bạn phải thay đổi nhiều phương thức không liên quan khi bạn thay đổi gì đó trong một lớp. Ví dụ, khi bạn thêm 1 loại sản phẩm, bạn phải thay đổi các phương thức liên quan như tìm kiếm, hiển thị, và sắp xếp sản phẩm.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Thường những thay đổi khác nhau này là do poor program structure hoặc là do &#8220;<strong>copypasta programming&#8221;</strong></li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Tách xử lý của lớp ra thành lớp riêng như <a href="https://refactoring.guru/extract-class">Extract Class</a> </li><li>Nếu những lớp khác nhau mà có cùng behavior, bạn nên kết hợp các lớp lại và dùng thừa kế. (<a href="https://refactoring.guru/extract-superclass">Extract Superclass</a> và <a href="https://refactoring.guru/extract-subclass">ExtractSubclass</a>)</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cải thiện cấu trúc code</li><li>Giảm các code bị trùng</li><li>Đơn giản hóa hỗ trợ</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-02154ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="02154ca" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0f35251" data-id="0f35251" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-6d51f8c elementor-widget elementor-widget-text-editor" data-id="6d51f8c" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào thì nên bỏ qua việc này</strong></p><p>Đôi khi gộp các lớp lại là điều không thể hoặc khá khó dẫn đến vô nghĩa. Một ví dụ là khi các lớp thay thế sử dụng những thư viện khác nhau, lúc đó mỗi lớp sẽ thực hiện đúng phiên bản của nó.</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/divergent-change">Divergent Change</a></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/su-thay-o-nhieu-noi-trong-mot-lop/">Series Refactoring – #14: Sự thay đổi ở nhiều nơi trong một lớp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/nhieu-su-thay-doi-o-nhieu-lop/">Series Refactoring – #15: Nhiều sự thay đổi ở nhiều lớp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
