@@ -1,90 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//blog.9xdevelopers.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//9xdevelopers.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/algorithm/</loc>
+		<loc>https://9xdevelopers.com/category/algorithm/</loc>
 		<lastmod>2020-08-15T12:38:22+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/smells/bloaters/</loc>
+		<loc>https://9xdevelopers.com/category/refactoring/smells/bloaters/</loc>
 		<lastmod>2020-09-02T16:06:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/csharp/</loc>
+		<loc>https://9xdevelopers.com/category/csharp/</loc>
 		<lastmod>2020-09-03T07:01:14+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/smells/change-preventers/</loc>
+		<loc>https://9xdevelopers.com/category/refactoring/smells/change-preventers/</loc>
 		<lastmod>2020-09-23T09:19:31+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/smells/</loc>
+		<loc>https://9xdevelopers.com/category/refactoring/smells/</loc>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/design-patterns/creational-patterns/</loc>
-		<lastmod>2020-10-03T10:15:44+00:00</lastmod>
+		<loc>https://9xdevelopers.com/category/design-patterns/creational-patterns/</loc>
+		<lastmod>2020-10-04T06:00:41+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/data-mining/</loc>
+		<loc>https://9xdevelopers.com/category/data-mining/</loc>
 		<lastmod>2020-04-16T05:12:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/design-patterns/</loc>
-		<lastmod>2020-10-03T10:15:44+00:00</lastmod>
+		<loc>https://9xdevelopers.com/category/design-patterns/</loc>
+		<lastmod>2020-10-04T07:46:17+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/smells/dispensables/</loc>
-		<lastmod>2020-10-03T11:09:29+00:00</lastmod>
+		<loc>https://9xdevelopers.com/category/refactoring/smells/dispensables/</loc>
+		<lastmod>2020-10-04T15:00:16+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/github/</loc>
+		<loc>https://9xdevelopers.com/category/github/</loc>
 		<lastmod>2020-04-16T08:30:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/javascript/</loc>
+		<loc>https://9xdevelopers.com/category/javascript/</loc>
 		<lastmod>2020-09-03T07:00:53+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/smells/object-orientation-abusers/</loc>
+		<loc>https://9xdevelopers.com/category/refactoring/smells/object-orientation-abusers/</loc>
 		<lastmod>2020-09-15T07:52:30+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/online-courses/</loc>
+		<loc>https://9xdevelopers.com/category/online-courses/</loc>
 		<lastmod>2020-04-12T07:19:48+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/programming/</loc>
+		<loc>https://9xdevelopers.com/category/programming/</loc>
 		<lastmod>2020-08-15T10:27:40+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/python/</loc>
+		<loc>https://9xdevelopers.com/category/python/</loc>
 		<lastmod>2020-04-06T11:58:26+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/questions/</loc>
+		<loc>https://9xdevelopers.com/category/questions/</loc>
 		<lastmod>2020-04-17T13:02:59+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/refactoring/</loc>
-		<lastmod>2020-10-03T11:09:29+00:00</lastmod>
+		<loc>https://9xdevelopers.com/category/refactoring/</loc>
+		<lastmod>2020-10-04T15:00:16+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/responsive-design/</loc>
+		<loc>https://9xdevelopers.com/category/responsive-design/</loc>
 		<lastmod>2020-04-10T05:44:44+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/stackoverflow/</loc>
+		<loc>https://9xdevelopers.com/category/stackoverflow/</loc>
 		<lastmod>2020-04-17T13:02:59+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/survey/</loc>
+		<loc>https://9xdevelopers.com/category/design-patterns/structural-patterns/</loc>
+		<lastmod>2020-10-04T07:46:17+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://9xdevelopers.com/category/survey/</loc>
 		<lastmod>2020-04-10T06:21:15+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/tools/</loc>
+		<loc>https://9xdevelopers.com/category/tools/</loc>
 		<lastmod>2020-04-15T08:08:21+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://blog.9xdevelopers.com/category/uncategorized/</loc>
+		<loc>https://9xdevelopers.com/category/uncategorized/</loc>
 		<lastmod>2020-04-25T09:23:56+00:00</lastmod>
 	</url>
 </urlset>
