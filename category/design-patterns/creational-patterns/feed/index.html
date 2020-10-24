@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Creational Patterns &#8211; 9x Developers&#039;s Blog</title>
-	<atom:link href="https://blog.9xdevelopers.com/category/design-patterns/creational-patterns/feed/" rel="self" type="application/rss+xml" />
-	<link>https://blog.9xdevelopers.com/</link>
+	<atom:link href="https://9xdevelopers.com/category/design-patterns/creational-patterns/feed/" rel="self" type="application/rss+xml" />
+	<link>https://9xdevelopers.com/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Sat, 03 Oct 2020 10:15:44 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 04 Oct 2020 06:00:41 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,25 +21,238 @@
 	<generator>https://wordpress.org/?v=5.5.1</generator>
 
 <image>
-	<url>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
+	<url>https://9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
 	<title>Creational Patterns &#8211; 9x Developers&#039;s Blog</title>
-	<link>https://blog.9xdevelopers.com/</link>
+	<link>https://9xdevelopers.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Design Patterns – #5: Singleton</title>
+		<link>https://9xdevelopers.com/singleton/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=singleton</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2020 05:47:01 +0000</pubDate>
+				<category><![CDATA[Creational Patterns]]></category>
+		<category><![CDATA[Design Patterns]]></category>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1539</guid>
+
+					<description><![CDATA[<p>Ý định Singleton là một pattern khởi tạo cho phép bạn đảm bảo rằng một lớp chỉ có duy nhất một instance, trong khi cho phép truy cập global đến instance đó. Vấn đề Với Singleton pattern giải quyết 2 vấn đề cùng lúc, vi phạm Singleton Reponsibility Principle. 1. Đảm bảo rằng một lớp &#8230;</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/singleton/"> <span class="screen-reader-text">Series Design Patterns – #5: Singleton</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/singleton/">Series Design Patterns – #5: Singleton</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1539" class="elementor elementor-1539" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Singleton </strong>là một pattern khởi tạo cho phép bạn đảm bảo rằng một lớp chỉ có duy nhất một instance, trong khi cho phép truy cập global đến instance đó.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Với Singleton pattern giải quyết 2 vấn đề cùng lúc, vi phạm <em>Singleton Reponsibility Principle</em>.</p><p>1. <strong>Đảm bảo rằng một lớp chỉ có một instance.</strong> Tại sao mọi người đều muốn điều khiển bao nhiên instance mà class có? Lý do phổ biến nhất cho việc này là việc kiểm tra truy cập vô những tại nguyên chia sẻ &#8211; ví dụ như database hoặc file.</p><p>Đây là cách vận hành: tưởng tượng rằng bạn đã tạo một đối tượng, nhưng sau một thời gian bạn quyết định tạo một cái mới. Thay vì nhận một đối tượng mới hoàn toàn, bạn sẽ nhận lại đối tượng bạn đã tạo.</p><p>Lưu ý rằng hành vi này không khả thi để implement constructor bình thường bởi vì constructor phải <strong>luôn</strong> trả về một đối tượng mới.</p><p>2. <strong>Cung cấp truy cập global cho instance</strong>. Nhớ rằng những biến global mà bạn sử dụng để lưu những đối tượng cần thiết? Trong khi chúng rất tiện, nhưng cũng sẽ không an toàn trong code vì chúng có thể overwrite nội dung của những giá trị biến và gây crash app.</p><p>Giống như biến global, Singleton pattern cho phép bạn truy cập đối tượng ở mọi nơi trong hệ thống. Tuy nhiên, nó cũng bảo vệ instance khởi bị overwritten bởi code khác.</p><p>Một khía cạnh khác của vấn đề này: bạn không muốn code giải quyết vấn đề #1 sẽ nằm rãi rác trong chương trình. Nó sẽ tốt hơn khi lưu nó trong một lớp, đặc biệt là những code còn lại phụ thuộc vào nó.</p><p>Ngày nay, Singleton pattern đã trở nên phổ biến mà mọi người có thể gọi một thứ gì đó là <em>singleton</em> thậm chí nếu nó giải quyết một trong những vấn đề được lập ra.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Tất cả implement của Singleton có 2 bước chung:</p><ul><li>Làm constructor mặc định thành private, để chặn những đối tượng khác sử dụng từ toán tử <strong>new</strong> với lớp Singleton.</li><li>Tạo một hàm tạo static như là một constructor. Hàm này sẽ gọi hàm private constructor để tạo một đối tượng và lưu nó trong static field. Tất cả lời gọi đến hàm này sẽ trả về đối tượng được cached.</li></ul><p>Nếu code bạn truy cập vô lớp Singleton, nó có thể gọi hàm Singleton&#8217;s static. Bất cứ khi nào hàm được gọi, một đối tượng cùng kết quả sẽ trả về.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4487fc2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4487fc2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-390ea1a" data-id="390ea1a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c4b831 elementor-widget elementor-widget-text-editor" data-id="1c4b831" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Liên hệ thực tế</h1><p>Government(chính phủ) là một ví dụ tuyệt vời cho Singleton pattern. Một thành phố chỉ có thể có duy nhất một goverment chính thức. Bất kể danh tính ca nhân của các cá nhân thành lập  governments, tiêu đề, &#8220;Government của X&#8221;, là một điểm toàn cục truy cập nhận dạng một nhóm người phụ trách.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p>1. Lớp <strong>Singleton</strong> khai báo bộ phương thức tĩnh <strong>getInstance</strong> mà trả về cùng interface của lớp của nó.</p><p>Hàm khởi tạo của Singleton nên được dấu đi từ code. Việc gọi phương thức <strong>getInstance </strong>nên là cách duy nhất để lấy đối tượng Singleton.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Trong ví dụ này, lớp kết nối database có thể xem là một <strong>Singleton</strong>. Lớp này không có hàm khởi tạo public, cho nên cách duy nhất để lấy đối tượng nó bằng cách gọi hàm <strong>getInstance</strong>. Hàm này lấy đối tượng được tạo đầu tiên và trả về nó trong tất cả lời gọi sau này.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Singleton pattern khi mà lớp trong chương trình của bạn nên có duy nhất một instance sử dụng cho tất cả client; ví dụ, một đối tượng đơn database được chia sẽ ở nhiều nơi trong chương trình.</strong></p><p>Singleton pattern vô hiệu hóa tất cả cách của việc tạo đối tượng của lớp ngoại trừ một hàm tạo đặc biệt. Hàm này không những tạo một đối tượng mới mà con trả về một đối tượng đã tồn tại.</p><p><strong>Sử dụng</strong> <strong>Singleton pattern khi bạn cần ràng buộc chặt hơn cho biến toàn cục.</strong></p><p>Không như biến toàn cục, Singleton pattern đảm bảo rằng chỉ có một instance của một lớp. Không có gì khác, ngoại trừ bản thân lớp Singleton, có thể thay thế cached instance.</p><p>Lưu ý rằng bạn có thể chỉnh lại giới hạn này và cho phép tạo bất kì số lượng Singleton instances nào. Phần code cần thay đổi là thân của hàm <strong>getInstance</strong>.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Thêm một private static field vào lớp để chưa singleton instance.</p><p>2. Khai báo một hàm tạo public static để lấy singleton instance.</p><p>3. Viết &#8220;lazy initialization&#8221; trong hàm static này. Nó nên tạo một đối tượng mới cho lần gọi đầu tiên, đặt nó trong một static field. Phương thức nên luôn luôn trả về instance đó cho mỗi lần gọi sau này.</p><p>4. Tạo hàm constructor của lớp private. Phương thức static của lớp sẽ vẫn có thể gọi constructor, nhưng những đối tượng khác sẽ không được.</p><p>5. Đi qua client code và thay thế trực tiếp những lời gọi trực tiếp đến hàm khởi tạo của singleton với lời gọi đến hàm tạo static.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể chắc chắn rằng lớp chỉ có duy nhất một instance.</li><li>Có được truy cập toàn cục đến instance đó.</li><li>Đối tượng singleton được init chỉ khi được request đến nó lần đầu tiên</li></ul><p><strong>Nhược:</strong></p><ul><li>Vi phạm <em>Singleton Reponsibility Principle</em>. Pattern giải quyết 2 vấn đề cùng lúc.</li><li>Singleton pattern có thể mang một design tệ, cho instance, khi mà components của hệ thống biết quá nhiều về nhau.</li><li>Pattern yêu cầu một cách xử lý đặc biệt trong môi trường multithreaded để đảm bảo threads sẽ không tạo nhiều đối tượng singleton nhiều lần.</li><li>Có thể sẽ khó khăn cho unit test client code của Singleton bởi vì nhiều test framework dựa vào kế thừa khi mà mock đối tượng. Bởi vì constructor có lớp singleton là private và override static method là một điều không khả thi trong hầu hết ngôn ngữ, bạn sẽ cần nghĩ đến việc tìm cách để mock singleton. Hoặc không viết tests. Hoặc không sử dụng Singleton pattern.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Lớp <strong><span style="text-decoration: underline;">Facade</span> </strong>có thể được chuyển thành <span style="text-decoration: underline;"><strong>Singleton</strong></span> bởi vì đối tượng facade đầy đủ trong hầu hết trường hợp.</li><li><span style="text-decoration: underline;"><strong>Flyweight</strong></span><strong> </strong>sẽ giống <strong>Singleton </strong>nếu bằng cách nào đó giảm tất cả những trạng thái chia sẽ của đối tượng cho chỉ một đối tượng flyweight. Nhưng có 2 sự khác biệt nền tảng giữa chúng là:</li></ul><ol><li>Nên chỉ có duy nhất một instance Singleton, trong khi lớp <em>Flyweight </em>có thể có nhiều instance với những trạng thái nội tại.</li><li>Đối tượng <em>Singleton</em> có thể thay đổi được, trong khi Flyweight thì bất biến.</li></ol><ul><li><strong><span style="text-decoration: underline;">Abstract Factory, Builders</span></strong> và <strong>Prototypes</strong> có thể được triển khai như <strong>Singletons</strong>.</li></ul><p> </p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/singleton">Singleton</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/singleton/">Series Design Patterns – #5: Singleton</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Design Patterns – #4: Prototype</title>
-		<link>https://blog.9xdevelopers.com/prototype/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=prototype</link>
+		<link>https://9xdevelopers.com/prototype/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=prototype</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Sat, 03 Oct 2020 06:35:30 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1519</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1519</guid>
 
 					<description><![CDATA[<p>Ý định Prototype là một pattern khởi tạo cho phép bạn copy đối tượng đã tồn tại mà không làm code bạn phụ thuộc vào những của chúng. Vấn đề Tưởng tượng rằng bạn có một đối tượng, và bạn muốn tạo chính xác một bản sao của nó. Vậy bạn làm như thế nào? Đầu &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/prototype/"> <span class="screen-reader-text">Series Design Patterns – #4: Prototype</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/prototype/"> <span class="screen-reader-text">Series Design Patterns – #4: Prototype</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1519" class="elementor elementor-1519" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -234,7 +447,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -242,17 +455,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #3: Builder</title>
-		<link>https://blog.9xdevelopers.com/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
+		<link>https://9xdevelopers.com/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Fri, 02 Oct 2020 02:12:04 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1510</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1510</guid>
 
 					<description><![CDATA[<p>Ý định Builder&#160;là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code. Vấn đề Tưởng tượng rằng một đối tượng phức tạp cần sức lực &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1510" class="elementor elementor-1510" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -447,7 +660,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -455,17 +668,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #2: Abstract Factory</title>
-		<link>https://blog.9xdevelopers.com/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
+		<link>https://9xdevelopers.com/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Thu, 01 Oct 2020 08:16:45 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1499</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1499</guid>
 
 					<description><![CDATA[<p>Ý định Abstract Method là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể. Vấn đề Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm: 1. Một họ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1499" class="elementor elementor-1499" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -643,7 +856,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -651,17 +864,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #1: Factory Method</title>
-		<link>https://blog.9xdevelopers.com/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
+		<link>https://9xdevelopers.com/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Tue, 29 Sep 2020 15:24:22 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1478</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1478</guid>
 
 					<description><![CDATA[<p>Được biết đến như: Hàm khởi tạo ảo Ý định Factory Method là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo. Vấn đề Tưởng tượng rằng bạn đang tạo ra một &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -856,7 +1069,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
