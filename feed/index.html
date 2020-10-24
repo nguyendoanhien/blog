@@ -9,10 +9,10 @@
 
 <channel>
 	<title>9x Developers&#039;s Blog</title>
-	<atom:link href="https://blog.9xdevelopers.com/feed/" rel="self" type="application/rss+xml" />
-	<link>https://blog.9xdevelopers.com/</link>
+	<atom:link href="https://9xdevelopers.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://9xdevelopers.com/</link>
 	<description>Learning and sharing developer&#039;s experiences</description>
-	<lastBuildDate>Sat, 03 Oct 2020 11:09:29 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 04 Oct 2020 15:00:16 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,25 +21,596 @@
 	<generator>https://wordpress.org/?v=5.5.1</generator>
 
 <image>
-	<url>https://blog.9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
+	<url>https://9xdevelopers.com/wp-content/uploads/2020/08/cropped-9x-logo-3-32x32.png</url>
 	<title>9x Developers&#039;s Blog</title>
-	<link>https://blog.9xdevelopers.com/</link>
+	<link>https://9xdevelopers.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
+		<title>Series Refactoring – #24: Message Chains</title>
+		<link>https://9xdevelopers.com/message-chains/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=message-chains</link>
+		
+		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2020 14:54:37 +0000</pubDate>
+				<category><![CDATA[Dispensables]]></category>
+		<category><![CDATA[Refactoring]]></category>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1634</guid>
+
+					<description><![CDATA[<p>Dấu hiệu nhân biết Khi bạn thấy trong code có một loạt các lệnh gọi tương tự như này $a-&#62;b()-&#62;c()-&#62;d() Lý do của những vấn đề này Message Chains xảy ra khi một lớp client yêu cầu một đối tượng khác, mà đối tượng đó yêu cầu một đối tượng khác, và tiếp tục như &#8230;</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/message-chains/"> <span class="screen-reader-text">Series Refactoring – #24: Message Chains</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/message-chains/">Series Refactoring – #24: Message Chains</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1634" class="elementor elementor-1634" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Khi bạn thấy trong code có một loạt các lệnh gọi tương tự như này<strong> $a-&gt;b()-&gt;c()-&gt;d()</strong></li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Message Chains xảy ra khi một lớp client yêu cầu một đối tượng khác, mà đối tượng đó yêu cầu một đối tượng khác, và tiếp tục như vậy. Các chuỗi này có nghĩa là lớp client phụ thuộc vào điều hướng theo cấu trúc lớp. Bất kỳ thay đổi nào trong các mối quan hệ này đều phải chỉnh sửa lớp client.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Để xóa một message chain, sử dụng <a href="https://refactoring.guru/hide-delegate">Hide Delegate.</a></li><li>Đôi khi, nghĩ về lý do tại sao một đối tượng cuối cùng được sử dụng. Có thể nó sẽ hợp lý nếu sử dụng <a href="https://refactoring.guru/extract-method">Extract Method</a> cho chức năng và di chuyển đến đầu của chuỗi message, bằng cách sử dụng <a href="https://refactoring.guru/move-method">Move Method</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Giảm sự phụ thuộc giữa các lớp của một chuỗi.</li><li>Code bớt cồng kềnh.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fa0ba13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa0ba13" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb111d4" data-id="bb111d4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-49484c1 elementor-widget elementor-widget-text-editor" data-id="49484c1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><b>khi nào có thể bỏ qua việc này</b></p><ul><li>Việc ẩn các lớp ủy quyền quá mức sẽ khó để thấy chức năng thực sự xảy ra ở đâu. Nói cách khác, tránh luôn cả smell <a href="https://refactoring.guru/smells/middle-man">Middle Man</a>.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/inappropriate-intimacy">Message Chains</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/message-chains/">Series Refactoring – #24: Message Chains</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Series Design Patterns – #6: Adapter</title>
+		<link>https://9xdevelopers.com/adapter/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=adapter</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2020 07:27:09 +0000</pubDate>
+				<category><![CDATA[Design Patterns]]></category>
+		<category><![CDATA[Structural Patterns]]></category>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1616</guid>
+
+					<description><![CDATA[<p>Được biết đến như: wrapper Ý định Adapter là một cấu trúc pattern cho phép đối tượng mà không tương thích interface tương tác với nhau. Vấn đề Tưởng tượng rằng bạn đang làm một ứng dụng quản lý chợ. Ứng dụng bạn tải về dữ liệu của chợ từ nhiều nguồn dưới dạng XML và &#8230;</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/adapter/"> <span class="screen-reader-text">Series Design Patterns – #6: Adapter</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/adapter/">Series Design Patterns – #6: Adapter</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">5</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1616" class="elementor elementor-1616" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-7c3fe58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7c3fe58" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e1f9046" data-id="e1f9046" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8a12fc2 elementor-widget elementor-widget-text-editor" data-id="8a12fc2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Được biết đến như: </strong>wrapper</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><b>Adapter </b>là một cấu trúc pattern cho phép đối tượng mà không tương thích interface tương tác với nhau.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Tưởng tượng rằng bạn đang làm một ứng dụng quản lý chợ. Ứng dụng bạn tải về dữ liệu của chợ từ nhiều nguồn dưới dạng XML và hiện thị một biểu đồ hoặc bảng biểu cho người dùng.</p><p>Một ý kiến khác, bạn quyết định cải thiện ứng dụng bằng việt tích hợp một thư viện phân tích 3rd-party. Nhưng có một vấn đề: thư viện phân tích này chỉ làm việc với dữ liệu JSON.</p><p>Bạn có thể xài thay đổi thư viện khác đề làm việc với XML. Tuy nhiên nó sẽ có thể làm sai cách hoạt động của thư viện. Tệ hơn, bạn sẽ không có quyền truy cập vào mã nguồn của thư viện, việc này có thể không khả thi.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Bạn có thể tạo <em>adapter</em>. Đây là một đối tượng đặc biệt biến đổi interface của một đối tượng để đối tượng khác có thể hiểu nó.</p><p>Adapter sẽ wrap(bọc lấy) một trong những đối tượng để che đi tính phức tạp của việc chuyển đổi. Đối tượng được wrap sẽ không biết gì về adapter. Ví dụ, bạn có thể wrap đối tượng mà xử lý từ m và km với một adapter có thể chuyển đổi tất cả dữ liệu sang đơn vị khác như feet và miles.</p><p>Adapter không thể chuyển đối dữ liệu sang nhiều định dạng khác nhưng có thể giúp đối tượng với những interface khác nhau tương tác với nhau. Đây là cách no làm việc:</p><p>1. Adapter có interface, tương thích với một trong những đối tượng tồn tại.</p><p>2. Sử dụng interface này, đối tượng đã tồn tại có thể gọi một cách an toàn đến phương thức adapter.</p><p>3. Khi nhận được yêu cầu. adapter sẽ truyền yêu cầu đến đối tượng thứ hai, nhưng trong định dạng và thứ tự đối tượng đó muốn.</p><p>Tuy nhiên đối khi nó vẫn có thể tạo ra một adapter 2 chiều.</p><p>Chúng ta hãy quay lại ứng dụng chợ, để giải quyết vấn đề không tương thích định dạng này, bạn có thể tạo một XML-to-JSON adapter cho mỗi lớp của thư viện phân tích để code bạn có thể làm việc trực tiếp. Sau đó, bạn chỉnh code bạn giao tiếp với thư viện này duy nhất thông qua adapters. Khi adapter được gọi, nó sẽ biến đổi dữ liệu XML sang JSON và truyền vô phương thức thích hợp của đối tượng được wrap.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4487fc2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4487fc2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-390ea1a" data-id="390ea1a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c4b831 elementor-widget elementor-widget-text-editor" data-id="1c4b831" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Liên hệ thực tế</h1><p>Khi bạn đi du lịch từ US sang Europe lần đầu tiên, bạn sẽ bất ngờ khi xạc pin cho laptop. Đầu sạc và khe sạc có thể khác nhau cho mỗi quốc gia. Đó là tại sao đầu sạc US không thể gắp vào khe cắm German. Vấn đề có thể giải quyết bằng việc sử dụng đầu sạc adapter có khe cắm kiểu US và đầu sạc Euro.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p><strong>Đối tượng adapter</strong></p><p>Cách triển khai này sử dụng một nguyên lý đối thành phần đối tượng: adapter implement interface của một đối tượng và wrap đối tượng còn lại. Nó có thể áp dụng trong mọi ngôn ngữ lập trình phổ biến.</p><p>1. <strong>Client</strong> là lớp mang xử lý logic của ứng dụng.</p><p>2. <strong>Client Interface</strong> mô tả một giao thức mà những lớp khác phải theo để tương tác với client code.</p><p>3. <strong>Service</strong> là một lớp có ích (thường là 3rd-party). Client không thể sử dụng lớp này trực tiếp vì nó không tương thích interface.</p><p>4. <strong>Adapter </strong>là một lớp có thể lạp việc với cả client và service: nó implemement client interface, trong khi wrap đối tượng service. Adapter nhận lời gọi từ client thông qua adapter interface và chuyển chúng thành lời gọi đến đối tượng service được wrap dưới format mà nó có thể hiểu.</p><p>5. Client code không coupled với lớp concrete adapter miên là nó có thể làm việc với adapter thông qua interface. Nhờ việc này, bạn có thể có nhiều loại adapter trong chương trình mà không phá vỡ code cũ. Điều này sẽ có ích khi interface của lớp service thay đổi hoặc bị thay thế: bạn chỉ cần tạo một lớp adapter mới mà không thay đổi client code.</p><hr /><p><strong>Lớp adapter</strong></p><p>Implement sử dụng kế thừa: adapter kế thừa interface từ 2 đối tượng cùng lúc. Lưu ý rằng cách tiếp cần này có thể triển khai được đối với ngôn ngữ lập trình hỗ trợ đa kế thừa. như C++.</p><p>1. <strong>Lớp Adapter</strong> không cần wrap bất kì đối tượng nào bởi vì nó kế thừa hành vi của client và service. Adaptation xảy ra bên trong phương thức overrided. Kết quả adapter có thể sử dụng ở nơi mà tồn tại lớp client.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Trong ví dụ này của <strong>Adapter </strong>pattern dựa trên xung đột giữa square pegs và round holes.</p><p>Adapter dự định là round peg, với bán kính bằng với nửa đường kính hình vuông (nói cách khác, bạn có của vòng tròn nhỏ nhất phải vừa với square peg).</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng lớp Adapter khi bạn muốn sử dụng lớp đã tồn tại, nhưng interface của nó không tương thích tới code bạn.</strong></p><p>Adapter pattern cho phép bạn tạo một tầng trung gian trong lớp mà có thể xem như lớp chuyển dịch giữa code bạn và lớp 3rd-party.</p><hr /><p><strong>Sử dụng pattern khi bạn muốn tái sử dụng những lớp con có sắn mà thiếu những chức năng chung mà không thể sử dụng trong lớp cha.</strong></p><p>Bạn có thể mở rộng mỗi lớp con và đặt những chức năng còn thiếu váo lớp con. Tuy nhiên, bạn sẽ cần phải dupplicate code cho tất cả những lớp mới, việc này sẽ làm cho <span style="text-decoration: underline;"><strong>smell really bad</strong></span>.</p><p>Giải pháp liên quan hơn có thể là đặt những chức năng còn thiếu vào lớp adapter. Sau đó bạn có thể wrap đối tượng với chức năng còn thiếu bên trong adapter, và có được những tính năng cần thiết một cách tự động. Để làm được việc này, lớp mục tiêu phải follow interface. Cách tiếp cận này trông rất giống với <span style="text-decoration: underline;"><strong>Decorator</strong></span> pattern.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Đảm bảo rằng bạn phải có ít nhất 2 lớp không tương thích interface:</p><ul><li>Một lớp <em>service, </em>mà bạn không thể thay đổi (thường là 3rd-party với nhiều ràng buộc)</li><li>Một lớp <em>client</em> mà có lợi từ việc sử dụng lớp service.</li></ul><p>2. Khai báo client interface và mô tả cách mà clients giao tiếp với service.</p><p>3. Tạo một lớp adapter và cho nó follow client interface. Cho phương thức trống bây giờ.</p><p>4. Thêm một field cho lớp adapter để chứa reference tới đối tượng service. Cách thông thường để initialize field này thông qua constructor, nhưng đôi khi nó sẽ tiện hơn khi truyền nó vô adapter khi gọi phương thức của nó.</p><p>5. Theo thứ tự, việc implement tất cả phương thức của client interface trong lớp adapter. Adapter nên delegate hầu hết công việc cho đối tượng service, xử lý duy nhất interface hoặc việc chuyển đổi format dữ liệu.</p><p>6. Client nên sử dụng adapter thông qua client interface. Điều này có thể cho phép bạn thay đổi hoặc mở rộng adapters mà không ảnh hưởng đến client code.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><span style="color: #339966;"><strong>Ưu:</strong></span></p><ul><li><em>Single Reponsibility Principle</em>. Bạn có thể tách interface hoặc code chuyển đổi data từ logic nghiệp vụ chính của chương trình.</li><li><em>Open/Closed Principle</em>. Bạn có thể tạo một loại mới của adapter vào chương trình mà không phá vỡ đi client code, miến là nó làm việc với adapters thông qua client interface.</li></ul><p><span style="color: #ff0000;"><strong>Nhược:</strong></span></p><ul><li>Độ phức tạp tổng của code tăng lên, bởi vì bạn phải tạo một bộ interface và lớp. Đôi khi, nó sẽ đơn giản hơn chỉ việc thay đổi lớp service để nó khớp với code bạn.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li><span style="text-decoration: underline;"><strong>Bridge</strong></span><em> </em>thường được thiết kế đầu, cho phép bạn phát triển những phần của ứng dụng một cách độc lập lẫn nhau. Mặt khác <span style="text-decoration: underline;"><strong>Adapter</strong></span><strong> </strong>thường được sử dụng với ứng dụng cũ, để làm cho những lớp không tương thích làm việc tốt hơn với nhau.</li><li><strong><span style="text-decoration: underline;">Adapter</span></strong> thay đổi interface của đối tượng cũ, trong khi <strong><span style="text-decoration: underline;">Decorator</span> </strong>nâng cấp đối tượng mà không làm thay đổi interface của nó. Thêm vào đó, <em>Decorator </em>hỗ trợ recursive composition, thứ mà không thể khi sử dụng <em>Adapter</em>.</li><li><span style="text-decoration: underline;"><strong>Adapter</strong></span> cung cấp một interface khác để wrap đối tượng, <span style="text-decoration: underline;"><strong>Proxy</strong></span><strong> </strong>cung cấp nó cùng interface, và <span style="text-decoration: underline;"><strong>Decorator</strong></span> cho nó một interface tốt hơn.</li><li><strong><span style="text-decoration: underline;">Facade</span> </strong>khai báo một interface mới của đối tượng cũ, miến là <strong><span style="text-decoration: underline;">Adapter</span></strong><strong> </strong>làm interface đó tái sử dụng. <em>Adapter </em>thường wrap chỉ một đối tượng, trong khi <em>Facade</em> làm việc với toàn bộ hệ thống con của đối tượng.</li><li><span style="text-decoration: underline;"><strong>Bridge</strong></span>, <span style="text-decoration: underline;"><strong>State</strong></span>, <span style="text-decoration: underline;"><strong>Strategy</strong></span> (và <strong><span style="text-decoration: underline;">Adapter</span></strong>) có một cấu trúc giống nhau. Sâu hơn, tất cả patterns đó dựa vào composition, thứ mà delegate để làm việc với đối tượng khác. Tuy nhiên, chúng giải quyết những vấn đề khác nhau. Pattern không chỉ là một công thức cho việc cấu trúc code bạn một hướng cụ thể. nó có thể sử dụng để giao tiếp với developers vấn đề mà pattern giải quyết được.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/adapter">Adapter</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/adapter/">Series Design Patterns – #6: Adapter</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Series Design Patterns – #5: Singleton</title>
+		<link>https://9xdevelopers.com/singleton/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=singleton</link>
+		
+		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2020 05:47:01 +0000</pubDate>
+				<category><![CDATA[Creational Patterns]]></category>
+		<category><![CDATA[Design Patterns]]></category>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1539</guid>
+
+					<description><![CDATA[<p>Ý định Singleton là một pattern khởi tạo cho phép bạn đảm bảo rằng một lớp chỉ có duy nhất một instance, trong khi cho phép truy cập global đến instance đó. Vấn đề Với Singleton pattern giải quyết 2 vấn đề cùng lúc, vi phạm Singleton Reponsibility Principle. 1. Đảm bảo rằng một lớp &#8230;</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/singleton/"> <span class="screen-reader-text">Series Design Patterns – #5: Singleton</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/singleton/">Series Design Patterns – #5: Singleton</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">4</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1539" class="elementor elementor-1539" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><b>Ý định</b></h1><p><strong>Singleton </strong>là một pattern khởi tạo cho phép bạn đảm bảo rằng một lớp chỉ có duy nhất một instance, trong khi cho phép truy cập global đến instance đó.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Vấn đề</strong></h1><p>Với Singleton pattern giải quyết 2 vấn đề cùng lúc, vi phạm <em>Singleton Reponsibility Principle</em>.</p><p>1. <strong>Đảm bảo rằng một lớp chỉ có một instance.</strong> Tại sao mọi người đều muốn điều khiển bao nhiên instance mà class có? Lý do phổ biến nhất cho việc này là việc kiểm tra truy cập vô những tại nguyên chia sẻ &#8211; ví dụ như database hoặc file.</p><p>Đây là cách vận hành: tưởng tượng rằng bạn đã tạo một đối tượng, nhưng sau một thời gian bạn quyết định tạo một cái mới. Thay vì nhận một đối tượng mới hoàn toàn, bạn sẽ nhận lại đối tượng bạn đã tạo.</p><p>Lưu ý rằng hành vi này không khả thi để implement constructor bình thường bởi vì constructor phải <strong>luôn</strong> trả về một đối tượng mới.</p><p>2. <strong>Cung cấp truy cập global cho instance</strong>. Nhớ rằng những biến global mà bạn sử dụng để lưu những đối tượng cần thiết? Trong khi chúng rất tiện, nhưng cũng sẽ không an toàn trong code vì chúng có thể overwrite nội dung của những giá trị biến và gây crash app.</p><p>Giống như biến global, Singleton pattern cho phép bạn truy cập đối tượng ở mọi nơi trong hệ thống. Tuy nhiên, nó cũng bảo vệ instance khởi bị overwritten bởi code khác.</p><p>Một khía cạnh khác của vấn đề này: bạn không muốn code giải quyết vấn đề #1 sẽ nằm rãi rác trong chương trình. Nó sẽ tốt hơn khi lưu nó trong một lớp, đặc biệt là những code còn lại phụ thuộc vào nó.</p><p>Ngày nay, Singleton pattern đã trở nên phổ biến mà mọi người có thể gọi một thứ gì đó là <em>singleton</em> thậm chí nếu nó giải quyết một trong những vấn đề được lập ra.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><strong>Giải pháp</strong></h1><p>Tất cả implement của Singleton có 2 bước chung:</p><ul><li>Làm constructor mặc định thành private, để chặn những đối tượng khác sử dụng từ toán tử <strong>new</strong> với lớp Singleton.</li><li>Tạo một hàm tạo static như là một constructor. Hàm này sẽ gọi hàm private constructor để tạo một đối tượng và lưu nó trong static field. Tất cả lời gọi đến hàm này sẽ trả về đối tượng được cached.</li></ul><p>Nếu code bạn truy cập vô lớp Singleton, nó có thể gọi hàm Singleton&#8217;s static. Bất cứ khi nào hàm được gọi, một đối tượng cùng kết quả sẽ trả về.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4487fc2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4487fc2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-390ea1a" data-id="390ea1a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c4b831 elementor-widget elementor-widget-text-editor" data-id="1c4b831" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Liên hệ thực tế</h1><p>Government(chính phủ) là một ví dụ tuyệt vời cho Singleton pattern. Một thành phố chỉ có thể có duy nhất một goverment chính thức. Bất kể danh tính ca nhân của các cá nhân thành lập  governments, tiêu đề, &#8220;Government của X&#8221;, là một điểm toàn cục truy cập nhận dạng một nhóm người phụ trách.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e0d589 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0d589" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-52ae78e" data-id="52ae78e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0cc39d elementor-widget elementor-widget-text-editor" data-id="b0cc39d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cấu trúc</h1><p>1. Lớp <strong>Singleton</strong> khai báo bộ phương thức tĩnh <strong>getInstance</strong> mà trả về cùng interface của lớp của nó.</p><p>Hàm khởi tạo của Singleton nên được dấu đi từ code. Việc gọi phương thức <strong>getInstance </strong>nên là cách duy nhất để lấy đối tượng Singleton.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ca97f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca97f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aded6e6" data-id="aded6e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-96480e0 elementor-widget elementor-widget-text-editor" data-id="96480e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mã giả</h1><p>Trong ví dụ này, lớp kết nối database có thể xem là một <strong>Singleton</strong>. Lớp này không có hàm khởi tạo public, cho nên cách duy nhất để lấy đối tượng nó bằng cách gọi hàm <strong>getInstance</strong>. Hàm này lấy đối tượng được tạo đầu tiên và trả về nó trong tất cả lời gọi sau này.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1dd127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1dd127" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5dd5e0" data-id="e5dd5e0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-427ae6e elementor-widget elementor-widget-text-editor" data-id="427ae6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Khả năng áp dụng</h1><div> </div><p><strong>Sử dụng Singleton pattern khi mà lớp trong chương trình của bạn nên có duy nhất một instance sử dụng cho tất cả client; ví dụ, một đối tượng đơn database được chia sẽ ở nhiều nơi trong chương trình.</strong></p><p>Singleton pattern vô hiệu hóa tất cả cách của việc tạo đối tượng của lớp ngoại trừ một hàm tạo đặc biệt. Hàm này không những tạo một đối tượng mới mà con trả về một đối tượng đã tồn tại.</p><p><strong>Sử dụng</strong> <strong>Singleton pattern khi bạn cần ràng buộc chặt hơn cho biến toàn cục.</strong></p><p>Không như biến toàn cục, Singleton pattern đảm bảo rằng chỉ có một instance của một lớp. Không có gì khác, ngoại trừ bản thân lớp Singleton, có thể thay thế cached instance.</p><p>Lưu ý rằng bạn có thể chỉnh lại giới hạn này và cho phép tạo bất kì số lượng Singleton instances nào. Phần code cần thay đổi là thân của hàm <strong>getInstance</strong>.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Cách triển khai</h1><p>1. Thêm một private static field vào lớp để chưa singleton instance.</p><p>2. Khai báo một hàm tạo public static để lấy singleton instance.</p><p>3. Viết &#8220;lazy initialization&#8221; trong hàm static này. Nó nên tạo một đối tượng mới cho lần gọi đầu tiên, đặt nó trong một static field. Phương thức nên luôn luôn trả về instance đó cho mỗi lần gọi sau này.</p><p>4. Tạo hàm constructor của lớp private. Phương thức static của lớp sẽ vẫn có thể gọi constructor, nhưng những đối tượng khác sẽ không được.</p><p>5. Đi qua client code và thay thế trực tiếp những lời gọi trực tiếp đến hàm khởi tạo của singleton với lời gọi đến hàm tạo static.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fd831a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fd831a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c8d0bdf" data-id="c8d0bdf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4532280 elementor-widget elementor-widget-text-editor" data-id="4532280" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Ưu và nhược</h1><div> </div><p><strong>Ưu:</strong></p><ul><li>Bạn có thể chắc chắn rằng lớp chỉ có duy nhất một instance.</li><li>Có được truy cập toàn cục đến instance đó.</li><li>Đối tượng singleton được init chỉ khi được request đến nó lần đầu tiên</li></ul><p><strong>Nhược:</strong></p><ul><li>Vi phạm <em>Singleton Reponsibility Principle</em>. Pattern giải quyết 2 vấn đề cùng lúc.</li><li>Singleton pattern có thể mang một design tệ, cho instance, khi mà components của hệ thống biết quá nhiều về nhau.</li><li>Pattern yêu cầu một cách xử lý đặc biệt trong môi trường multithreaded để đảm bảo threads sẽ không tạo nhiều đối tượng singleton nhiều lần.</li><li>Có thể sẽ khó khăn cho unit test client code của Singleton bởi vì nhiều test framework dựa vào kế thừa khi mà mock đối tượng. Bởi vì constructor có lớp singleton là private và override static method là một điều không khả thi trong hầu hết ngôn ngữ, bạn sẽ cần nghĩ đến việc tìm cách để mock singleton. Hoặc không viết tests. Hoặc không sử dụng Singleton pattern.</li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa2c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa2c19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95f1038" data-id="95f1038" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5cd005 elementor-widget elementor-widget-text-editor" data-id="f5cd005" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1>Mối quan hệ giữa những patterns khác</h1><ul><li>Lớp <strong><span style="text-decoration: underline;">Facade</span> </strong>có thể được chuyển thành <span style="text-decoration: underline;"><strong>Singleton</strong></span> bởi vì đối tượng facade đầy đủ trong hầu hết trường hợp.</li><li><span style="text-decoration: underline;"><strong>Flyweight</strong></span><strong> </strong>sẽ giống <strong>Singleton </strong>nếu bằng cách nào đó giảm tất cả những trạng thái chia sẽ của đối tượng cho chỉ một đối tượng flyweight. Nhưng có 2 sự khác biệt nền tảng giữa chúng là:</li></ul><ol><li>Nên chỉ có duy nhất một instance Singleton, trong khi lớp <em>Flyweight </em>có thể có nhiều instance với những trạng thái nội tại.</li><li>Đối tượng <em>Singleton</em> có thể thay đổi được, trong khi Flyweight thì bất biến.</li></ol><ul><li><strong><span style="text-decoration: underline;">Abstract Factory, Builders</span></strong> và <strong>Prototypes</strong> có thể được triển khai như <strong>Singletons</strong>.</li></ul><p> </p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08b3d95 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08b3d95" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9def2aa" data-id="9def2aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b813045 elementor-widget elementor-widget-text-editor" data-id="b813045" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/design-patterns/singleton">Singleton</a></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/singleton/">Series Design Patterns – #5: Singleton</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Series Refactoring – #23: Thân thiết không thích hợp</title>
-		<link>https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=than-thiet-khong-thich-hop</link>
+		<link>https://9xdevelopers.com/than-thiet-khong-thich-hop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=than-thiet-khong-thich-hop</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Sat, 03 Oct 2020 11:05:03 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1605</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1605</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một lớp sử dụng những trường và phương thức nội bộ của một lớp khác. Lý do của những vấn đề này Dành nhiều thời gian cho việc theo dõi sự kết nối giữ các lớp. Các lớp thì nên biết càng ít về nhau thì càng tốt vì sẽ dễ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/"> <span class="screen-reader-text">Series Refactoring – #23: Thân thiết không thích hợp</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/"> <span class="screen-reader-text">Series Refactoring – #23: Thân thiết không thích hợp</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1605" class="elementor elementor-1605" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -132,7 +703,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/than-thiet-khong-thich-hop/">Series Refactoring – #23: Thân thiết không thích hợp</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -140,17 +711,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #4: Prototype</title>
-		<link>https://blog.9xdevelopers.com/prototype/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=prototype</link>
+		<link>https://9xdevelopers.com/prototype/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=prototype</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Sat, 03 Oct 2020 06:35:30 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1519</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1519</guid>
 
 					<description><![CDATA[<p>Ý định Prototype là một pattern khởi tạo cho phép bạn copy đối tượng đã tồn tại mà không làm code bạn phụ thuộc vào những của chúng. Vấn đề Tưởng tượng rằng bạn có một đối tượng, và bạn muốn tạo chính xác một bản sao của nó. Vậy bạn làm như thế nào? Đầu &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/prototype/"> <span class="screen-reader-text">Series Design Patterns – #4: Prototype</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/prototype/"> <span class="screen-reader-text">Series Design Patterns – #4: Prototype</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1519" class="elementor elementor-1519" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -345,7 +916,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/prototype/">Series Design Patterns – #4: Prototype</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -353,17 +924,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #22: Tính năng ghen tỵ</title>
-		<link>https://blog.9xdevelopers.com/tinh-nang-ghen-ty/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tinh-nang-ghen-ty</link>
+		<link>https://9xdevelopers.com/tinh-nang-ghen-ty/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tinh-nang-ghen-ty</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Fri, 02 Oct 2020 02:17:55 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1531</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1531</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Một phương thức truy cập dữ liệu của một đối tượng khác nhiều hơn dữ liệu của chính nó. Lý do của những vấn đề này Cái mùi này có thể xảy ra sau khi các trường được di chuyển vô lớp dữ liệu. Nếu trong trường hợp bạn muốn di &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/"> <span class="screen-reader-text">Series Refactoring – #22: Tính năng ghen tỵ</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/tinh-nang-ghen-ty/"> <span class="screen-reader-text">Series Refactoring – #22: Tính năng ghen tỵ</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1531" class="elementor elementor-1531" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -473,7 +1044,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/tinh-nang-ghen-ty/">Series Refactoring – #22: Tính năng ghen tỵ</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -481,17 +1052,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #3: Builder</title>
-		<link>https://blog.9xdevelopers.com/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
+		<link>https://9xdevelopers.com/builder/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=builder</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Fri, 02 Oct 2020 02:12:04 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1510</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1510</guid>
 
 					<description><![CDATA[<p>Ý định Builder&#160;là một creational design pattern để bạn xây dựng lên những đối tượng phức tạp từng bước một. Pattern cho phép bạn sinh ra những loại khác nhau và đại diện của đối tượng sử dụng cùng một construction code. Vấn đề Tưởng tượng rằng một đối tượng phức tạp cần sức lực &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/builder/"> <span class="screen-reader-text">Series Design Patterns – #3: Builder</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1510" class="elementor elementor-1510" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -686,7 +1257,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/builder/">Series Design Patterns – #3: Builder</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -694,17 +1265,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #2: Abstract Factory</title>
-		<link>https://blog.9xdevelopers.com/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
+		<link>https://9xdevelopers.com/abtract-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=abtract-history</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Thu, 01 Oct 2020 08:16:45 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1499</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1499</guid>
 
 					<description><![CDATA[<p>Ý định Abstract Method là một pattern khởi tạo mà nó sinh ra một tập hợp những đối tượng liên quan nhau mà không chỉ định trực tiếp đến lớp cụ thể. Vấn đề Tưởng tượng rằng bạn đang tạo ra một cửa hàng nội thất. Code của bạn hiện tại bao gồm: 1. Một họ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/abtract-history/"> <span class="screen-reader-text">Series Design Patterns – #2: Abstract Factory</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">6</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1499" class="elementor elementor-1499" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -882,7 +1453,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/abtract-history/">Series Design Patterns – #2: Abstract Factory</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -890,17 +1461,17 @@
 			</item>
 		<item>
 		<title>Series Refactoring – #21: Chú trọng bất cần thiết</title>
-		<link>https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chu-trong-bat-can-thiet</link>
+		<link>https://9xdevelopers.com/chu-trong-bat-can-thiet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chu-trong-bat-can-thiet</link>
 		
 		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
 		<pubDate>Wed, 30 Sep 2020 05:28:12 +0000</pubDate>
 				<category><![CDATA[Dispensables]]></category>
 		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1491</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1491</guid>
 
 					<description><![CDATA[<p>Dấu hiệu nhân biết Có những lớp, phương thức, trường và biến không sử dụng. Lý do của những vấn đề này Đôi khi tạo code &#8216;phòng hờ&#8217; để hỗ trợ cho những tính năng dự đoán trong tương lai mà không giờ được thực thi. Và kết quả là code trở nên khó để &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/"> <span class="screen-reader-text">Series Refactoring – #21: Chú trọng bất cần thiết</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/"> <span class="screen-reader-text">Series Refactoring – #21: Chú trọng bất cần thiết</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1491" class="elementor elementor-1491" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -1010,7 +1581,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/chu-trong-bat-can-thiet/">Series Refactoring – #21: Chú trọng bất cần thiết</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -1018,17 +1589,17 @@
 			</item>
 		<item>
 		<title>Series Design Patterns – #1: Factory Method</title>
-		<link>https://blog.9xdevelopers.com/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
+		<link>https://9xdevelopers.com/factory-method/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=factory-method</link>
 		
 		<dc:creator><![CDATA[Hien Nguyen]]></dc:creator>
 		<pubDate>Tue, 29 Sep 2020 15:24:22 +0000</pubDate>
 				<category><![CDATA[Creational Patterns]]></category>
 		<category><![CDATA[Design Patterns]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1478</guid>
+		<guid isPermaLink="false">https://9xdevelopers.com/?p=1478</guid>
 
 					<description><![CDATA[<p>Được biết đến như: Hàm khởi tạo ảo Ý định Factory Method là một pattern khởi tạo mà nó cung cấp một interface cho việc tạo đối tượng trong superclass, nhưng cho phép subclasses có thể thay đổi type của đối tượng mà sẽ được tạo. Vấn đề Tưởng tượng rằng bạn đang tạo ra một &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+<p class="read-more"> <a class="" href="https://9xdevelopers.com/factory-method/"> <span class="screen-reader-text">Series Design Patterns – #1: Factory Method</span> Read More »</a></p>
+<p>The post <a rel="nofollow" href="https://9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">7</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1478" class="elementor elementor-1478" data-elementor-settings="[]">
 						<div class="elementor-inner">
@@ -1223,357 +1794,7 @@
 						</div>
 						</div>
 					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring – #20: Code chết</title>
-		<link>https://blog.9xdevelopers.com/code-chet/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=code-chet</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Tue, 29 Sep 2020 14:36:51 +0000</pubDate>
-				<category><![CDATA[Dispensables]]></category>
-		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1465</guid>
-
-					<description><![CDATA[<p>Dấu hiệu nhân biết Một biến, tham số, trường, phương thức hoặc lớp không được sử dụng (thường là bởi vì nó cũ) Lý do của những vấn đề này Khi yêu cầu phần mềm thay đổi hoặc chỉnh sửa phần mềm lại cho đúng thì sẽ không có ai có thời gian để dọn &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/code-chet/"> <span class="screen-reader-text">Series Refactoring – #20: Code chết</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1465" class="elementor elementor-1465" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Một biến, tham số, trường, phương thức hoặc lớp không được sử dụng (thường là bởi vì nó cũ)</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Khi yêu cầu phần mềm thay đổi hoặc chỉnh sửa phần mềm lại cho đúng thì sẽ không có ai có thời gian để dọn dẹp lại code cũ</li><li>Giống như là code có thể được tìm thấy trong câu điều kiện phức tạp, khi một trong những nhánh trở nên khó tiếp cận (do lỗi hoặc do trường hợp khác)</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Cách nhanh nhất để tìm code chết là sử dụng một IDE tốt</li><li>Xóa những code không sử dụng và file ko cần thiết.</li><li>Trong trường hợp các lớp không cần thiết, <a href="https://refactoring.guru/inline-class">Inline Class</a> hoặc <a href="https://refactoring.guru/collapse-hierarchy">Collapse Hierarchy</a> có thể được áp dụng nếu một lớp con hoặc lớp cha được sử dụng.</li><li>Để loại bỏ những tham số không cần thiết, sử dụng <a href="https://refactoring.guru/remove-parameter">Remove Parameter</a>.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Làm code ngắn lại</li><li>Dễ hỗ trợ hơn</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/dead-code">Dead Code</a></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/code-chet/">Series Refactoring – #20: Code chết</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring – #19: Lớp dữ liệu</title>
-		<link>https://blog.9xdevelopers.com/lop-du-lieu/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-du-lieu</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Mon, 28 Sep 2020 02:23:55 +0000</pubDate>
-				<category><![CDATA[Dispensables]]></category>
-		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1435</guid>
-
-					<description><![CDATA[<p>Dấu hiệu nhân biết Một lớp dữ liệu thường là những lớp mà nó chỉ bao gồm trường và những phương thức đơn giản với mục đích là để truy cập dữ liệu của chính nó (getters và setters). Nó chỉ chứa dữ liệu được sử dụng trong những lớp khác. Những lớp này không &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/lop-du-lieu/"> <span class="screen-reader-text">Series Refactoring – #19: Lớp dữ liệu</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">2</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1435" class="elementor elementor-1435" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Một lớp dữ liệu thường là những lớp mà nó chỉ bao gồm trường và những phương thức đơn giản với mục đích là để truy cập dữ liệu của chính nó (getters và setters). Nó chỉ chứa dữ liệu được sử dụng trong những lớp khác. Những lớp này không chứa bất kỳ chức năng nào và không thể tự chạy những dữ liệu của nó một cách độc lập.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Điều này là bình thường khi mà mới tạo lớp chỉ chứa một vài trường public(và thậm chí có thể có đầy đủ getters/setters). Nhưng sức mạnh thật sự của đối tượng là nó có thể bao gồm những hành vi và xử lý dữ liệu của nó.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Nếu một lớp bao gồm những trường public, sử dụng <a href="https://refactoring.guru/encapsulate-field">Encapsulate Field</a> để giấu chúng từ cách tiếp cận trực tiếp và yêu cầu chỉ tiếp cận thông qua getters và setters.</li><li>Sử dụng <a href="https://refactoring.guru/encapsulate-collection">Encapsulate Collection</a> cho dữ liệu trong mảng.</li><li>Xem lại code trên client đang sử dụng lớp. Trong đó, bạn có thể tìm ra chức năng mà nó nên ở trong lớp dữ liệu của chính nó. Nếu có thì sử dụng <a href="https://refactoring.guru/move-method">Move Method</a> và <a href="https://refactoring.guru/extract-method">Extract Method</a> để di chuyển chức năng đó vô lớp dữ liệu.</li><li>Sau khi lớp đầy đủ các phương thức chỉnh chu, bạn có thể muốn loại bỏ những phương thức cũ để lấy dữ liệu mà bạn cho nó quyền truy cập quá rộng để lấy được dữ liệu. Trong trường hợp này, nên loại bỏ phương thức cài đặt <a href="https://refactoring.guru/remove-setting-method">Remove Setting Method</a> và giấu phương thức đó <a href="https://refactoring.guru/hide-method">Hide Method</a>.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Cải thiện việc hiểu và cấu trúc lại code. Các thao tác trên dữ liệu cụ thể được tập hợp ở một nơi duy nhất thay vì ở một nơi ngẫu nhiên trong toàn bộ code.</li><li>Giúp bạn phát hiện code trùng trong code ở client</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/data-class">Data Class</a></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-du-lieu/">Series Refactoring – #19: Lớp dữ liệu</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Series Refactoring – #18: Lớp lười</title>
-		<link>https://blog.9xdevelopers.com/lop-luoi/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=lop-luoi</link>
-		
-		<dc:creator><![CDATA[Truc Phan]]></dc:creator>
-		<pubDate>Sat, 26 Sep 2020 07:44:18 +0000</pubDate>
-				<category><![CDATA[Dispensables]]></category>
-		<category><![CDATA[Refactoring]]></category>
-		<guid isPermaLink="false">https://blog.9xdevelopers.com/?p=1430</guid>
-
-					<description><![CDATA[<p>Dấu hiệu nhân biết Việu duy trì và hiểu các lớp luôn luôn tốn thời gian và tiền bạc. Nên nếu có một lớp không khiến cho bạn chú ý đến thì hãy xóa nó đi. Lý do của những vấn đề này Có thể là do một lớp được thiết kế với đầy đủ &#8230;</p>
-<p class="read-more"> <a class="" href="https://blog.9xdevelopers.com/lop-luoi/"> <span class="screen-reader-text">Series Refactoring – #18: Lớp lười</span> Read More »</a></p>
-<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<span class="rt-reading-time" style="display: block;"><span class="rt-label rt-prefix">Thời gian đọc:</span> <span class="rt-time">&lt; 1</span> <span class="rt-label rt-postfix">phút.</span></span>		<div data-elementor-type="wp-post" data-elementor-id="1430" class="elementor elementor-1430" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-e5c8cd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5c8cd1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3624e6d" data-id="3624e6d" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-da1730a elementor-widget elementor-widget-text-editor" data-id="da1730a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Dấu hiệu nhân biết</strong></p><ul><li>Việu duy trì và hiểu các lớp luôn luôn tốn thời gian và tiền bạc. Nên nếu có một lớp không khiến cho bạn chú ý đến thì hãy xóa nó đi.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d3f663 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d3f663" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79497fd" data-id="79497fd" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-5e0466d elementor-widget elementor-widget-text-editor" data-id="5e0466d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Lý do của những vấn đề này</strong></p><ul><li>Có thể là do một lớp được thiết kế với đầy đủ chức năng nhưng sau đó một vài lần refactor nó trở nên nhỏ một cách kỳ cục.</li><li>Hoặc là do nó được thiết kế để phục vụ cho những chức năng trong tương lai mà không bao giờ hoàn thành được.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-dbe06ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dbe06ff" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a4f3c1" data-id="8a4f3c1" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-26a18ae elementor-widget elementor-widget-text-editor" data-id="26a18ae" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cách khắc phục</strong></p><ul><li>Những thành phần mà nó gần như là vô dụng nên được xử lý như <a href="https://refactoring.guru/inline-class">Inline Class</a>.</li><li>Đối với những lớp con với những chức năng mới, thử sử dụng <a href="https://refactoring.guru/collapse-hierarchy">Collapse Hierarchy</a></li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-b226f43 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b226f43" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bd4a605" data-id="bd4a605" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-3d62626 elementor-widget elementor-widget-text-editor" data-id="3d62626" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Cái mình nhận lại được</strong></p><ul><li>Làm code ngắn lại.</li><li>Code dễ bảo trì hơn.</li></ul></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a80286e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a80286e" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a69e8b" data-id="2a69e8b" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-d656b73 elementor-widget elementor-widget-text-editor" data-id="d656b73" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>Khi nào có thể bỏ qua việc này</strong></p><p>Đôi khi một Lớp lười được tạo ra để vạch rõ ý định phát triển trong tương lai, trong trường hợp này, hãy cố gắng cân bằng giữa việc rõ ràng và đơn giản trong code của bạn.</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-91ca202 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91ca202" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f690e4" data-id="8f690e4" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-149f34a elementor-widget elementor-widget-text-editor" data-id="149f34a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Dịch từ : <a href="https://refactoring.guru/smells/lazy-class">Lazy Class</a></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-		<p>The post <a rel="nofollow" href="https://blog.9xdevelopers.com/lop-luoi/">Series Refactoring – #18: Lớp lười</a> appeared first on <a rel="nofollow" href="https://blog.9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
+		<p>The post <a rel="nofollow" href="https://9xdevelopers.com/factory-method/">Series Design Patterns – #1: Factory Method</a> appeared first on <a rel="nofollow" href="https://9xdevelopers.com/">9x Developers&#039;s Blog</a>.</p>
 ]]></content:encoded>
 					
 		
